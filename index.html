@@ -1,0 +1,419 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Kanit', sans-serif;
+    }
+
+    body {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      body {
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+    }
+
+    .row li {
+      width: 33%;
+      float: left;
+      padding: 3%;
+    }
+
+    .img_bt {
+      border: 0 none;
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .show-content {
+      display: block;
+    }
+
+    .hide-content {
+      display: none;
+    }
+
+    #elementClicked1:hover {
+      color: #6392eb;
+    }
+    #elementClicked2:hover {
+      color: #6392eb;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #6392eb;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #2a6ce7;
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <!-- button back to top -->
+  <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill" viewBox="0 0 16 16">
+      <path d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z"/>
+    </svg>
+  </button>
+  
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">อ่านบทความ</h5>
+    </div>
+
+    <!-- button -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+          <ul>
+            <li>
+              <a href="health.html"><img src="img/Group 4.png" class="img_bt img-responsive inline-block"
+                  alt="health button" /></a>
+            </li>
+            <li>
+              <a href="beauty.html"><img src="img/Group 5.png" class="img_bt img-responsive inline-block"
+                  alt="beauty button" /></a>
+            </li>
+            <li>
+              <a href="dental.html"><img src="img/Group 6.png" class="img_bt img-responsive inline-block"
+                  alt="dental button" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">บทความล่าสุด</h5>
+        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right;">ดูทั้งหมด</a>
+    </div>
+
+    <div id="latest">
+      <div class="show-content" id="example_content1">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow1">
+      </div>
+      <!-- <div class="card mb-3" >
+          
+          <div class="row g-0">
+            
+            //img
+            <div class="col-md-4">
+              <img
+                src=""
+                alt="..."
+                class="img-fluid rounded-start"
+              />
+            </div>
+            
+            //content
+            <div class="col-md-8">
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                
+                <p class="card-text">
+                  card text
+                </p>
+                
+                <p class="read-more">
+                  <a href="#">Read More</a>
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div> -->
+    </div>
+
+  </div>
+
+  <br><br><br>
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">บทความยอดนิยม</h5>
+      <a id="elementClicked2" style="display:block; cursor: pointer;  text-align: right;">ดูทั้งหมด</a>
+    </div>
+
+    <div id="popular">
+      <div class="show-content" id="example_content2">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow2">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    // data
+    let requestURL = "content.json";
+    let request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+      if (request.readyState == 4 && request.status == 200) {
+        dataReportStatus(JSON.parse(request.responseText));
+        console.log("jj");
+      }
+    };
+    request.open("GET", requestURL, true);
+    request.send();
+
+
+
+    function dataReportStatus(data) {
+      let count = 0
+      // latest content
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].content == "บทความล่าสุด") {
+          count += 1;
+          console.log(count);
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content1");
+            parent.appendChild(div_show);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow1");
+            parent.appendChild(div_show);
+          }
+        }
+      }
+
+      const elementClicked1 = document.querySelector("#elementClicked1");
+      const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
+
+      elementClicked1.addEventListener("click", () => {
+        elementYouWantToShow1.classList.toggle("hide-content");
+      });
+
+      // popular content
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].content == "บทความยอดนิยม") {
+          count += 1;
+          console.log(count);
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content2");
+            parent.appendChild(div_show);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow2");
+            parent.appendChild(div_show);
+          }
+        }
+      }
+
+      const elementClicked2 = document.querySelector("#elementClicked2");
+      const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
+
+      elementClicked2.addEventListener("click", () => {
+        elementYouWantToShow2.classList.toggle("hide-content");
+      });
+    }
+
+    // button to top
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    // end button to top
+
+  </script>
+  </div>
+</body>
+
+</html>
+
+<!-- document.getElementById('Result').innerHTML += data; -->
