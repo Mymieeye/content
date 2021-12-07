@@ -25,8 +25,8 @@
 
     @media screen and (min-width: 1000px) {
       body {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
       }
     }
 
@@ -57,11 +57,11 @@
     }
 
     #elementClicked1:hover {
-      color: #6392eb !important;
+      color: #6392eb;
     }
 
     #elementClicked2:hover {
-      color: #6392eb !important;
+      color: #6392eb;
     }
 
     #myBtn {
@@ -174,56 +174,9 @@
 
   <div>
     <div class="card-body">
-      <h4 class="card-title">อ่านบทความ<h4>
-    </div>
-
-    <!-- button -->
-    <div class="">
-      <div class="row">
-        <div class="menu-icon-section ">
-
-          <a target="_blank" href="health.html"><img src="img/health.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="health button" /></a>
-
-          <a target="_blank" href="beauty.html"><img src="img/beauty.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="beauty button" /></a>
-
-          <a target="_blank" href="dental.html"><img src="img/dental.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="dental button" /></a>
-
-          <a target="_blank" href="pets.html"><img src="img/pet.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="pet button" /></a>
-
-          <a target="_blank" href="health_lasik.html"><img src="img/lasik.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="lasik button" /></a>
-
-          <a target="_blank" href="health_HPV.html"><img src="img/vaccine.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="vaccine button" /></a>
-
-          <a target="_blank" href="health.html"><img src="img/health-cjeck.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="check-up button" /></a>
-
-          <a target="_blank" href="dental_invisible.html"><img src="img/invisalign.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="invisalign button" /></a>
-
-          <a target="_blank" href="dental_retainer.html"><img src="img/retainer.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="retainer button" /></a>
-
-          <a target="_blank" href="beauty_bikini-hair.html"><img src="img/bikini.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="bikini button" /></a>
-
-          <a target="_blank" href="beauty_hair-removal.html"><img src="img/armpit.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="armpit button" /></a>
-
-          <a target="_blank" href="beaut_breast.html"><img src="img/boobs.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="boobs button" /></a>
-
-        </div>
-      </div>
-
-    </div>
-
-
-  </div>
-
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">บทความล่าสุด</h5>
+      <h4 class="card-title">สัตว์เลี้ยง</h5>
         <hr>
-        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right; color: black; text-decoration: none;" href="#elementYouWantToShow1">ดูทั้งหมด</a>
+        <a id="elementClicked1" style="display:none; cursor: pointer;  text-align: right; color: black; text-decoration: none;" href="#elementYouWantToShow1">ดูทั้งหมด</a>
     </div>
 
     <div id="latest">
@@ -273,9 +226,9 @@
   <br>
   <div>
     <div class="card-body">
-      <h4 class="card-title">บทความยอดนิยม</h5>
+      <h4 class="card-title">ทำหมันสุนัข แมว สัตว์เลี้ยงอื่นๆ</h5>
         <hr>
-        <a id="elementClicked2" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2">ดูทั้งหมด</a>
+        <a id="elementClicked2" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2">ดูทั้งหมด</a>
     </div>
 
     <div id="popular">
@@ -310,7 +263,7 @@
       let count = 0
       // latest content
       for (let i = 0; i < data.length; i++) {
-        if (data[i].content == "บทความล่าสุด") {
+        if (data[i].Category_lv2 == "สัตว์เลี้ยง") {
           count += 1;
           console.log(count);
           // cover
@@ -403,7 +356,7 @@
       // popular content
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].content == "บทความยอดนิยม") {
+        if (data[i].Category_lv2 == "ทำหมันสุนัข แมว สัตว์เลี้ยงอื่นๆ") {
           count += 1;
           console.log(count);
 
@@ -514,7 +467,7 @@
       document.documentElement.scrollTop = 0;
     }
     // end button to top
-    
+
   </script>
   </div>
 </body>

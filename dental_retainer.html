@@ -147,6 +147,88 @@
     </svg>
   </button>
 
+  <!-- retainer -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ทำรีเทนเนอร์</h5>
+        <hr>
+        <a id="elementClicked7"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="retainer">
+      <div class="show-content" id="example_content7">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow7">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- invisible-braces -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">จัดฟันใส</h5>
+        <hr>
+        <a id="elementClicked4"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="invisible-braces">
+      <div class="show-content" id="example_content4">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow4">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- wire-braces -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">จัดฟันลวด</h5>
+        <hr>
+        <a id="elementClicked5"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="wire-braces">
+      <div class="show-content" id="example_content5">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow5">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- wire-invisible -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">จัดฟันลวด, จัดฟันใส</h5>
+        <hr>
+        <a id="elementClicked6"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="wire-invisible">
+      <div class="show-content" id="example_content6">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow6">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
   <!-- tooth-extraction-->
   <div>
     <div class="card-body">
@@ -209,86 +291,7 @@
   </div>
 
   <br>
-  <!-- invisible-braces -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">จัดฟันใส</h5>
-        <hr>
-        <a id="elementClicked4"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
-    </div>
 
-    <div id="invisible-braces">
-      <div class="show-content" id="example_content4">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow4">
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <!-- wire-braces -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">จัดฟันลวด</h5>
-        <hr>
-        <a id="elementClicked5"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
-    </div>
-
-    <div id="wire-braces">
-      <div class="show-content" id="example_content5">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow5">
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <!-- wire-invisible -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">จัดฟันลวด, จัดฟันใส</h5>
-        <hr>
-        <a id="elementClicked6"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
-    </div>
-
-    <div id="wire-invisible">
-      <div class="show-content" id="example_content6">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow6">
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <!-- retainer -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">ทำรีเทนเนอร์</h5>
-        <hr>
-        <a id="elementClicked7"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
-    </div>
-
-    <div id="retainer">
-      <div class="show-content" id="example_content7">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow7">
-      </div>
-    </div>
-  </div>
-
-  <br>
   <!-- gingiventomy -->
   <div>
     <div class="card-body">
@@ -506,102 +509,10 @@
 
     function dataReportStatus(data) {
       let count = 0
-      // tooth-extraction
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ถอนฟัน") {
-          count += 1;
-          console.log(count);
-
-          var a_cover = document.createElement("a");
-          a_cover.href = data[i].URL;
-          a_cover.setAttribute("style", "text-decoration: none; color:black;");
-
-          // cover
-          var div_show = document.createElement("div");
-
-          //in cover
-          var div_card = document.createElement("div");
-          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
-          div_card.setAttribute("style", "");
-
-          //row
-          var div_row = document.createElement("div");
-          div_row.setAttribute("class", "row g-0");
-          //col1
-          var div_col = document.createElement("div");
-          div_col.setAttribute("class", "col-md-4");
-          // add col1 in row
-          div_row.appendChild(div_col);
-          //img
-          var i_image = document.createElement("img");
-          i_image.src = data[i].image;
-          i_image.setAttribute("class", 'img-fluid rounded');
-
-          // i_image.setAttribute("src", `${data[i].image}`);
-
-          // add img in col1
-          div_col.appendChild(i_image);
-
-          //col2 des
-          var div_col2 = document.createElement("div");
-          div_col2.setAttribute("class", "col-md-8");
-          div_row.appendChild(div_col2);
-
-          var div_text = document.createElement("div");
-          div_text.setAttribute("class", "card-body");
-          div_col2.appendChild(div_text);
-
-
-          // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
-
-
-          // des
-          var p_tag = document.createElement("p");
-          p_tag.setAttribute("class", "card-text");
-          p_tag.innerHTML = `${data[i].Meta_Description}`;
-          div_text.appendChild(p_tag);
-
-          var p_tag2 = document.createElement("p");
-          p_tag2.setAttribute("class", "read-more");
-          p_tag2.innerHTML = '';
-          div_text.appendChild(p_tag2);
-
-          var a_link = document.createElement("a");
-          a_link.href = data[i].URL;
-          a_link.innerHTML = 'อ่านเพิ่มเติม';
-          p_tag2.appendChild(a_link);
-
-          div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
-
-          if (count < 4) {
-            var parent = document.getElementById("example_content1");
-            parent.appendChild(a_cover);
-
-          }
-          else {
-            var parent = documea_coverementById("elementYouWantToShow1");
-            parent.appendChild(div_show);
-          }
-        }
-      }
-
-      const elementClicked1 = document.querySelector("#elementClicked1");
-      const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
-
-      elementClicked1.addEventListener("click", () => {
-        elementYouWantToShow1.classList.toggle("hide-content");
-      });
-
-      // wisdom-tooth-removal
+      // retainers
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ถอนหรือผ่าฟันคุด") {
+        if (data[i].Category_lv2 == "ทำรีเทนเนอร์") {
           count += 1;
           console.log(count);
 
@@ -673,113 +584,21 @@
           a_cover.appendChild(div_show);
 
           if (count < 4) {
-            var parent = document.getElementById("example_content2");
+            var parent = document.getElementById("example_content7");
             parent.appendChild(a_cover);
           }
           else {
-            var parent = document.getElementById("elementYouWantToShow2");
+            var parent = document.getElementById("elementYouWantToShow7");
             parent.appendChild(a_cover);
           }
         }
       }
 
-      const elementClicked2 = document.querySelector("#elementClicked2");
-      const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
+      const elementClicked7 = document.querySelector("#elementClicked7");
+      const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
 
-      elementClicked2.addEventListener("click", () => {
-        elementYouWantToShow2.classList.toggle("hide-content");
-      });
-
-      // teeth-scaling
-      count = 0
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ขูดหินปูน") {
-          count += 1;
-          console.log(count);
-
-          var a_cover = document.createElement("a");
-          a_cover.href = data[i].URL;
-          a_cover.setAttribute("style", "text-decoration: none; color:black;");
-
-          // cover
-          var div_show = document.createElement("div");
-
-          //in cover
-          var div_card = document.createElement("div");
-          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
-          div_card.setAttribute("style", "");
-
-          //row
-          var div_row = document.createElement("div");
-          div_row.setAttribute("class", "row g-0");
-          //col1
-          var div_col = document.createElement("div");
-          div_col.setAttribute("class", "col-md-4");
-          // add col1 in row
-          div_row.appendChild(div_col);
-          //img
-          var i_image = document.createElement("img");
-          i_image.src = data[i].image;
-          i_image.setAttribute("class", 'img-fluid rounded');
-
-          // i_image.setAttribute("src", `${data[i].image}`);
-
-          // add img in col1
-          div_col.appendChild(i_image);
-
-          //col2 des
-          var div_col2 = document.createElement("div");
-          div_col2.setAttribute("class", "col-md-8");
-          div_row.appendChild(div_col2);
-
-          var div_text = document.createElement("div");
-          div_text.setAttribute("class", "card-body");
-          div_col2.appendChild(div_text);
-
-
-          // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
-
-
-          // des
-          var p_tag = document.createElement("p");
-          p_tag.setAttribute("class", "card-text");
-          p_tag.innerHTML = `${data[i].Meta_Description}`;
-          div_text.appendChild(p_tag);
-
-          var p_tag2 = document.createElement("p");
-          p_tag2.setAttribute("class", "read-more");
-          p_tag2.innerHTML = '';
-          div_text.appendChild(p_tag2);
-
-          var a_link = document.createElement("a");
-          a_link.href = data[i].URL;
-          a_link.innerHTML = 'อ่านเพิ่มเติม';
-          p_tag2.appendChild(a_link);
-
-          div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
-
-          if (count < 4) {
-            var parent = document.getElementById("example_content3");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow3");
-            parent.appendChild(a_cover);
-          }
-        }
-      }
-
-      const elementClicked3 = document.querySelector("#elementClicked3");
-      const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
-
-      elementClicked3.addEventListener("click", () => {
-        elementYouWantToShow3.classList.toggle("hide-content");
+      elementClicked7.addEventListener("click", () => {
+        elementYouWantToShow7.classList.toggle("hide-content");
       });
 
       // invisible-braces
@@ -1059,10 +878,12 @@
       });
 
 
-      // retainer
-      count = 0
+
+
+      // tooth-extraction
+      count = 0;
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำรีเทนเนอร์") {
+        if (data[i].Category_lv2 == "ถอนฟัน") {
           count += 1;
           console.log(count);
 
@@ -1134,22 +955,208 @@
           a_cover.appendChild(div_show);
 
           if (count < 4) {
-            var parent = document.getElementById("example_content7");
+            var parent = document.getElementById("example_content1");
+            parent.appendChild(a_cover);
+
+          }
+          else {
+            var parent = documea_coverementById("elementYouWantToShow1");
+            parent.appendChild(div_show);
+          }
+        }
+      }
+
+      const elementClicked1 = document.querySelector("#elementClicked1");
+      const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
+
+      elementClicked1.addEventListener("click", () => {
+        elementYouWantToShow1.classList.toggle("hide-content");
+      });
+
+      // wisdom-tooth-removal
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ถอนหรือผ่าฟันคุด") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card);
+          a_cover.appendChild(div_show);
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content2");
             parent.appendChild(a_cover);
           }
           else {
-            var parent = document.getElementById("elementYouWantToShow7");
+            var parent = document.getElementById("elementYouWantToShow2");
             parent.appendChild(a_cover);
           }
         }
       }
 
-      const elementClicked7 = document.querySelector("#elementClicked7");
-      const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
+      const elementClicked2 = document.querySelector("#elementClicked2");
+      const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
 
-      elementClicked7.addEventListener("click", () => {
-        elementYouWantToShow7.classList.toggle("hide-content");
+      elementClicked2.addEventListener("click", () => {
+        elementYouWantToShow2.classList.toggle("hide-content");
       });
+
+      // teeth-scaling
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ขูดหินปูน") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card);
+          a_cover.appendChild(div_show);
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content3");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow3");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked3 = document.querySelector("#elementClicked3");
+      const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
+
+      elementClicked3.addEventListener("click", () => {
+        elementYouWantToShow3.classList.toggle("hide-content");
+      });
+
 
       // gingiventomy
       count = 0
@@ -2097,7 +2104,7 @@
     }
     // end button to top
 
-    
+
   </script>
   </div>
 </body>

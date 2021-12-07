@@ -21,6 +21,7 @@
     body {
       margin-left: 5%;
       margin-right: 5%;
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -85,6 +86,7 @@
     #myBtn:hover {
       background-color: #2a6ce7;
     }
+
     .card-text {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -94,36 +96,42 @@
       line-clamp: 2;
       -webkit-box-orient: vertical;
     }
+
     @media only screen and (max-width: 450px) {
-      h5{
+      h5 {
         font-size: medium;
       }
-      p{
+
+      p {
         font-size: small;
       }
-      a{
+
+      a {
         font-size: small;
       }
-      
+
     }
+
     @media only screen and (max-width: 375px) {
-      h5{
+      h5 {
         font-size: small;
       }
-      p{
+
+      p {
         font-size: x-small;
       }
-      a{
+
+      a {
         font-size: small;
       }
     }
+
     @media only screen and (max-width: 765px) {
-      .card{
+      .card {
         padding: 0% !important;
       }
-      
+
     }
-    
   </style>
 
   <title>Document</title>
@@ -139,17 +147,61 @@
         d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
   </button>
-  
-  <!-- hifu-->
+
+
+  <!-- lasik -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ HIFU</h5>
-        <hr>
-        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow1"
-          class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ทำเลสิก</h4>
+      <hr>
+      <a id="elementClicked31"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="hifu">
+    <div id="lasik">
+      <div class="show-content" id="example_content31" name="lasik">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow31">
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- eye-screening-lasik -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ตรวจตา รักษาโรคตา, ทำเลสิก</h4>
+      <hr>
+      <a id="elementClicked30"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="eye-screening-lasik" name="eye-screening-lasik">
+      <div class="show-content" id="example_content30">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow30">
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+
+  <!-- health-check-up-->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">โปรแกรมตรวจสุขภาพ</h5>
+        <hr>
+        <a id="elementClicked1"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="health-check-up">
       <div class="show-content" id="example_content1">
       </div>
 
@@ -161,16 +213,17 @@
   </div>
 
   <br>
-  <!-- Ulthera -->
+  <!-- pre-employment-medical-screening -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera</h5>
+      <h4 class="card-title">ตรวจสุขภาพเข้าทำงาน</h5>
         <hr>
-        <a id="elementClicked2" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked2"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="Ulthera">
+    <div id="pre-employment-medical-screening">
       <div class="show-content" id="example_content2">
       </div>
 
@@ -180,15 +233,17 @@
   </div>
 
   <br>
-  <!-- Thermage -->
+  <!-- allergy-test -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Thermage</h5>
+      <h4 class="card-title">ตรวจภูมิแพ้และภาวะแพ้</h5>
         <hr>
-        <a id="elementClicked3" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked3"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="Thermage">
+    <div id="allergy-test">
       <div class="show-content" id="example_content3">
       </div>
 
@@ -198,15 +253,17 @@
   </div>
 
   <br>
-  <!-- Ulthera-hifu -->
+  <!-- flu-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera, ทำ HIFU</h5>
+      <h4 class="card-title">ฉีดวัคซีนไข้หวัดใหญ่</h5>
         <hr>
-        <a id="elementClicked4" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked4"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="Ulthera-hifu">
+    <div id="flu-vaccine">
       <div class="show-content" id="example_content4">
       </div>
 
@@ -216,15 +273,17 @@
   </div>
 
   <br>
-  <!-- Ulthera-Thermage -->
+  <!-- dengue-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera, ทำ Thermage</h5>
+      <h4 class="card-title">ฉีดวัคซีนไข้เลือดออก</h5>
         <hr>
-        <a id="elementClicked5" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked5"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="Ulthera-Thermage">
+    <div id="dengue-vaccine">
       <div class="show-content" id="example_content5">
       </div>
 
@@ -234,15 +293,17 @@
   </div>
 
   <br>
-  <!-- Thermage-hifu -->
+  <!-- shingles-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Thermage, ทำ HIFU</h5>
-        <hr>
-        <a id="elementClicked6" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ฉีดวัคซีนงูสวัด<h5>
+          <hr>
+          <a id="elementClicked6"
+            style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+            href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="Thermage-hifu">
+    <div id="shingles-vaccine">
       <div class="show-content" id="example_content6">
       </div>
 
@@ -252,15 +313,17 @@
   </div>
 
   <br>
-  <!-- botox-and-filler -->
+  <!-- rabies-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีด Botulinum Toxin, ฉีดสารเติมเต็ม</h5>
+      <h4 class="card-title">ฉีดวัคซีนพิษสุนัขบ้า</h5>
         <hr>
-        <a id="elementClicked7" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked7"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="botox-and-filler">
+    <div id="rabies-vaccine">
       <div class="show-content" id="example_content7">
       </div>
 
@@ -270,15 +333,17 @@
   </div>
 
   <br>
-  <!-- botox -->
+  <!-- sleep-test -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีด Botulinum Toxin</h5>
+      <h4 class="card-title">ตรวจการนอน Sleep Test</h5>
         <hr>
-        <a id="elementClicked8" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked8"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="botox">
+    <div id="sleep-test">
       <div class="show-content" id="example_content8">
       </div>
 
@@ -288,15 +353,17 @@
   </div>
 
   <br>
-  <!-- filler -->
+  <!-- covid-19 -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีดสารเติมเต็ม</h5>
+      <h4 class="card-title">ตรวจโควิด-19 (COVID-19)</h5>
         <hr>
-        <a id="elementClicked9" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked9"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="filler">
+    <div id="covid-19">
       <div class="show-content" id="example_content9">
       </div>
 
@@ -306,16 +373,17 @@
   </div>
 
   <br>
-  <!-- thread-lift -->
+  <!-- vitamin-check -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ร้อยไหม</h5>
+      <h4 class="card-title">ตรวจวิตามิน</h5>
         <hr>
-        <a id="elementClicked10" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow10"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked10"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="thread-lift">
+    <div id="vitamin-check">
       <div class="show-content" id="example_content10">
       </div>
 
@@ -325,16 +393,17 @@
   </div>
 
   <br>
-  <!-- rhinoplasty -->
+  <!-- vitamin-infusion -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมจมูก</h5>
+      <h4 class="card-title">ฉีดวิตามิน</h5>
         <hr>
-        <a id="elementClicked11" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow11"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked11"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="rhinoplasty">
+    <div id="vitamin-infusion">
       <div class="show-content" id="example_content11">
       </div>
 
@@ -344,16 +413,17 @@
   </div>
 
   <br>
-  <!-- breast-augmentation -->
+  <!-- vitamin-infusion-vitamin-drip -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมหน้าอก</h5>
+      <h4 class="card-title">ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง</h5>
         <hr>
-        <a id="elementClicked12" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow12"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked12"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="breast-augmentation">
+    <div id="vitamin-infusion-vitamin-drip">
       <div class="show-content" id="example_content12">
       </div>
 
@@ -363,16 +433,17 @@
   </div>
 
   <br>
-  <!-- nipples -->
+  <!-- hormone-testing -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำหัวนม</h5>
+      <h4 class="card-title">ตรวจระดับฮอร์โมน</h5>
         <hr>
-        <a id="elementClicked13" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow13"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked13"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="nipples">
+    <div id="hormone-testing">
       <div class="show-content" id="example_content13">
       </div>
 
@@ -382,16 +453,17 @@
   </div>
 
   <br>
-  <!-- pink-nipples -->
+  <!-- drug-test -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำหัวนมชมพู</h5>
+      <h4 class="card-title">ตรวจสารพิษ สารเสพติด</h5>
         <hr>
-        <a id="elementClicked14" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow14"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked14"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="pink-nipples">
+    <div id="drug-test">
       <div class="show-content" id="example_content14">
       </div>
 
@@ -401,16 +473,18 @@
   </div>
 
   <br>
-  <!-- chin-augmentation -->
+  <!-- heart-checkup -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมคาง</h5>
-        <hr>
-        <a id="elementClicked15" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow15"
-          class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจหัวใจ</h4>
+      <hr>
+
+      <a id="elementClicked15"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="chin-augmentation">
+    <div id="heart-checkup">
       <div class="show-content" id="example_content15">
       </div>
 
@@ -420,16 +494,17 @@
   </div>
 
   <br>
-  <!-- jaw-surgery -->
+  <!-- liver-checkup -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ศัลยกรรมขากรรไกรและคาง</h5>
+      <h4 class="card-title">ตรวจตับ</h5>
         <hr>
-        <a id="elementClicked16" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow16"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked16"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="jaw-surgery">
+    <div id="liver-checkup">
       <div class="show-content" id="example_content16">
       </div>
 
@@ -439,16 +514,17 @@
   </div>
 
   <br>
-  <!-- surgery- -->
+  <!-- hbv-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมจมูก, เสริมหน้าอก, ทำตา</h5>
+      <h4 class="card-title">ฉีดวัคซีนไวรัสตับอักเสบบี</h5>
         <hr>
-        <a id="elementClicked17" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow17"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked17"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="surgery-">
+    <div id="hbv-vaccine">
       <div class="show-content" id="example_content17">
       </div>
 
@@ -458,16 +534,17 @@
   </div>
 
   <br>
-  <!-- vaginal-rejuvenation -->
+  <!-- diabetes-screening -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กระชับช่องคลอด ปรับสีผิวจุดซ่อนเร้น</h5>
+      <h4 class="card-title">ตรวจเบาหวาน</h5>
         <hr>
-        <a id="elementClicked18" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow18"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked18"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow18" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="vaginal-rejuvenation">
+    <div id="diabetes-screening">
       <div class="show-content" id="example_content18">
       </div>
 
@@ -477,16 +554,17 @@
   </div>
 
   <br>
-  <!-- nails -->
+  <!-- hemorrhoids -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำเล็บ</h5>
+      <h4 class="card-title">ตรวจและรักษาริดสีดวงทวาร</h5>
         <hr>
-        <a id="elementClicked19" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow19"
-          class='see_all'>ดูทั้งหมด</a>
+        <a id="elementClicked19"
+          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow19" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="nails">
+    <div id="hemorrhoids">
       <div class="show-content" id="example_content19">
       </div>
 
@@ -496,16 +574,18 @@
   </div>
 
   <br>
-  <!-- massage-and-spa -->
+  <!-- DNA -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">นวด สปา</h5>
-        <hr>
-        <a id="elementClicked20" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow20"
-          class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจ DNA</h4>
+      <hr>
+
+      <a id="elementClicked20"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow20" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="massage-and-spa">
+    <div id="DNA">
       <div class="show-content" id="example_content20">
       </div>
 
@@ -515,16 +595,18 @@
   </div>
 
   <br>
-  <!-- facial-treatment -->
+  <!-- STD -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทรีตเมนต์หน้า นวดหน้า</h5>
-        <hr>
-        <a id="elementClicked21" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow21"
-          class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจ STD</h4>
+      <hr>
+
+      <a id="elementClicked21"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow21" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="facial-treatment">
+    <div id="STD">
       <div class="show-content" id="example_content21">
       </div>
 
@@ -534,16 +616,18 @@
   </div>
 
   <br>
-  <!-- lip-micropigmentation -->
+  <!-- osteoporosis -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">สักปาก ทำสีปาก</h5>
-        <hr>
-        <a id="elementClicked22" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow22"
-          class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจกระดูก</h4>
+      <hr>
+
+      <a id="elementClicked22"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow22" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="lip-micropigmentation">
+    <div id="osteoporosis">
       <div class="show-content" id="example_content22">
       </div>
 
@@ -553,15 +637,17 @@
   </div>
 
   <br>
-  <!-- eye-surgery -->
+  <!-- osteoporosis-cure -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำตา</h4>
+      <h4 class="card-title">รักษา ผ่าตัด กระดูกและข้อ</h4>
       <hr>
-      <a id="elementClicked23" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked23"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="eye-surgery">
+    <div id="osteoporosis-cure">
       <div class="show-content" id="example_content23">
       </div>
 
@@ -571,15 +657,17 @@
   </div>
 
   <br>
-  <!-- eyebrow -->
+  <!-- chiropractic -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำคิ้ว</h4>
+      <h4 class="card-title">นวดจัดกระดูก (Chiropractic)</h4>
       <hr>
-      <a id="elementClicked24" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked24"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="eyebrow">
+    <div id="chiropractic">
       <div class="show-content" id="example_content24">
       </div>
 
@@ -589,15 +677,17 @@
   </div>
 
   <br>
-  <!-- lash-lift -->
+  <!-- physical-therapy -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำขนตา ขอบตา</h4>
+      <h4 class="card-title">กายภาพบำบัดและนวดเพื่อการรักษา</h4>
       <hr>
-      <a id="elementClicked25" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked25"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="lash-lift">
+    <div id="physical-therapy">
       <div class="show-content" id="example_content25">
       </div>
 
@@ -607,15 +697,17 @@
   </div>
 
   <br>
-  <!-- tightening-body -->
+  <!-- elderly-care -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ดูด-สลายไขมัน</h4>
+      <h4 class="card-title">ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ</h4>
       <hr>
-      <a id="elementClicked26" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked26"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="tightening-body">
+    <div id="elderly-care">
       <div class="show-content" id="example_content26">
       </div>
 
@@ -625,15 +717,17 @@
   </div>
 
   <br>
-  <!-- hair-removal -->
+  <!-- lung-screening -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนรักแร้</h4>
+      <h4 class="card-title">ตรวจปอด</h4>
       <hr>
-      <a id="elementClicked27" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked27"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="hair-removal">
+    <div id="lung-screening">
       <div class="show-content" id="example_content27">
       </div>
 
@@ -643,15 +737,17 @@
   </div>
 
   <br>
-  <!-- haircut -->
+  <!-- ipd-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ดัด สระ ซอย ทำสีผม</h4>
+      <h4 class="card-title">ฉีดวัคซีน IPD</h4>
       <hr>
-      <a id="elementClicked28" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked28"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="haircut">
+    <div id="ipd-vaccine">
       <div class="show-content" id="example_content28">
       </div>
 
@@ -661,15 +757,17 @@
   </div>
 
   <br>
-  <!-- hair-treatment -->
+  <!-- eye-screening -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทรีตเมนต์บำรุงผม นวดศีรษะผ่อนคลาย</h4>
+      <h4 class="card-title">ตรวจตา รักษาโรคตา</h4>
       <hr>
-      <a id="elementClicked29" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked29"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="hair-treatment">
+    <div id="eye-screening">
       <div class="show-content" id="example_content29">
       </div>
 
@@ -679,52 +777,18 @@
   </div>
 
   <br>
-  <!-- hair-transplant -->
+
+  <!-- cancer-screen -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ปลูกผม รักษาผมร่วง</h4>
+      <h4 class="card-title">ตรวจมะเร็งทั่วไป</h4>
       <hr>
-      <a id="elementClicked30" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked32"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="hair-transplant">
-      <div class="show-content" id="example_content30">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow30">
-      </div>
-    </div>
-  </div>
-
-  <br>
-  <!-- facial-hair-removal -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">กำจัดขนหน้า</h4>
-      <hr>
-      <a id="elementClicked31" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
-    </div>
-
-    <div id="facial-hair-removal">
-      <div class="show-content" id="example_content31">
-      </div>
-
-      <div class="hide-content" id="elementYouWantToShow31">
-      </div>
-    </div>
-  </div>
-
-
-  <br>
-  <!-- removal-arm-hair -->
-  <div>
-    <div class="card-body">
-      <h4 class="card-title">กำจัดขนแขน</h4>
-      <hr>
-      <a id="elementClicked32" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
-    </div>
-
-    <div id="removal-arm-hair">
+    <div id="cancer-screen">
       <div class="show-content" id="example_content32">
       </div>
 
@@ -734,15 +798,17 @@
   </div>
 
   <br>
-  <!-- removal-leg-hair -->
+  <!-- cancer-screen-for-wowan -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนขา</h4>
+      <h4 class="card-title">ตรวจมะเร็งสำหรับผู้หญิง</h4>
       <hr>
-      <a id="elementClicked33" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked33"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="removal-leg-hair">
+    <div id="cancer-screen-for-wowan">
       <div class="show-content" id="example_content33">
       </div>
 
@@ -752,15 +818,17 @@
   </div>
 
   <br>
-  <!-- bikini-hair -->
+  <!-- hpv-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนที่ลับ</h4>
+      <h4 class="card-title">ฉีดวัคซีน HPV</h4>
       <hr>
-      <a id="elementClicked34" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked34"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="bikini-hair">
+    <div id="hpv-vaccine">
       <div class="show-content" id="example_content34">
       </div>
 
@@ -770,15 +838,17 @@
   </div>
 
   <br>
-  <!-- beauty-delivery-service -->
+  <!-- cancer-screen-for-man -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมสวยถึงบ้าน</h4>
+      <h4 class="card-title">ตรวจมะเร็งสำหรับผู้ชาย</h4>
       <hr>
-      <a id="elementClicked35" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked35"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="beauty-delivery-service">
+    <div id="cancer-screen-for-man">
       <div class="show-content" id="example_content35">
       </div>
 
@@ -788,15 +858,17 @@
   </div>
 
   <br>
-  <!-- canine-teeth-decoration -->
+  <!-- Infertility -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำเขี้ยว</h4>
+      <h4 class="card-title">ตรวจภาวะมีบุตรยาก</h4>
       <hr>
-      <a id="elementClicked36" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked36"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="canine-teeth-decoration">
+    <div id="Infertility">
       <div class="show-content" id="example_content36">
       </div>
 
@@ -806,15 +878,17 @@
   </div>
 
   <br>
-  <!-- remove-tattoo -->
+  <!-- egg-freezing -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ลบรอยสัก</h4>
+      <h4 class="card-title">IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่</h4>
       <hr>
-      <a id="elementClicked37" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked37"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="remove-tattoo">
+    <div id="egg-freezing">
       <div class="show-content" id="example_content37">
       </div>
 
@@ -824,15 +898,17 @@
   </div>
 
   <br>
-  <!-- laser -->
+  <!-- health-check-up-before-marriage -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เลเซอร์หน้าแก้ปัญหาผิว</h4>
+      <h4 class="card-title">ตรวจก่อนแต่ง</h4>
       <hr>
-      <a id="elementClicked38" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked38"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="laser">
+    <div id="health-check-up-before-marriage">
       <div class="show-content" id="example_content38">
       </div>
 
@@ -842,15 +918,17 @@
   </div>
 
   <br>
-  <!-- acne-scar -->
+  <!-- cesarean -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">รักษาสิว ลดรอยสิว</h4>
+      <h4 class="card-title">ฝากครรภ์ คลอดบุตร</h4>
       <hr>
-      <a id="elementClicked39" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked39"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="acne-scar">
+    <div id="cesarean">
       <div class="show-content" id="example_content39">
       </div>
 
@@ -860,15 +938,17 @@
   </div>
 
   <br>
-  <!-- mole-freckle-and-keloid -->
+  <!-- being-mom -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">จี้ไฝ กระ รักษาแผลเป็นคีลอยด์</h4>
+      <h4 class="card-title">แนะนำคุณแม่มือใหม่</h4>
       <hr>
-      <a id="elementClicked40" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
+      <a id="elementClicked40"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="mole-freckle-and-keloid">
+    <div id="being-mom">
       <div class="show-content" id="example_content40">
       </div>
 
@@ -877,7 +957,264 @@
     </div>
   </div>
 
+  <br>
+  <!-- vaccines-children -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ฉีดวัคซีนเด็ก</h4>
+      <hr>
+      <a id="elementClicked41"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow41" class='see_all'>ดูทั้งหมด</a>
+    </div>
 
+    <div id="vaccines-children">
+      <div class="show-content" id="example_content41">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow41">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- vaccine-mmr -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ฉีดวัคซีน MMR</h4>
+      <hr>
+      <a id="elementClicked42"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow42" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="vaccine-mmr">
+      <div class="show-content" id="example_content42">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow42">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- dtp-vaccine -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ฉีดวัคซีน DTP</h4>
+      <hr>
+      <a id="elementClicked43"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow43" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="dtp-vaccine">
+      <div class="show-content" id="example_content43">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow43">
+      </div>
+    </div>
+  </div>
+
+  <!-- <br> -->
+  <!-- spa-and-massage -->
+  <!-- <div>
+    <div class="card-body">
+      <h4 class="card-title">นวด สปา</h4>
+      <hr>
+      <a id="elementClicked44" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="spa-and-massage">
+      <div class="show-content" id="example_content44">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow44">
+      </div>
+    </div>
+  </div> -->
+
+  <br>
+  <!-- hbo -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">HBO (ไฮเปอร์แบริก)</h4>
+      <hr>
+      <a id="elementClicked45"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow45" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="hbo">
+      <div class="show-content" id="example_content45">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow45">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- cupping-therapy -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ดูแลสุขภาพด้วยแพทย์แผนจีน</h4>
+      <hr>
+      <a id="elementClicked46"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow46" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="cupping-therapy">
+      <div class="show-content" id="example_content46">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow46">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- weight-management -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ลดน้ำหนัก ออกกำลังกาย</h4>
+      <hr>
+      <a id="elementClicked47"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow47" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="weight-management">
+      <div class="show-content" id="example_content47">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow47">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- Detox -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">Detox</h4>
+      <hr>
+      <a id="elementClicked48"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow48" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="Detox">
+      <div class="show-content" id="example_content48">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow48">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- sex-reassignment -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">แปลงเพศ</h4>
+      <hr>
+      <a id="elementClicked49"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow49" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="sex-reassignment">
+      <div class="show-content" id="example_content49">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow49">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- circumcision -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ขริบปลายอวัยวะเพศชาย</h4>
+      <hr>
+      <a id="elementClicked50"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow50" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="circumcision">
+      <div class="show-content" id="example_content50">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow50">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- penis-enlargement -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">เพิ่มขนาดอวัยวะเพศ</h4>
+      <hr>
+      <a id="elementClicked51"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow51" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="penis-enlargement">
+      <div class="show-content" id="example_content51">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow51">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- mental-health -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">ปรึกษาสุขภาพจิต</h4>
+      <hr>
+      <a id="elementClicked52"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow52" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="mental-health">
+      <div class="show-content" id="example_content52">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow52">
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <!-- health-home-service -->
+  <div>
+    <div class="card-body">
+      <h4 class="card-title">บริการถึงบ้าน</h4>
+      <hr>
+      <a id="elementClicked53"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow53" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="health-home-service">
+      <div class="show-content" id="example_content53">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow53">
+      </div>
+    </div>
+  </div>
 
   <script>
     // data
@@ -896,11 +1233,13 @@
 
     function dataReportStatus(data) {
       let count = 0
-      // hifu
+      // eye-screening-lasik 
+      count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ HIFU") {
+        if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา, ทำเลสิก") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -965,8 +1304,196 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content30");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow30");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked30 = document.querySelector("#elementClicked30");
+      const elementYouWantToShow30 = document.querySelector("#elementYouWantToShow30");
+
+      elementClicked30.addEventListener("click", () => {
+        elementYouWantToShow30.classList.toggle("hide-content");
+      });
+
+      // lasik 
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ทำเลสิก") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content31");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow31");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked31 = document.querySelector("#elementClicked31");
+      const elementYouWantToShow31 = document.querySelector("#elementYouWantToShow31");
+
+      elementClicked31.addEventListener("click", () => {
+        elementYouWantToShow31.classList.toggle("hide-content");
+      });
+
+
+      // health-check-up
+      count = 0;
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "โปรแกรมตรวจสุขภาพ") {
+          count += 1;
+          // console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content1");
             parent.appendChild(a_cover);
@@ -985,12 +1512,13 @@
         elementYouWantToShow1.classList.toggle("hide-content");
       });
 
-      // Ulthera
+      // pre-employment-medical-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ Ulthera") {
+        if (data[i].Category_lv2 == "ตรวจสุขภาพเข้าทำงาน") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1055,8 +1583,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content2");
             parent.appendChild(a_cover);
@@ -1075,12 +1604,13 @@
         elementYouWantToShow2.classList.toggle("hide-content");
       });
 
-      // Thermage
+      // allergy-test
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ Thermage") {
+        if (data[i].Category_lv2 == "ตรวจภูมิแพ้และภาวะแพ้") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1145,8 +1675,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content3");
             parent.appendChild(a_cover);
@@ -1165,12 +1696,13 @@
         elementYouWantToShow3.classList.toggle("hide-content");
       });
 
-      // Ulthera-hifu
+      // flu-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ Ulthera, ทำ HIFU") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนไข้หวัดใหญ่") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1235,8 +1767,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content4");
             parent.appendChild(a_cover);
@@ -1255,12 +1788,13 @@
         elementYouWantToShow4.classList.toggle("hide-content");
       });
 
-      // Ulthera-Thermage
+      // dengue-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ Ulthera, ทำ Thermage") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนไข้เลือดออก") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1325,8 +1859,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content5");
             parent.appendChild(a_cover);
@@ -1345,12 +1880,13 @@
         elementYouWantToShow5.classList.toggle("hide-content");
       });
 
-      // Thermage-hifu
+      // shingles-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำ Thermage, ทำ HIFU") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนงูสวัด") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1415,8 +1951,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content6");
             parent.appendChild(a_cover);
@@ -1436,12 +1973,13 @@
       });
 
 
-      // botox-filler
+      // rabies-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ฉีด Botulinum Toxin, ฉีดสารเติมเต็ม") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนพิษสุนัขบ้า") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1506,8 +2044,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content7");
             parent.appendChild(a_cover);
@@ -1526,12 +2065,13 @@
         elementYouWantToShow7.classList.toggle("hide-content");
       });
 
-      // botox
+      // sleep-test
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ฉีด Botulinum Toxin") {
+        if (data[i].Category_lv2 == "ตรวจการนอน Sleep Test") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1596,8 +2136,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content8");
             parent.appendChild(a_cover);
@@ -1616,12 +2157,13 @@
         elementYouWantToShow8.classList.toggle("hide-content");
       });
 
-      // filler
+      // covid-19
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ฉีดสารเติมเต็ม") {
+        if (data[i].Category_lv2 == "ตรวจโควิด-19 (COVID-19)") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1686,8 +2228,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content9");
             parent.appendChild(a_cover);
@@ -1706,12 +2249,13 @@
         elementYouWantToShow9.classList.toggle("hide-content");
       });
 
-      // thread-lift
+      // vitamin-check
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ร้อยไหม") {
+        if (data[i].Category_lv2 == "ตรวจวิตามิน") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1776,8 +2320,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content10");
             parent.appendChild(a_cover);
@@ -1796,12 +2341,13 @@
         elementYouWantToShow10.classList.toggle("hide-content");
       });
 
-      // rhinoplasty
+      // vitamin-infusion
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เสริมจมูก") {
+        if (data[i].Category_lv2 == "ฉีดวิตามิน") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1866,8 +2412,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content11");
             parent.appendChild(a_cover);
@@ -1886,12 +2433,13 @@
         elementYouWantToShow11.classList.toggle("hide-content");
       });
 
-      // breast-augmentation
+      // vitamin-infusion-vitamin-drip
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เสริมหน้าอก") {
+        if (data[i].Category_lv2 == "ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -1956,8 +2504,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content12");
             parent.appendChild(a_cover);
@@ -1977,12 +2526,13 @@
       });
 
 
-      // nipples
+      // hormone-testing
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำหัวนม") {
+        if (data[i].Category_lv2 == "ตรวจระดับฮอร์โมน") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2047,8 +2597,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content13");
             parent.appendChild(a_cover);
@@ -2067,12 +2618,13 @@
         elementYouWantToShow13.classList.toggle("hide-content");
       });
 
-      // pink-nipples
+      // drug-test
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำหัวนมชมพู") {
+        if (data[i].Category_lv2 == "ตรวจสารพิษ สารเสพติด") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2137,8 +2689,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content14");
             parent.appendChild(a_cover);
@@ -2157,12 +2710,13 @@
         elementYouWantToShow14.classList.toggle("hide-content");
       });
 
-      // chin-augmentation
+      // heart-checkup
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เสริมคาง") {
+        if (data[i].Category_lv2 == "ตรวจหัวใจ") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2227,8 +2781,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content15");
             parent.appendChild(a_cover);
@@ -2247,12 +2802,13 @@
         elementYouWantToShow15.classList.toggle("hide-content");
       });
 
-      // jaw-surgery
+      // liver-checkup
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ศัลยกรรมขากรรไกรและคาง") {
+        if (data[i].Category_lv2 == "ตรวจตับ") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2317,8 +2873,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content16");
             parent.appendChild(a_cover);
@@ -2337,12 +2894,13 @@
         elementYouWantToShow16.classList.toggle("hide-content");
       });
 
-      // surgery
+      // hbv-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เสริมจมูก, เสริมหน้าอก, ทำตา") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนไวรัสตับอักเสบบี") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2407,8 +2965,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content17");
             parent.appendChild(a_cover);
@@ -2427,12 +2986,13 @@
         elementYouWantToShow17.classList.toggle("hide-content");
       });
 
-      // vaginal-rejuvenation
+      // diabetes-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กระชับช่องคลอด ปรับสีผิวจุดซ่อนเร้น") {
+        if (data[i].Category_lv2 == "ตรวจเบาหวาน") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2497,8 +3057,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content18");
             parent.appendChild(a_cover);
@@ -2517,12 +3078,13 @@
         elementYouWantToShow18.classList.toggle("hide-content");
       });
 
-      // nails
+      // hemorrhoids
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำเล็บ") {
+        if (data[i].Category_lv2 == "ตรวจและรักษาริดสีดวงทวาร") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2587,8 +3149,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content19");
             parent.appendChild(a_cover);
@@ -2608,12 +3171,13 @@
       });
 
 
-      // massage-and-spa
+      // DNA
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "นวด สปา") {
+        if (data[i].Category_lv2 == "ตรวจ DNA") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2678,8 +3242,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content20");
             parent.appendChild(a_cover);
@@ -2698,12 +3263,13 @@
         elementYouWantToShow20.classList.toggle("hide-content");
       });
 
-      // facial-treatment
+      // STD
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทรีตเมนต์หน้า นวดหน้า") {
+        if (data[i].Category_lv2 == "ตรวจ STD") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2768,8 +3334,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content21");
             parent.appendChild(a_cover);
@@ -2789,12 +3356,13 @@
       });
 
 
-      // lip-micropigmentation
+      // osteoporosis
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "สักปาก ทำสีปาก") {
+        if (data[i].Category_lv2 == "ตรวจกระดูก") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2859,8 +3427,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content22");
             parent.appendChild(a_cover);
@@ -2879,12 +3448,13 @@
         elementYouWantToShow22.classList.toggle("hide-content");
       });
 
-      // eye-surgery
+      // osteoporosis-cure
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำตา") {
+        if (data[i].Category_lv2 == "รักษา ผ่าตัด กระดูกและข้อ") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -2949,8 +3519,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content23");
             parent.appendChild(a_cover);
@@ -2969,12 +3540,13 @@
         elementYouWantToShow23.classList.toggle("hide-content");
       });
 
-      // eyebrow
+      // chiropractic
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำคิ้ว") {
+        if (data[i].Category_lv2 == "นวดจัดกระดูก (Chiropractic)") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3039,8 +3611,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content24");
             parent.appendChild(a_cover);
@@ -3059,12 +3632,13 @@
         elementYouWantToShow24.classList.toggle("hide-content");
       });
 
-      // lash-lift
+      // physical-therapy
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำขนตา ขอบตา") {
+        if (data[i].Category_lv2 == "กายภาพบำบัดและนวดเพื่อการรักษา") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3129,8 +3703,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content25");
             parent.appendChild(a_cover);
@@ -3149,12 +3724,13 @@
         elementYouWantToShow25.classList.toggle("hide-content");
       });
 
-      // tightening-body
+      // elderly-care
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ดูด-สลายไขมัน") {
+        if (data[i].Category_lv2 == "ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3219,8 +3795,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content26");
             parent.appendChild(a_cover);
@@ -3239,12 +3816,13 @@
         elementYouWantToShow26.classList.toggle("hide-content");
       });
 
-      // hair-removal
+      // lung-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กำจัดขนรักแร้") {
+        if (data[i].Category_lv2 == "ตรวจปอด") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3309,8 +3887,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content27");
             parent.appendChild(a_cover);
@@ -3329,12 +3908,13 @@
         elementYouWantToShow27.classList.toggle("hide-content");
       });
 
-      // haircut
+      // ipd-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ดัด สระ ซอย ทำสีผม") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีน IPD") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3399,8 +3979,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content28");
             parent.appendChild(a_cover);
@@ -3419,12 +4000,13 @@
         elementYouWantToShow28.classList.toggle("hide-content");
       });
 
-      // hair-treatment
+      // eye-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทรีตเมนต์บำรุงผม นวดศีรษะผ่อนคลาย") {
+        if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3489,8 +4071,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content29");
             parent.appendChild(a_cover);
@@ -3509,12 +4092,14 @@
         elementYouWantToShow29.classList.toggle("hide-content");
       });
 
-      // hair-transplant
+
+      // cancer-screen 
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ปลูกผม รักษาผมร่วง") {
+        if (data[i].Category_lv2 == "ตรวจมะเร็งทั่วไป") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3579,188 +4164,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content30");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow30");
-            parent.appendChild(a_cover);
-          }
-        }
-      }
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
-      const elementClicked30 = document.querySelector("#elementClicked30");
-      const elementYouWantToShow30 = document.querySelector("#elementYouWantToShow30");
-
-      elementClicked30.addEventListener("click", () => {
-        elementYouWantToShow30.classList.toggle("hide-content");
-      });
-
-      // facial-hair-removal 
-      count = 0
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กำจัดขนหน้า") {
-          count += 1;
-          console.log(count);
-          var a_cover = document.createElement("a");
-          a_cover.href = data[i].URL;
-          a_cover.setAttribute("style", "text-decoration: none; color:black;");
-
-          // cover
-          var div_show = document.createElement("div");
-
-          //in cover
-          var div_card = document.createElement("div");
-          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
-          div_card.setAttribute("style", "");
-
-          //row
-          var div_row = document.createElement("div");
-          div_row.setAttribute("class", "row g-0");
-          //col1
-          var div_col = document.createElement("div");
-          div_col.setAttribute("class", "col-md-4");
-          // add col1 in row
-          div_row.appendChild(div_col);
-          //img
-          var i_image = document.createElement("img");
-          i_image.src = data[i].image;
-          i_image.setAttribute("class", 'img-fluid rounded');
-
-          // i_image.setAttribute("src", `${data[i].image}`);
-
-          // add img in col1
-          div_col.appendChild(i_image);
-
-          //col2 des
-          var div_col2 = document.createElement("div");
-          div_col2.setAttribute("class", "col-md-8");
-          div_row.appendChild(div_col2);
-
-          var div_text = document.createElement("div");
-          div_text.setAttribute("class", "card-body");
-          div_col2.appendChild(div_text);
-
-
-          // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
-
-
-          // des
-          var p_tag = document.createElement("p");
-          p_tag.setAttribute("class", "card-text");
-          p_tag.innerHTML = `${data[i].Meta_Description}`;
-          div_text.appendChild(p_tag);
-
-          var p_tag2 = document.createElement("p");
-          p_tag2.setAttribute("class", "read-more");
-          p_tag2.innerHTML = '';
-          div_text.appendChild(p_tag2);
-
-          var a_link = document.createElement("a");
-          a_link.href = data[i].URL;
-          a_link.innerHTML = 'อ่านเพิ่มเติม';
-          p_tag2.appendChild(a_link);
-
-          div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content31");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow31");
-            parent.appendChild(a_cover);
-          }
-        }
-      }
-
-      const elementClicked31 = document.querySelector("#elementClicked31");
-      const elementYouWantToShow31 = document.querySelector("#elementYouWantToShow31");
-
-      elementClicked31.addEventListener("click", () => {
-        elementYouWantToShow31.classList.toggle("hide-content");
-      });
-
-      // removal-arm-hair
-      count = 0
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กำจัดขนแขน") {
-          count += 1;
-          console.log(count);
-          var a_cover = document.createElement("a");
-          a_cover.href = data[i].URL;
-          a_cover.setAttribute("style", "text-decoration: none; color:black;");
-
-          // cover
-          var div_show = document.createElement("div");
-
-          //in cover
-          var div_card = document.createElement("div");
-          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
-          div_card.setAttribute("style", "");
-
-          //row
-          var div_row = document.createElement("div");
-          div_row.setAttribute("class", "row g-0");
-          //col1
-          var div_col = document.createElement("div");
-          div_col.setAttribute("class", "col-md-4");
-          // add col1 in row
-          div_row.appendChild(div_col);
-          //img
-          var i_image = document.createElement("img");
-          i_image.src = data[i].image;
-          i_image.setAttribute("class", 'img-fluid rounded');
-
-          // i_image.setAttribute("src", `${data[i].image}`);
-
-          // add img in col1
-          div_col.appendChild(i_image);
-
-          //col2 des
-          var div_col2 = document.createElement("div");
-          div_col2.setAttribute("class", "col-md-8");
-          div_row.appendChild(div_col2);
-
-          var div_text = document.createElement("div");
-          div_text.setAttribute("class", "card-body");
-          div_col2.appendChild(div_text);
-
-
-          // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
-
-
-          // des
-          var p_tag = document.createElement("p");
-          p_tag.setAttribute("class", "card-text");
-          p_tag.innerHTML = `${data[i].Meta_Description}`;
-          div_text.appendChild(p_tag);
-
-          var p_tag2 = document.createElement("p");
-          p_tag2.setAttribute("class", "read-more");
-          p_tag2.innerHTML = '';
-          div_text.appendChild(p_tag2);
-
-          var a_link = document.createElement("a");
-          a_link.href = data[i].URL;
-          a_link.innerHTML = 'อ่านเพิ่มเติม';
-          p_tag2.appendChild(a_link);
-
-          div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
           if (count < 4) {
             var parent = document.getElementById("example_content32");
             parent.appendChild(a_cover);
@@ -3779,12 +4185,13 @@
         elementYouWantToShow32.classList.toggle("hide-content");
       });
 
-      // removal-leg-hair
+      // cancer-screen-for-woman
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กำจัดขนขา") {
+        if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้หญิง") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3849,8 +4256,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content33");
             parent.appendChild(a_cover);
@@ -3869,12 +4277,13 @@
         elementYouWantToShow33.classList.toggle("hide-content");
       });
 
-      // bikini-hair
+      // hpv-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "กำจัดขนที่ลับ") {
+        if (data[i].Category_lv2 == "ฉีดวัคซีน HPV") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -3939,8 +4348,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content34");
             parent.appendChild(a_cover);
@@ -3959,12 +4369,13 @@
         elementYouWantToShow34.classList.toggle("hide-content");
       });
 
-      // beauty-delivery-service
+      // cancer-screen-for-man
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เสริมสวยถึงบ้าน") {
+        if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้ชาย") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4029,8 +4440,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content35");
             parent.appendChild(a_cover);
@@ -4049,12 +4461,13 @@
         elementYouWantToShow35.classList.toggle("hide-content");
       });
 
-      // canine-teeth-decoration
+      // Infertility
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำเขี้ยว") {
+        if (data[i].Category_lv2 == "ตรวจภาวะมีบุตรยาก") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4119,8 +4532,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content36");
             parent.appendChild(a_cover);
@@ -4139,12 +4553,13 @@
         elementYouWantToShow36.classList.toggle("hide-content");
       });
 
-      // remove-tattoo
+      // egg-freezing
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ลบรอยสัก") {
+        if (data[i].Category_lv2 == "IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4209,8 +4624,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content37");
             parent.appendChild(a_cover);
@@ -4229,12 +4645,13 @@
         elementYouWantToShow37.classList.toggle("hide-content");
       });
 
-      // laser
+      // health-check-up-before-marriage
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "เลเซอร์หน้าแก้ปัญหาผิว") {
+        if (data[i].Category_lv2 == "ตรวจก่อนแต่ง") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4299,8 +4716,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content38");
             parent.appendChild(a_cover);
@@ -4319,12 +4737,13 @@
         elementYouWantToShow38.classList.toggle("hide-content");
       });
 
-      // acne-scar
+      // cesarean
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "รักษาสิว ลดรอยสิว") {
+        if (data[i].Category_lv2 == "ฝากครรภ์ คลอดบุตร") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4389,8 +4808,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content39");
             parent.appendChild(a_cover);
@@ -4409,12 +4829,13 @@
         elementYouWantToShow39.classList.toggle("hide-content");
       });
 
-      // mole-freckle-and-keloid
+      // being-mom
       count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "จี้ไฝ กระ รักษาแผลเป็นคีลอยด์") {
+        if (data[i].Category_lv2 == "แนะนำคุณแม่มือใหม่") {
           count += 1;
           console.log(count);
+
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -4479,8 +4900,9 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
           if (count < 4) {
             var parent = document.getElementById("example_content40");
             parent.appendChild(a_cover);
@@ -4499,9 +4921,1119 @@
         elementYouWantToShow40.classList.toggle("hide-content");
       });
 
+      // vaccines-children
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ฉีดวัคซีนเด็ก") {
+          count += 1;
+          console.log(count);
 
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content41");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow41");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked41 = document.querySelector("#elementClicked41");
+      const elementYouWantToShow41 = document.querySelector("#elementYouWantToShow41");
+
+      elementClicked41.addEventListener("click", () => {
+        elementYouWantToShow41.classList.toggle("hide-content");
+      });
+
+      // vaccine-mmr
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ฉีดวัคซีน MMR") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content42");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow42");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked42 = document.querySelector("#elementClicked42");
+      const elementYouWantToShow42 = document.querySelector("#elementYouWantToShow42");
+
+      elementClicked42.addEventListener("click", () => {
+        elementYouWantToShow42.classList.toggle("hide-content");
+      });
+
+      // dtp-vaccine
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ฉีดวัคซีน DTP") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content43");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow43");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked43 = document.querySelector("#elementClicked43");
+      const elementYouWantToShow43 = document.querySelector("#elementYouWantToShow43");
+
+      elementClicked43.addEventListener("click", () => {
+        elementYouWantToShow43.classList.toggle("hide-content");
+      });
+
+
+
+
+
+      // hbo
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "HBO (ไฮเปอร์แบริก)") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content45");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow45");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked45 = document.querySelector("#elementClicked45");
+      const elementYouWantToShow45 = document.querySelector("#elementYouWantToShow45");
+
+      elementClicked45.addEventListener("click", () => {
+        elementYouWantToShow45.classList.toggle("hide-content");
+      });
+
+      // cupping-therapy
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ดูแลสุขภาพด้วยแพทย์แผนจีน") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content46");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow46");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked46 = document.querySelector("#elementClicked46");
+      const elementYouWantToShow46 = document.querySelector("#elementYouWantToShow46");
+
+      elementClicked46.addEventListener("click", () => {
+        elementYouWantToShow46.classList.toggle("hide-content");
+      });
+
+      // weight-management
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ลดน้ำหนัก ออกกำลังกาย") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content47");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow47");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked47 = document.querySelector("#elementClicked47");
+      const elementYouWantToShow47 = document.querySelector("#elementYouWantToShow47");
+
+      elementClicked47.addEventListener("click", () => {
+        elementYouWantToShow47.classList.toggle("hide-content");
+      });
+
+      // Detox
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "Detox") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content48");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow48");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked48 = document.querySelector("#elementClicked48");
+      const elementYouWantToShow48 = document.querySelector("#elementYouWantToShow48");
+
+      elementClicked48.addEventListener("click", () => {
+        elementYouWantToShow48.classList.toggle("hide-content");
+      });
+
+      // sex-reassignment
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "แปลงเพศ") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content49");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow49");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked49 = document.querySelector("#elementClicked49");
+      const elementYouWantToShow49 = document.querySelector("#elementYouWantToShow49");
+
+      elementClicked49.addEventListener("click", () => {
+        elementYouWantToShow49.classList.toggle("hide-content");
+      });
+
+      // circumcision
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ขริบปลายอวัยวะเพศชาย") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content50");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow50");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked50 = document.querySelector("#elementClicked50");
+      const elementYouWantToShow50 = document.querySelector("#elementYouWantToShow50");
+
+      elementClicked50.addEventListener("click", () => {
+        elementYouWantToShow50.classList.toggle("hide-content");
+      });
+
+      // penis-enlargement
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "เพิ่มขนาดอวัยวะเพศ") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content51");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow51");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked51 = document.querySelector("#elementClicked51");
+      const elementYouWantToShow51 = document.querySelector("#elementYouWantToShow51");
+
+      elementClicked51.addEventListener("click", () => {
+        elementYouWantToShow51.classList.toggle("hide-content");
+      });
+
+      // mental-health
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "ปรึกษาสุขภาพจิต") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content52");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow52");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked52 = document.querySelector("#elementClicked52");
+      const elementYouWantToShow52 = document.querySelector("#elementYouWantToShow52");
+
+      elementClicked52.addEventListener("click", () => {
+        elementYouWantToShow52.classList.toggle("hide-content");
+      });
+
+      // health-home-service
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "บริการถึงบ้าน") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h5_tag = document.createElement("h5");
+          h5_tag.setAttribute("class", "card-title");
+          h5_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h5_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
+
+          if (count < 4) {
+            var parent = document.getElementById("example_content53");
+            parent.appendChild(a_cover);
+          }
+          else {
+            var parent = document.getElementById("elementYouWantToShow53");
+            parent.appendChild(a_cover);
+          }
+        }
+      }
+
+      const elementClicked53 = document.querySelector("#elementClicked53");
+      const elementYouWantToShow53 = document.querySelector("#elementYouWantToShow53");
+
+      elementClicked53.addEventListener("click", () => {
+        elementYouWantToShow53.classList.toggle("hide-content");
+      });
 
     }
+
+
+
+
 
     // button to top
     //Get the button

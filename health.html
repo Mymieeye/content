@@ -86,6 +86,46 @@
     #myBtn:hover {
       background-color: #2a6ce7;
     }
+
+    .card-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /* number of lines to show */
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    @media only screen and (max-width: 450px) {
+      h5{
+        font-size: medium;
+      }
+      p{
+        font-size: small;
+      }
+      a{
+        font-size: small;
+      }
+      
+    }
+    @media only screen and (max-width: 375px) {
+      h5{
+        font-size: small;
+      }
+      p{
+        font-size: x-small;
+      }
+      a{
+        font-size: small;
+      }
+    }
+    @media only screen and (max-width: 765px) {
+      .card{
+        padding: 0% !important;
+      }
+      
+    }
+    
   </style>
 
   <title>Document</title>
@@ -101,12 +141,14 @@
         d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
   </button>
-  <br><br>
+  
+
   <!-- health-check-up-->
   <div>
     <div class="card-body">
       <h4 class="card-title">โปรแกรมตรวจสุขภาพ</h5>
-        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow1"class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="health-check-up">
@@ -120,12 +162,13 @@
 
   </div>
 
-  <br><br><br>
+  <br>
   <!-- pre-employment-medical-screening -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจสุขภาพเข้าทำงาน</h5>
-        <a id="elementClicked2" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked2" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="pre-employment-medical-screening">
@@ -137,12 +180,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- allergy-test -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจภูมิแพ้และภาวะแพ้</h5>
-        <a id="elementClicked3" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked3" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="allergy-test">
@@ -154,12 +198,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- flu-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีนไข้หวัดใหญ่</h5>
-        <a id="elementClicked4" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked4" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="flu-vaccine">
@@ -171,12 +216,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- dengue-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีนไข้เลือดออก</h5>
-        <a id="elementClicked5" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked5" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dengue-vaccine">
@@ -188,12 +234,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- shingles-vaccine -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีดวัคซีนงูสวัด</h5>
-        <a id="elementClicked6" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ฉีดวัคซีนงูสวัด<h5>
+        <hr>
+        <a id="elementClicked6" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="shingles-vaccine">
@@ -205,12 +252,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- rabies-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีนพิษสุนัขบ้า</h5>
-        <a id="elementClicked7" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked7" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="rabies-vaccine">
@@ -222,12 +270,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- sleep-test -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจการนอน Sleep Test</h5>
-        <a id="elementClicked8" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked8" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="sleep-test">
@@ -239,12 +288,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- covid-19 -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจโควิด-19 (COVID-19)</h5>
-        <a id="elementClicked9" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked9" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="covid-19">
@@ -256,12 +306,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- vitamin-check -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจวิตามิน</h5>
-        <a id="elementClicked10" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked10" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vitamin-check">
@@ -273,12 +324,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- vitamin-infusion -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวิตามิน</h5>
-        <a id="elementClicked11" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked11" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vitamin-infusion">
@@ -290,12 +342,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- vitamin-infusion-vitamin-drip -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง</h5>
-        <a id="elementClicked12" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked12" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vitamin-infusion-vitamin-drip">
@@ -307,12 +360,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- hormone-testing -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจระดับฮอร์โมน</h5>
-        <a id="elementClicked13" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked13" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hormone-testing">
@@ -324,12 +378,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- drug-test -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจสารพิษ สารเสพติด</h5>
-        <a id="elementClicked14" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked14" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="drug-test">
@@ -341,12 +396,14 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- heart-checkup -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตรวจหัวใจ</h5>
-        <a id="elementClicked15" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจหัวใจ</h4>
+      <hr>
+        
+        <a id="elementClicked15" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="heart-checkup">
@@ -358,12 +415,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- liver-checkup -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจตับ</h5>
-        <a id="elementClicked16" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked16" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="liver-checkup">
@@ -375,12 +433,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- hbv-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีนไวรัสตับอักเสบบี</h5>
-        <a id="elementClicked17" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked17" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hbv-vaccine">
@@ -392,12 +451,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- diabetes-screening -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจเบาหวาน</h5>
-        <a id="elementClicked18" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked18" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow18" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="diabetes-screening">
@@ -409,12 +469,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- hemorrhoids -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจและรักษาริดสีดวงทวาร</h5>
-        <a id="elementClicked19" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+        <hr>
+        <a id="elementClicked19" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow19" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hemorrhoids">
@@ -426,12 +487,14 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- DNA -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตรวจ DNA</h5>
-        <a id="elementClicked20" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจ DNA</h4>
+      <hr>
+        
+        <a id="elementClicked20" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow20" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="DNA">
@@ -443,12 +506,14 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- STD -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตรวจ STD</h5>
-        <a id="elementClicked21" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจ STD</h4>
+      <hr>
+        
+        <a id="elementClicked21" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow21" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="STD">
@@ -460,12 +525,14 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- osteoporosis -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตรวจกระดูก</h5>
-        <a id="elementClicked22" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title">ตรวจกระดูก</h4>
+      <hr>
+        
+        <a id="elementClicked22" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow22" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="osteoporosis">
@@ -477,12 +544,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- osteoporosis-cure -->
   <div>
     <div class="card-body">
       <h4 class="card-title">รักษา ผ่าตัด กระดูกและข้อ</h4>
-      <a id="elementClicked23" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked23" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="osteoporosis-cure">
@@ -494,12 +562,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- chiropractic -->
   <div>
     <div class="card-body">
       <h4 class="card-title">นวดจัดกระดูก (Chiropractic)</h4>
-      <a id="elementClicked24" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked24" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="chiropractic">
@@ -511,12 +580,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- physical-therapy -->
   <div>
     <div class="card-body">
       <h4 class="card-title">กายภาพบำบัดและนวดเพื่อการรักษา</h4>
-      <a id="elementClicked25" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked25" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="physical-therapy">
@@ -528,12 +598,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- elderly-care -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ</h4>
-      <a id="elementClicked26" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked26" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="elderly-care">
@@ -545,12 +616,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- lung-screening -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจปอด</h4>
-      <a id="elementClicked27" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked27" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="lung-screening">
@@ -562,12 +634,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- ipd-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีน IPD</h4>
-      <a id="elementClicked28" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked28" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="ipd-vaccine">
@@ -579,12 +652,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- eye-screening -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจตา รักษาโรคตา</h4>
-      <a id="elementClicked29" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked29" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="eye-screening">
@@ -596,15 +670,16 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- eye-screening-lasik -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตรวจตา รักษาโรคตา, ทำเลสิก</h4>
-      <a id="elementClicked30" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <h4 class="card-title" >ตรวจตา รักษาโรคตา, ทำเลสิก</h4>
+      <hr>
+      <a id="elementClicked30" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="eye-screening-lasik">
+    <div id="eye-screening-lasik" name="eye-screening-lasik">
       <div class="show-content" id="example_content30">
       </div>
 
@@ -613,16 +688,17 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- lasik -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ทำเลสิก</h4>
-      <a id="elementClicked31" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked31" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="lasik">
-      <div class="show-content" id="example_content31">
+      <div class="show-content" id="example_content31" name="lasik">
       </div>
 
       <div class="hide-content" id="elementYouWantToShow31">
@@ -631,12 +707,13 @@
   </div>
  
  
-  <br><br><br>
+  <br>
   <!-- cancer-screen -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจมะเร็งทั่วไป</h4>
-      <a id="elementClicked32" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked32" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="cancer-screen">
@@ -648,12 +725,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- cancer-screen-for-wowan -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจมะเร็งสำหรับผู้หญิง</h4>
-      <a id="elementClicked33" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked33" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="cancer-screen-for-wowan">
@@ -665,12 +743,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- hpv-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีน HPV</h4>
-      <a id="elementClicked34" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked34" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hpv-vaccine">
@@ -682,12 +761,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- cancer-screen-for-man -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจมะเร็งสำหรับผู้ชาย</h4>
-      <a id="elementClicked35" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked35" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="cancer-screen-for-man">
@@ -699,12 +779,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- Infertility -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจภาวะมีบุตรยาก</h4>
-      <a id="elementClicked36" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked36" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Infertility">
@@ -716,12 +797,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- egg-freezing -->
   <div>
     <div class="card-body">
       <h4 class="card-title">IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่</h4>
-      <a id="elementClicked37" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked37" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="egg-freezing">
@@ -733,12 +815,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- health-check-up-before-marriage -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ตรวจก่อนแต่ง</h4>
-      <a id="elementClicked38" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked38" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="health-check-up-before-marriage">
@@ -750,12 +833,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- cesarean -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฝากครรภ์ คลอดบุตร</h4>
-      <a id="elementClicked39" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked39" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="cesarean">
@@ -767,12 +851,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- being-mom -->
   <div>
     <div class="card-body">
       <h4 class="card-title">แนะนำคุณแม่มือใหม่</h4>
-      <a id="elementClicked40" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked40" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="being-mom">
@@ -784,12 +869,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- vaccines-children -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีนเด็ก</h4>
-      <a id="elementClicked41" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked41" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow41" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vaccines-children">
@@ -801,12 +887,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- vaccine-mmr -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีน MMR</h4>
-      <a id="elementClicked42" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked42" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow42" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vaccine-mmr">
@@ -818,12 +905,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- dtp-vaccine -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ฉีดวัคซีน DTP</h4>
-      <a id="elementClicked43" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked43" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow43" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dtp-vaccine">
@@ -835,12 +923,13 @@
     </div>
   </div>
 
-  <!-- <br><br><br> -->
+  <!-- <br> -->
   <!-- spa-and-massage -->
   <!-- <div>
     <div class="card-body">
       <h4 class="card-title">นวด สปา</h4>
-      <a id="elementClicked44" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked44" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="spa-and-massage">
@@ -852,12 +941,13 @@
     </div>
   </div> -->
 
-  <br><br><br>
+  <br>
   <!-- hbo -->
   <div>
     <div class="card-body">
       <h4 class="card-title">HBO (ไฮเปอร์แบริก)</h4>
-      <a id="elementClicked45" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked45" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow45" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hbo">
@@ -869,12 +959,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- cupping-therapy -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ดูแลสุขภาพด้วยแพทย์แผนจีน</h4>
-      <a id="elementClicked46" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked46" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow46" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="cupping-therapy">
@@ -886,12 +977,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- weight-management -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ลดน้ำหนัก ออกกำลังกาย</h4>
-      <a id="elementClicked47" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked47" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow47" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="weight-management">
@@ -903,12 +995,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- Detox -->
   <div>
     <div class="card-body">
       <h4 class="card-title">Detox</h4>
-      <a id="elementClicked48" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked48" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow48" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Detox">
@@ -920,12 +1013,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- sex-reassignment -->
   <div>
     <div class="card-body">
       <h4 class="card-title">แปลงเพศ</h4>
-      <a id="elementClicked49" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked49" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow49" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="sex-reassignment">
@@ -937,12 +1031,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- circumcision -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ขริบปลายอวัยวะเพศชาย</h4>
-      <a id="elementClicked50" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked50" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow50" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="circumcision">
@@ -954,12 +1049,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- penis-enlargement -->
   <div>
     <div class="card-body">
       <h4 class="card-title">เพิ่มขนาดอวัยวะเพศ</h4>
-      <a id="elementClicked51" style="display:block; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked51" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow51" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="penis-enlargement">
@@ -971,12 +1067,13 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br>
   <!-- mental-health -->
   <div>
     <div class="card-body">
       <h4 class="card-title">ปรึกษาสุขภาพจิต</h4>
-      <a id="elementClicked52" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked52" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow52" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="mental-health">
@@ -989,12 +1086,13 @@
   </div>
   
   
-  <br><br><br>
+  <br>
   <!-- health-home-service -->
   <div>
     <div class="card-body">
       <h4 class="card-title">บริการถึงบ้าน</h4>
-      <a id="elementClicked53" style="display:none; cursor: pointer;  text-align: right;" class='see_all'>ดูทั้งหมด</a>
+      <hr>
+      <a id="elementClicked53" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow53" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="health-home-service">
@@ -1027,7 +1125,12 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "โปรแกรมตรวจสุขภาพ") {
           count += 1;
-          console.log(count);
+          // console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+          
 
           // cover
           var div_show = document.createElement("div");
@@ -1090,14 +1193,16 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+            a_cover.appendChild(div_show)
+            a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content1");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow1");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1115,6 +1220,10 @@
         if (data[i].Category_lv2 == "ตรวจสุขภาพเข้าทำงาน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1177,14 +1286,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content2");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow2");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1202,6 +1312,10 @@
         if (data[i].Category_lv2 == "ตรวจภูมิแพ้และภาวะแพ้") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1264,14 +1378,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content3");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow3");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1289,6 +1404,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนไข้หวัดใหญ่") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1351,14 +1470,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content4");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow4");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1376,6 +1496,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนไข้เลือดออก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1438,14 +1562,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content5");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow5");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1463,6 +1588,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนงูสวัด") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1525,14 +1654,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content6");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow6");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1551,6 +1681,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนพิษสุนัขบ้า") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1613,14 +1747,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content7");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow7");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1638,6 +1773,10 @@
         if (data[i].Category_lv2 == "ตรวจการนอน Sleep Test") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1700,14 +1839,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content8");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow8");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1725,6 +1865,10 @@
         if (data[i].Category_lv2 == "ตรวจโควิด-19 (COVID-19)") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1787,14 +1931,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content9");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow9");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1812,6 +1957,10 @@
         if (data[i].Category_lv2 == "ตรวจวิตามิน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1874,14 +2023,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content10");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow10");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1899,6 +2049,10 @@
         if (data[i].Category_lv2 == "ฉีดวิตามิน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -1961,14 +2115,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content11");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow11");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -1986,6 +2141,10 @@
         if (data[i].Category_lv2 == "ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2048,14 +2207,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content12");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow12");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2074,6 +2234,10 @@
         if (data[i].Category_lv2 == "ตรวจระดับฮอร์โมน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2136,14 +2300,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content13");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow13");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2161,6 +2326,10 @@
         if (data[i].Category_lv2 == "ตรวจสารพิษ สารเสพติด") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2223,14 +2392,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content14");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow14");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2248,6 +2418,10 @@
         if (data[i].Category_lv2 == "ตรวจหัวใจ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2310,14 +2484,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content15");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow15");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2335,6 +2510,10 @@
         if (data[i].Category_lv2 == "ตรวจตับ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2397,14 +2576,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content16");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow16");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2422,6 +2602,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนไวรัสตับอักเสบบี") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2484,14 +2668,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content17");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow17");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2509,6 +2694,10 @@
         if (data[i].Category_lv2 == "ตรวจเบาหวาน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2571,14 +2760,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content18");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow18");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2596,6 +2786,10 @@
         if (data[i].Category_lv2 == "ตรวจและรักษาริดสีดวงทวาร") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2658,14 +2852,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content19");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow19");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2684,6 +2879,10 @@
         if (data[i].Category_lv2 == "ตรวจ DNA") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2746,14 +2945,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content20");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow20");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2771,6 +2971,10 @@
         if (data[i].Category_lv2 == "ตรวจ STD") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2833,14 +3037,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content21");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow21");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2859,6 +3064,10 @@
         if (data[i].Category_lv2 == "ตรวจกระดูก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -2921,14 +3130,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content22");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow22");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -2946,6 +3156,10 @@
         if (data[i].Category_lv2 == "รักษา ผ่าตัด กระดูกและข้อ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3008,14 +3222,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content23");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow23");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3033,6 +3248,10 @@
         if (data[i].Category_lv2 == "นวดจัดกระดูก (Chiropractic)") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3095,14 +3314,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content24");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow24");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3120,6 +3340,10 @@
         if (data[i].Category_lv2 == "กายภาพบำบัดและนวดเพื่อการรักษา") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3182,14 +3406,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content25");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow25");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3207,6 +3432,10 @@
         if (data[i].Category_lv2 == "ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3269,14 +3498,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content26");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow26");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3294,6 +3524,10 @@
         if (data[i].Category_lv2 == "ตรวจปอด") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3356,14 +3590,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content27");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow27");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3381,6 +3616,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีน IPD") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3443,14 +3682,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content28");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow28");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3468,6 +3708,10 @@
         if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3530,14 +3774,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content29");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow29");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3555,6 +3800,10 @@
         if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา, ทำเลสิก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3617,14 +3866,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content30");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow30");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3642,6 +3892,10 @@
         if (data[i].Category_lv2 == "ทำเลสิก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3704,14 +3958,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content31");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow31");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3729,6 +3984,10 @@
         if (data[i].Category_lv2 == "ตรวจมะเร็งทั่วไป") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3791,14 +4050,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content32");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow32");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3816,6 +4076,10 @@
         if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้หญิง") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3878,14 +4142,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content33");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow33");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3903,6 +4168,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีน HPV") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -3965,14 +4234,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content34");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow34");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -3990,6 +4260,10 @@
         if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้ชาย") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4052,14 +4326,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content35");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow35");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4077,6 +4352,10 @@
         if (data[i].Category_lv2 == "ตรวจภาวะมีบุตรยาก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4139,14 +4418,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content36");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow36");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4164,6 +4444,10 @@
         if (data[i].Category_lv2 == "IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4226,14 +4510,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content37");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow37");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4251,6 +4536,10 @@
         if (data[i].Category_lv2 == "ตรวจก่อนแต่ง") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4313,14 +4602,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content38");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow38");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4338,6 +4628,10 @@
         if (data[i].Category_lv2 == "ฝากครรภ์ คลอดบุตร") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4400,14 +4694,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content39");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow39");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4425,6 +4720,10 @@
         if (data[i].Category_lv2 == "แนะนำคุณแม่มือใหม่") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4487,14 +4786,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content40");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow40");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4512,6 +4812,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีนเด็ก") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4574,14 +4878,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content41");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow41");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4599,6 +4904,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีน MMR") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4661,14 +4970,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content42");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow42");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4686,6 +4996,10 @@
         if (data[i].Category_lv2 == "ฉีดวัคซีน DTP") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4748,14 +5062,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content43");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow43");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4767,99 +5082,20 @@
         elementYouWantToShow43.classList.toggle("hide-content");
       });
 
-      // spa-and-massage
-      // count = 0
-      // for (let i = 0; i < data.length; i++) {
-      //   if (data[i].Category_lv2 == "นวด สปา") {
-      //     count += 1;
-      //     console.log(count);
+      
+      
 
-      //     // cover
-      //     var div_show = document.createElement("div");
-
-      //     //in cover
-      //     var div_card = document.createElement("div");
-      //     div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
-      //     div_card.setAttribute("style", "");
-
-      //     //row
-      //     var div_row = document.createElement("div");
-      //     div_row.setAttribute("class", "row g-0");
-      //     //col1
-      //     var div_col = document.createElement("div");
-      //     div_col.setAttribute("class", "col-md-4");
-      //     // add col1 in row
-      //     div_row.appendChild(div_col);
-      //     //img
-      //     var i_image = document.createElement("img");
-      //     i_image.src = data[i].image;
-      //     i_image.setAttribute("class", 'img-fluid rounded');
-
-      //     // i_image.setAttribute("src", `${data[i].image}`);
-
-      //     // add img in col1
-      //     div_col.appendChild(i_image);
-
-      //     //col2 des
-      //     var div_col2 = document.createElement("div");
-      //     div_col2.setAttribute("class", "col-md-8");
-      //     div_row.appendChild(div_col2);
-
-      //     var div_text = document.createElement("div");
-      //     div_text.setAttribute("class", "card-body");
-      //     div_col2.appendChild(div_text);
-
-
-      //     // title
-      //     var h5_tag = document.createElement("h5");
-      //     h5_tag.setAttribute("class", "card-title");
-      //     h5_tag.innerHTML = `${data[i].Meta_Title}`;
-      //     div_text.appendChild(h5_tag);
-
-
-      //     // des
-      //     var p_tag = document.createElement("p");
-      //     p_tag.setAttribute("class", "card-text");
-      //     p_tag.innerHTML = `${data[i].Meta_Description}`;
-      //     div_text.appendChild(p_tag);
-
-      //     var p_tag2 = document.createElement("p");
-      //     p_tag2.setAttribute("class", "read-more");
-      //     p_tag2.innerHTML = '';
-      //     div_text.appendChild(p_tag2);
-
-      //     var a_link = document.createElement("a");
-      //     a_link.href = data[i].URL;
-      //     a_link.innerHTML = 'อ่านเพิ่มเติม';
-      //     p_tag2.appendChild(a_link);
-
-      //     div_card.appendChild(div_row);
-      //     div_show.appendChild(div_card)
-
-      //     if (count < 4) {
-      //       var parent = document.getElementById("example_content44");
-      //       parent.appendChild(div_show);
-      //     }
-      //     else {
-      //       var parent = document.getElementById("elementYouWantToShow44");
-      //       parent.appendChild(div_show);
-      //     }
-      //   }
-      // }
-
-      // const elementClicked44 = document.querySelector("#elementClicked44");
-      // const elementYouWantToShow44 = document.querySelector("#elementYouWantToShow44");
-
-      // elementClicked44.addEventListener("click", () => {
-      //   elementYouWantToShow44.classList.toggle("hide-content");
-      // });
-
+      
       // hbo
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "HBO (ไฮเปอร์แบริก)") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -4922,14 +5158,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content45");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow45");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -4947,6 +5184,10 @@
         if (data[i].Category_lv2 == "ดูแลสุขภาพด้วยแพทย์แผนจีน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5009,14 +5250,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content46");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow46");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5034,6 +5276,10 @@
         if (data[i].Category_lv2 == "ลดน้ำหนัก ออกกำลังกาย") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5096,14 +5342,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content47");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow47");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5121,6 +5368,10 @@
         if (data[i].Category_lv2 == "Detox") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5183,14 +5434,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content48");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow48");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5208,6 +5460,10 @@
         if (data[i].Category_lv2 == "แปลงเพศ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5270,14 +5526,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content49");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow49");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5295,6 +5552,10 @@
         if (data[i].Category_lv2 == "ขริบปลายอวัยวะเพศชาย") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5357,14 +5618,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content50");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow50");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5382,6 +5644,10 @@
         if (data[i].Category_lv2 == "เพิ่มขนาดอวัยวะเพศ") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5444,14 +5710,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content51");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow51");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5469,6 +5736,10 @@
         if (data[i].Category_lv2 == "ปรึกษาสุขภาพจิต") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5531,14 +5802,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content52");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow52");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5556,6 +5828,10 @@
         if (data[i].Category_lv2 == "บริการถึงบ้าน") {
           count += 1;
           console.log(count);
+          
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
 
           // cover
           var div_show = document.createElement("div");
@@ -5618,14 +5894,15 @@
 
           div_card.appendChild(div_row);
           div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           if (count < 4) {
             var parent = document.getElementById("example_content53");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
           else {
             var parent = document.getElementById("elementYouWantToShow53");
-            parent.appendChild(div_show);
+            parent.appendChild(a_cover);
           }
         }
       }
@@ -5664,7 +5941,7 @@
       document.documentElement.scrollTop = 0;
     }
     // end button to top
-
+    
   </script>
   </div>
 </body>
