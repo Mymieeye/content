@@ -14,9 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      font-family: 'Kanit', sans-serif;
-    }
+    
 
     body {
       margin-left: 5%;
@@ -57,11 +55,11 @@
     }
 
     #elementClicked1:hover {
-      color: #6392eb !important;
+      color: #0fb395ad;
     }
 
     #elementClicked2:hover {
-      color: #6392eb !important;
+      color: #0fb395ad;
     }
 
     #myBtn {
@@ -95,7 +93,7 @@
     }
 
     @media only screen and (max-width: 450px) {
-      h5 {
+      h3 {
         font-size: medium;
       }
 
@@ -110,7 +108,7 @@
     }
 
     @media only screen and (max-width: 375px) {
-      h5 {
+      h3 {
         font-size: small;
       }
 
@@ -137,8 +135,13 @@
       margin: 0 !important;
 
     }
+    .img_bt:hover {
+            transform: scale(1.1);
+            transition: .1s;
+            filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.137));
+        }
 
-    
+
     @media screen and (max-width: 900px) {
       .menu-icon-section {
         width: 100%;
@@ -148,7 +151,7 @@
       }
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 375px) {
       .menu-icon-section {
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -164,17 +167,20 @@
 <body>
 
   <!-- button back to top -->
-  <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
+  <!-- <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill"
       viewBox="0 0 16 16">
       <path
-        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
+      d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
-  </button>
+  </button> -->
 
   <div>
     <div class="card-body">
-      <h4 class="card-title">อ่านบทความ<h4>
+      <h1 class="card-title">บทความสุขภาพ ทำฟัน และความงาม<h1>
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">บทความแนะนำ<h2>
     </div>
 
     <!-- button -->
@@ -182,34 +188,41 @@
       <div class="row">
         <div class="menu-icon-section ">
 
-          <a target="_blank" href="health.html"><img src="img/health.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="health button" /></a>
+          <a href="health.html" target=”_blank”><img src="img/health.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="health button" /></a>
 
-          <a target="_blank" href="beauty.html"><img src="img/beauty.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="beauty button" /></a>
+          <a href="beauty.html" target=”_blank”><img src="img/beauty.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="beauty button" /></a>
 
-          <a target="_blank" href="dental.html"><img src="img/dental.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="dental button" /></a>
+          <a href="dental.html" target=”_blank”><img src="img/dental.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="dental button" /></a>
 
-          <a target="_blank" href="pets.html"><img src="img/pet.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="pet button" /></a>
+          <a href="pets.html" target=”_blank”><img src="img/pet.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="pet button" /></a>
 
-          <a target="_blank" href="health_lasik.html"><img src="img/lasik.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="lasik button" /></a>
+          <a href="health_lasik.html" target=”_blank”><img src="img/lasik.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="lasik button" /></a>
 
-          <a target="_blank" href="health_HPV.html"><img src="img/vaccine.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="vaccine button" /></a>
+          <a href="health_HPV.html" target=”_blank”><img src="img/vaccine.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="vaccine button" /></a>
 
-          <a target="_blank" href="health.html"><img src="img/health-cjeck.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="check-up button" /></a>
+          <a href="health_checkup.html" target=”_blank”><img src="img/health-cjeck.png"
+              class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="check-up button" /></a>
 
-          <a target="_blank" href="dental_invisible.html"><img src="img/invisalign.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;"
-              alt="invisalign button" /></a>
+          <a href="dental_invisible.html" target=”_blank”><img src="img/invisalign.png"
+              class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="invisalign button" /></a>
 
-          <a target="_blank" href="dental_retainer.html"><img src="img/retainer.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="retainer button" /></a>
+          <a href="dental_retainer.html" target=”_blank”><img src="img/retainer.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="retainer button" /></a>
 
-          <a target="_blank" href="beauty_bikini-hair.html"><img src="img/bikini.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="bikini button" /></a>
+          <a href="beauty_bikini-hair.html" target=”_blank”><img src="img/bikini.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="bikini button" /></a>
 
-          <a target="_blank" href="beauty_hair-removal.html"><img src="img/armpit.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="armpit button" /></a>
+          <a href="beauty_hair-removal.html" target=”_blank”><img src="img/armpit.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="armpit button" /></a>
 
-          <a target="_blank" href="beaut_breast.html"><img src="img/boobs.png" class="img_bt img-responsive inline-block " style="margin-bottom: 15%;" alt="boobs button" /></a>
+          <a href="beaut_breast.html" target=”_blank”><img src="img/boobs.png" class="img_bt img-responsive inline-block "
+              style="margin-bottom: 15%;" alt="boobs button" /></a>
 
         </div>
       </div>
@@ -221,9 +234,11 @@
 
   <div>
     <div class="card-body">
-      <h4 class="card-title">บทความล่าสุด</h5>
+      <h2 class="card-title">บทความล่าสุด</h2>
         <hr>
-        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right; color: black; text-decoration: none;" href="#elementYouWantToShow1">ดูทั้งหมด</a>
+        <a id="elementClicked1"
+          style="display:block; cursor: pointer;  text-align: right; color: black; text-decoration: none;"
+          href="#elementYouWantToShow1">ดูทั้งหมด</a>
     </div>
 
     <div id="latest">
@@ -249,7 +264,7 @@
             <div class="col-md-8">
 
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h2 class="card-title">Card title</h2>
                 
                 <p class="card-text">
                   card text
@@ -273,9 +288,11 @@
   <br>
   <div>
     <div class="card-body">
-      <h4 class="card-title">บทความยอดนิยม</h5>
+      <h2 class="card-title">บทความยอดนิยม</h2>
         <hr>
-        <a id="elementClicked2" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2">ดูทั้งหมด</a>
+        <a id="elementClicked2"
+          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+          href="#elementYouWantToShow2">ดูทั้งหมด</a>
     </div>
 
     <div id="popular">
@@ -292,6 +309,7 @@
 
 
   <script>
+
     // data
     let requestURL = "content.json";
     let request = new XMLHttpRequest();
@@ -304,7 +322,11 @@
     request.open("GET", requestURL, true);
     request.send();
 
-
+    // wait til loaded data
+    var jumpID = url.split("#")[1];
+        $.get("content.json", function (data) {
+            document.getElementById(jumpID).scrollIntoView();
+        });
 
     function dataReportStatus(data) {
       let count = 0
@@ -356,10 +378,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -448,10 +470,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -514,11 +536,10 @@
       document.documentElement.scrollTop = 0;
     }
     // end button to top
-    
+
+
   </script>
   </div>
 </body>
 
 </html>
-
-<!-- document.getElementById('Result').innerHTML += data; -->

@@ -21,6 +21,7 @@
     body {
       margin-left: 5%;
       margin-right: 5%;
+     
     }
 
     @media screen and (min-width: 1000px) {
@@ -56,14 +57,14 @@
       display: none;
     }
 
-    .see_all {
-      color: black !important;
-      text-decoration: none !important;
+    .see_all{
+      color:black !important; 
+      text-decoration: none !important; 
     }
 
-    .see_all:hover {
-      color: #6392eb !important;
-      text-decoration: none !important;
+    .see_all:hover{
+      color:#6392eb !important; 
+      text-decoration: none !important; 
     }
 
     #myBtn {
@@ -95,42 +96,36 @@
       line-clamp: 2;
       -webkit-box-orient: vertical;
     }
-
     @media only screen and (max-width: 450px) {
-      h3 {
+      h3{
         font-size: medium;
       }
-
-      p {
+      p{
         font-size: small;
       }
-
-      a {
+      a{
         font-size: small;
       }
-
+      
     }
-
     @media only screen and (max-width: 375px) {
-      h3 {
+      h3{
         font-size: small;
       }
-
-      p {
+      p{
         font-size: x-small;
       }
-
-      a {
+      a{
         font-size: small;
       }
     }
-
     @media only screen and (max-width: 765px) {
-      .card {
+      .card{
         padding: 0% !important;
       }
-
+      
     }
+    
   </style>
 
   <title>Document</title>
@@ -146,26 +141,24 @@
       d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
   </button> -->
-
+ 
   <div class="card-body">
-    <h1 class="card-title">บทความทันตกรรม<h1>
+    <h1 class="card-title">บทความสุขภาพ และสุขภาพจิต<h1>
   </div>
-
-  <!-- retainer -->
+  
+  <!-- hpv-vaccine -->
   <div>
     <div class="card-body">
-      <h2 class="card-title">ทำรีเทนเนอร์</h2>
-        <hr>
-        <a id="elementClicked7"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">โปรแกรมตรวจสุขภาพ</h2>
+      <hr>
+      <a id="elementClicked34" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
     </div>
 
-    <div id="retainer">
-      <div class="show-content" id="example_content7">
+    <div id="hpv-vaccine">
+      <div class="show-content" id="example_content34">
       </div>
 
-      <div class="hide-content" id="elementYouWantToShow7">
+      <div class="hide-content" id="elementYouWantToShow34">
       </div>
     </div>
   </div>
@@ -173,8 +166,6 @@
   <br>
 
  
-
-
   <script>
     // data
     let requestURL = "content.json";
@@ -192,13 +183,14 @@
 
     function dataReportStatus(data) {
       let count = 0
-      // retainers
-      count = 0
+
+            // hpv-vaccine
+            count = 0
       for (let i = 0; i < data.length; i++) {
-        if (data[i].Category_lv2 == "ทำรีเทนเนอร์") {
+        if (data[i].Category_lv2 == "โปรแกรมตรวจสุขภาพ") {
           count += 1;
           console.log(count);
-
+          
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
           a_cover.setAttribute("style", "text-decoration: none; color:black;");
@@ -263,29 +255,33 @@
           p_tag2.appendChild(a_link);
 
           div_card.appendChild(div_row);
-          div_show.appendChild(div_card);
-          a_cover.appendChild(div_show);
+          div_show.appendChild(div_card)
+          a_cover.appendChild(div_show)
 
           // if (count < 4) {
-            var parent = document.getElementById("example_content7");
+            var parent = document.getElementById("example_content34");
             parent.appendChild(a_cover);
           // }
           // else {
-          //   var parent = document.getElementById("elementYouWantToShow7");
+          //   var parent = document.getElementById("elementYouWantToShow34");
           //   parent.appendChild(a_cover);
           // }
         }
       }
 
-      // const elementClicked7 = document.querySelector("#elementClicked7");
-      // const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
+      // const elementClicked34 = document.querySelector("#elementClicked34");
+      // const elementYouWantToShow34 = document.querySelector("#elementYouWantToShow34");
 
-      // elementClicked7.addEventListener("click", () => {
-      //   elementYouWantToShow7.classList.toggle("hide-content");
+      // elementClicked34.addEventListener("click", () => {
+      //   elementYouWantToShow34.classList.toggle("hide-content");
       // });
 
-      
+     
     }
+
+
+
+
 
     // button to top
     //Get the button
@@ -308,8 +304,7 @@
       document.documentElement.scrollTop = 0;
     }
     // end button to top
-
-
+    
   </script>
   </div>
 </body>

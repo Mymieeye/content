@@ -21,6 +21,7 @@
     body {
       margin-left: 5%;
       margin-right: 5%;
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -62,7 +63,7 @@
     }
 
     .see_all:hover {
-      color: #6392eb !important;
+      color: #0FB396 !important;
       text-decoration: none !important;
     }
 
@@ -75,7 +76,7 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: #6392eb;
+      background-color: #0FB396;
       color: white;
       cursor: pointer;
       padding: 15px;
@@ -83,8 +84,9 @@
     }
 
     #myBtn:hover {
-      background-color: #2a6ce7;
+      background-color: #0FB396;
     }
+
     .card-text {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -94,36 +96,129 @@
       line-clamp: 2;
       -webkit-box-orient: vertical;
     }
+
     @media only screen and (max-width: 450px) {
-      h5{
+      h3 {
         font-size: medium;
       }
-      p{
+
+      p {
         font-size: small;
       }
-      a{
+
+      a {
         font-size: small;
       }
-      
+
+      .topics {
+        font-size: small !important;
+      }
+
     }
+
     @media only screen and (max-width: 375px) {
-      h5{
+      h3 {
         font-size: small;
       }
-      p{
+
+      p {
         font-size: x-small;
       }
-      a{
+
+      a {
         font-size: small;
       }
     }
+
     @media only screen and (max-width: 765px) {
-      .card{
+      .card {
         padding: 0% !important;
       }
-      
+
     }
-    
+
+    .topicslist__topiccolumncont.long {
+      width: 33%;
+      display: inline-block;
+
+    }
+
+
+
+    a {
+      text-decoration: none;
+    }
+
+    .topicslist__section {
+      width: auto;
+      /* background-color: #c2f5e949; */
+      margin-bottom: 3%;
+    }
+
+    .topics {
+      color: #012524;
+    }
+
+    .topics:hover {
+      color: #0d6efd;
+    }
+
+    .health-topics__nav-ul {
+      display: flex;
+      margin: 0;
+      justify-content: start;
+    }
+
+    li {
+      padding: 2%;
+      list-style: none;
+
+    }
+
+    .topics {
+      margin: 20px 0;
+      color: #0FB396;
+      font-size: medium;
+    }
+
+    #search {
+      background-color: #ffffff;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+      /* #search {
+        width: 130px;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        right: 10px;
+        
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+     
+      .health-topics__nav-ul{
+        flex-direction: column;
+        align-items: center;
+      }
+      h4{
+        font-size: medium !important;
+      }
+      .search{
+        font-size: xx-small;
+        align-items: center;
+        
+      } */
+      .topicslist__topiccolumncont.long {
+        width: 100%;
+      }
+
+    }
+
+    .search {
+      font-size: large;
+    }
   </style>
 
   <title>Document</title>
@@ -132,21 +227,370 @@
 <body>
 
   <!-- button back to top -->
-  <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
+  <!-- <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill"
       viewBox="0 0 16 16">
       <path
-        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
+      d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
-  </button>
-  
+  </button> -->
+
+  <div class="card-body">
+    <h1 class="card-title">บทความความงาม<h1>
+  </div>
+
+  <!-- filter by alphabet -->
+  <div class="health-topics__nav-container " id="search">
+    <nav class="health-topics__nav">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li style="color: #a5a5a5;" class="search">ค้นหาตามตัวอักษร</li>
+        </ul>
+      </div>
+      <ul class="health-topics__nav-ul">
+        <li class=""><a class="topics" href="#1" target="_self">
+            <h4>ก</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#2" target="_self">
+            <h4>จ</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#3" target="_self">
+            <h4>ฉ</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#4" target="_self">
+            <h4>ต</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#5" target="_self">
+            <h4>ด</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#6" target="_self">
+            <h4>ท</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#7" target="_self">
+            <h4>น</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#8" target="_self">
+            <h4>ป</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#9" target="_self">
+            <h4>ร</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#10" target="_self">
+            <h4>ล</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#11" target="_self">
+            <h4>ศ</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#12" target="_self">
+            <h4>ส</h4>
+          </a></li>
+
+
+
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+  <!-- ก -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="1">
+            <h4>ก</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#vaginal-rejuvenation" class="topics">กระชับช่องคลอด ปรับสีผิวจุดซ่อนเร้น</a></li>
+          <li><a href="#removal-leg-hair" class="topics">กำจัดขนขา</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#removal-arm-hair" class="topics">กำจัดขนแขน</a></li>
+          <li><a href="#bikini-hair" class="topics">กำจัดขนที่ลับ</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#hair-removal" class="topics">กำจัดขนรักแร้</a></li>
+          <li><a href="#facial-hair-removal" class="topics">กำจัดขนหน้า</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- จ -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="2">
+            <h4>จ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#mole-freckle-and-keloid" class="topics">จี้ไฝ กระ รักษาแผลเป็นคีลอยด์</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ฉ -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="3">
+            <h4>ฉ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#botox" class="topics">ฉีด Botulinum Toxin</a></li>
+          <li><a href="#botox-and-filler" class="topics">ฉีด Botulinum Toxin, ฉีดสารเติมเต็ม</a></li>
+          <li><a href="#filler" class="topics">ฉีดสารเติมเต็ม</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ต -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="4">
+            <h4>ต</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#haircut" class="topics">ดัด สระ ซอย ทำสีผม</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ด -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="5">
+            <h4>ด</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#tightening-body" class="topics">ดูด-สลายไขมัน</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ท -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="6">
+            <h4>ท</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#hair-treatment" class="topics">ทรีตเมนต์บำรุงผม นวดศีรษะผ่อนคลาย</a></li>
+          <li><a href="#facial-treatment" class="topics">ทรีตเมนต์หน้า นวดหน้า</a></li>
+          <li><a href="#hifu" class="topics">ทำ HIFU</a></li>
+          <li><a href="#Thermage" class="topics">ทำ Thermage</a></li>
+          <li><a href="#Thermage-hifu" class="topics">ทำ Thermage, ทำ HIFU</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#Ulthera" class="topics">ทำ Ulthera</a></li>
+          <li><a href="#Ulthera-hifu" class="topics">ทำ Ulthera, ทำ HIFU</a></li>
+          <li><a href="#Ulthera-Thermage" class="topics">ทำ Ulthera, ทำ Thermage</a></li>
+          <li><a href="#lash-lift" class="topics">ทำขนตา ขอบตา</a></li>
+          <li><a href="#canine-teeth-decoration" class="topics">ทำเขี้ยว</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#eyebrow" class="topics">ทำคิ้ว</a></li>
+          <li><a href="#eye-surgery" class="topics">ทำตา</a></li>
+          <li><a href="#nails" class="topics">ทำเล็บ</a></li>
+          <li><a href="#nipples" class="topics">ทำหัวนม</a></li>
+          <li><a href="#pink-nipples" class="topics">ทำหัวนมชมพู</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- น -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="7">
+            <h4>น</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li>
+            <a href="#spa-and-massage" class="topics">นวด สปา</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ป -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="8">
+            <h4>ป</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li>
+            <a href="#hair-transplant" class="topics">ปลูกผม รักษาผมร่วง</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ร -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="9">
+            <h4>ร</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li>
+            <a href="#thread-lift" class="topics">ร้อยไหม</a>
+          </li>
+          <li>
+            <a href="#acne-scar" class="topics">รักษาสิว ลดรอยสิว</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ล -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="10">
+            <h4>ล</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li>
+            <a href="#remove-tattoo" class="topics">ลบรอยสัก</a>
+          </li>
+          <li>
+            <a href="#laser" class="topics">เลเซอร์หน้าแก้ปัญหาผิว</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ศ -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="11">
+            <h4>ศ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li>
+            <a href="#jaw-surgery" class="topics">ศัลยกรรมขากรรไกรและคาง</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ส -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="12">
+            <h4>ส</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#lip-micropigmentation" class="topics">สักปาก ทำสีปาก</a></li>
+          <li><a href="#chin-augmentation" class="topics">เสริมคาง</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#rhinoplasty" class="topics">เสริมจมูก</a></li>
+          <li><a href="#surgery-" class="topics">เสริมจมูก, เสริมหน้าอก, ทำตา</a></li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont long">
+        <ul>
+          <li><a href="#beauty-delivery-service" class="topics">เสริมสวยถึงบ้าน</a></li>
+          <li><a href="#breast-augmentation" class="topics">เสริมหน้าอก</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- hifu-->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ HIFU</h5>
-        <hr>
-        <a id="elementClicked1" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow1"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ HIFU</h2>
+      <hr>
+      <a id="elementClicked1"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hifu">
@@ -164,10 +608,11 @@
   <!-- Ulthera -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera</h5>
-        <hr>
-        <a id="elementClicked2" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ Ulthera</h2>
+      <hr>
+      <a id="elementClicked2"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Ulthera">
@@ -183,9 +628,11 @@
   <!-- Thermage -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Thermage</h5>
-        <hr>
-        <a id="elementClicked3" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ Thermage</h2>
+      <hr>
+      <a id="elementClicked3"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Thermage">
@@ -201,9 +648,11 @@
   <!-- Ulthera-hifu -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera, ทำ HIFU</h5>
-        <hr>
-        <a id="elementClicked4" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ Ulthera, ทำ HIFU</h2>
+      <hr>
+      <a id="elementClicked4"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Ulthera-hifu">
@@ -219,9 +668,11 @@
   <!-- Ulthera-Thermage -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Ulthera, ทำ Thermage</h5>
-        <hr>
-        <a id="elementClicked5" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ Ulthera, ทำ Thermage</h2>
+      <hr>
+      <a id="elementClicked5"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Ulthera-Thermage">
@@ -237,9 +688,11 @@
   <!-- Thermage-hifu -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำ Thermage, ทำ HIFU</h5>
-        <hr>
-        <a id="elementClicked6" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำ Thermage, ทำ HIFU</h2>
+      <hr>
+      <a id="elementClicked6"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="Thermage-hifu">
@@ -255,9 +708,11 @@
   <!-- botox-and-filler -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีด Botulinum Toxin, ฉีดสารเติมเต็ม</h5>
-        <hr>
-        <a id="elementClicked7" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ฉีด Botulinum Toxin, ฉีดสารเติมเต็ม</h2>
+      <hr>
+      <a id="elementClicked7"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="botox-and-filler">
@@ -273,9 +728,11 @@
   <!-- botox -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีด Botulinum Toxin</h5>
-        <hr>
-        <a id="elementClicked8" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ฉีด Botulinum Toxin</h2>
+      <hr>
+      <a id="elementClicked8"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="botox">
@@ -291,9 +748,11 @@
   <!-- filler -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฉีดสารเติมเต็ม</h5>
-        <hr>
-        <a id="elementClicked9" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ฉีดสารเติมเต็ม</h2>
+      <hr>
+      <a id="elementClicked9"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="filler">
@@ -309,10 +768,11 @@
   <!-- thread-lift -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ร้อยไหม</h5>
-        <hr>
-        <a id="elementClicked10" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow10"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ร้อยไหม</h2>
+      <hr>
+      <a id="elementClicked10"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="thread-lift">
@@ -328,10 +788,11 @@
   <!-- rhinoplasty -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมจมูก</h5>
-        <hr>
-        <a id="elementClicked11" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow11"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เสริมจมูก</h2>
+      <hr>
+      <a id="elementClicked11"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="rhinoplasty">
@@ -347,10 +808,11 @@
   <!-- breast-augmentation -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมหน้าอก</h5>
-        <hr>
-        <a id="elementClicked12" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow12"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เสริมหน้าอก</h2>
+      <hr>
+      <a id="elementClicked12"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="breast-augmentation">
@@ -366,10 +828,11 @@
   <!-- nipples -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำหัวนม</h5>
-        <hr>
-        <a id="elementClicked13" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow13"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำหัวนม</h2>
+      <hr>
+      <a id="elementClicked13"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="nipples">
@@ -385,10 +848,11 @@
   <!-- pink-nipples -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำหัวนมชมพู</h5>
-        <hr>
-        <a id="elementClicked14" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow14"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำหัวนมชมพู</h2>
+      <hr>
+      <a id="elementClicked14"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="pink-nipples">
@@ -404,10 +868,11 @@
   <!-- chin-augmentation -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมคาง</h5>
-        <hr>
-        <a id="elementClicked15" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow15"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เสริมคาง</h2>
+      <hr>
+      <a id="elementClicked15"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="chin-augmentation">
@@ -423,10 +888,11 @@
   <!-- jaw-surgery -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ศัลยกรรมขากรรไกรและคาง</h5>
-        <hr>
-        <a id="elementClicked16" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow16"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ศัลยกรรมขากรรไกรและคาง</h2>
+      <hr>
+      <a id="elementClicked16"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="jaw-surgery">
@@ -442,10 +908,11 @@
   <!-- surgery- -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมจมูก, เสริมหน้าอก, ทำตา</h5>
-        <hr>
-        <a id="elementClicked17" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow17"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เสริมจมูก, เสริมหน้าอก, ทำตา</h2>
+      <hr>
+      <a id="elementClicked17"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="surgery-">
@@ -461,10 +928,11 @@
   <!-- vaginal-rejuvenation -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กระชับช่องคลอด ปรับสีผิวจุดซ่อนเร้น</h5>
-        <hr>
-        <a id="elementClicked18" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow18"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กระชับช่องคลอด ปรับสีผิวจุดซ่อนเร้น</h2>
+      <hr>
+      <a id="elementClicked18"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow18" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="vaginal-rejuvenation">
@@ -480,10 +948,11 @@
   <!-- nails -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำเล็บ</h5>
-        <hr>
-        <a id="elementClicked19" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow19"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำเล็บ</h2>
+      <hr>
+      <a id="elementClicked19"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow19" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="nails">
@@ -499,10 +968,11 @@
   <!-- massage-and-spa -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">นวด สปา</h5>
-        <hr>
-        <a id="elementClicked20" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow20"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">นวด สปา</h2>
+      <hr>
+      <a id="elementClicked20"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow20" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="massage-and-spa">
@@ -518,10 +988,11 @@
   <!-- facial-treatment -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทรีตเมนต์หน้า นวดหน้า</h5>
-        <hr>
-        <a id="elementClicked21" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow21"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทรีตเมนต์หน้า นวดหน้า</h2>
+      <hr>
+      <a id="elementClicked21"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow21" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="facial-treatment">
@@ -537,10 +1008,11 @@
   <!-- lip-micropigmentation -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">สักปาก ทำสีปาก</h5>
-        <hr>
-        <a id="elementClicked22" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow22"
-          class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">สักปาก ทำสีปาก</h2>
+      <hr>
+      <a id="elementClicked22"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow22" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="lip-micropigmentation">
@@ -556,9 +1028,10 @@
   <!-- eye-surgery -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำตา</h4>
-      <hr>
-      <a id="elementClicked23" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำตา</h2>
+      <a id="elementClicked23"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="eye-surgery">
@@ -574,9 +1047,10 @@
   <!-- eyebrow -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำคิ้ว</h4>
-      <hr>
-      <a id="elementClicked24" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำคิ้ว</h2>
+      <a id="elementClicked24"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="eyebrow">
@@ -592,9 +1066,10 @@
   <!-- lash-lift -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำขนตา ขอบตา</h4>
-      <hr>
-      <a id="elementClicked25" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำขนตา ขอบตา</h2>
+      <a id="elementClicked25"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="lash-lift">
@@ -610,9 +1085,10 @@
   <!-- tightening-body -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ดูด-สลายไขมัน</h4>
-      <hr>
-      <a id="elementClicked26" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ดูด-สลายไขมัน</h2>
+      <a id="elementClicked26"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="tightening-body">
@@ -628,9 +1104,10 @@
   <!-- hair-removal -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนรักแร้</h4>
-      <hr>
-      <a id="elementClicked27" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กำจัดขนรักแร้</h2>
+      <a id="elementClicked27"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hair-removal">
@@ -646,9 +1123,10 @@
   <!-- haircut -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ดัด สระ ซอย ทำสีผม</h4>
-      <hr>
-      <a id="elementClicked28" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ดัด สระ ซอย ทำสีผม</h2>
+      <a id="elementClicked28"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="haircut">
@@ -664,9 +1142,10 @@
   <!-- hair-treatment -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทรีตเมนต์บำรุงผม นวดศีรษะผ่อนคลาย</h4>
-      <hr>
-      <a id="elementClicked29" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทรีตเมนต์บำรุงผม นวดศีรษะผ่อนคลาย</h2>
+      <a id="elementClicked29"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hair-treatment">
@@ -682,9 +1161,10 @@
   <!-- hair-transplant -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ปลูกผม รักษาผมร่วง</h4>
-      <hr>
-      <a id="elementClicked30" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ปลูกผม รักษาผมร่วง</h2>
+      <a id="elementClicked30"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="hair-transplant">
@@ -700,9 +1180,10 @@
   <!-- facial-hair-removal -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนหน้า</h4>
-      <hr>
-      <a id="elementClicked31" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กำจัดขนหน้า</h2>
+      <a id="elementClicked31"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="facial-hair-removal">
@@ -719,9 +1200,10 @@
   <!-- removal-arm-hair -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนแขน</h4>
-      <hr>
-      <a id="elementClicked32" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กำจัดขนแขน</h2>
+      <a id="elementClicked32"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="removal-arm-hair">
@@ -737,9 +1219,10 @@
   <!-- removal-leg-hair -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนขา</h4>
-      <hr>
-      <a id="elementClicked33" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กำจัดขนขา</h2>
+      <a id="elementClicked33"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="removal-leg-hair">
@@ -755,9 +1238,10 @@
   <!-- bikini-hair -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">กำจัดขนที่ลับ</h4>
-      <hr>
-      <a id="elementClicked34" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">กำจัดขนที่ลับ</h2>
+      <a id="elementClicked34"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="bikini-hair">
@@ -773,9 +1257,10 @@
   <!-- beauty-delivery-service -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เสริมสวยถึงบ้าน</h4>
-      <hr>
-      <a id="elementClicked35" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เสริมสวยถึงบ้าน</h2>
+      <a id="elementClicked35"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="beauty-delivery-service">
@@ -791,9 +1276,10 @@
   <!-- canine-teeth-decoration -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำเขี้ยว</h4>
-      <hr>
-      <a id="elementClicked36" style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำเขี้ยว</h2>
+      <a id="elementClicked36"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="canine-teeth-decoration">
@@ -809,9 +1295,10 @@
   <!-- remove-tattoo -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ลบรอยสัก</h4>
-      <hr>
-      <a id="elementClicked37" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ลบรอยสัก</h2>
+      <a id="elementClicked37"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="remove-tattoo">
@@ -827,9 +1314,10 @@
   <!-- laser -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เลเซอร์หน้าแก้ปัญหาผิว</h4>
-      <hr>
-      <a id="elementClicked38" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เลเซอร์หน้าแก้ปัญหาผิว</h2>
+      <a id="elementClicked38"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="laser">
@@ -845,9 +1333,10 @@
   <!-- acne-scar -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">รักษาสิว ลดรอยสิว</h4>
-      <hr>
-      <a id="elementClicked39" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">รักษาสิว ลดรอยสิว</h2>
+      <a id="elementClicked39"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="acne-scar">
@@ -863,9 +1352,10 @@
   <!-- mole-freckle-and-keloid -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">จี้ไฝ กระ รักษาแผลเป็นคีลอยด์</h4>
-      <hr>
-      <a id="elementClicked40" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">จี้ไฝ กระ รักษาแผลเป็นคีลอยด์</h2>
+      <a id="elementClicked40"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="mole-freckle-and-keloid">
@@ -892,6 +1382,11 @@
     request.open("GET", requestURL, true);
     request.send();
 
+    // wait til loaded data
+    var jumpID = url.split("#")[1];
+    $.get("content.json", function (data) {
+      document.getElementById(jumpID).scrollIntoView();
+    });
 
 
     function dataReportStatus(data) {
@@ -942,10 +1437,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -967,23 +1462,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content1");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow1");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content1");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow1");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked1 = document.querySelector("#elementClicked1");
-      const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
+      // const elementClicked1 = document.querySelector("#elementClicked1");
+      // const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
 
-      elementClicked1.addEventListener("click", () => {
-        elementYouWantToShow1.classList.toggle("hide-content");
-      });
+      // elementClicked1.addEventListener("click", () => {
+      //   elementYouWantToShow1.classList.toggle("hide-content");
+      // });
 
       // Ulthera
       count = 0
@@ -1032,10 +1527,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1057,23 +1552,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content2");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow2");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content2");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow2");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked2 = document.querySelector("#elementClicked2");
-      const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
+      // const elementClicked2 = document.querySelector("#elementClicked2");
+      // const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
 
-      elementClicked2.addEventListener("click", () => {
-        elementYouWantToShow2.classList.toggle("hide-content");
-      });
+      // elementClicked2.addEventListener("click", () => {
+      //   elementYouWantToShow2.classList.toggle("hide-content");
+      // });
 
       // Thermage
       count = 0
@@ -1122,10 +1617,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1147,23 +1642,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content3");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow3");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content3");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow3");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked3 = document.querySelector("#elementClicked3");
-      const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
+      // const elementClicked3 = document.querySelector("#elementClicked3");
+      // const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
 
-      elementClicked3.addEventListener("click", () => {
-        elementYouWantToShow3.classList.toggle("hide-content");
-      });
+      // elementClicked3.addEventListener("click", () => {
+      //   elementYouWantToShow3.classList.toggle("hide-content");
+      // });
 
       // Ulthera-hifu
       count = 0
@@ -1212,10 +1707,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1237,23 +1732,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content4");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow4");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content4");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow4");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked4 = document.querySelector("#elementClicked4");
-      const elementYouWantToShow4 = document.querySelector("#elementYouWantToShow4");
+      // const elementClicked4 = document.querySelector("#elementClicked4");
+      // const elementYouWantToShow4 = document.querySelector("#elementYouWantToShow4");
 
-      elementClicked4.addEventListener("click", () => {
-        elementYouWantToShow4.classList.toggle("hide-content");
-      });
+      // elementClicked4.addEventListener("click", () => {
+      //   elementYouWantToShow4.classList.toggle("hide-content");
+      // });
 
       // Ulthera-Thermage
       count = 0
@@ -1302,10 +1797,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1327,23 +1822,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content5");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow5");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content5");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow5");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked5 = document.querySelector("#elementClicked5");
-      const elementYouWantToShow5 = document.querySelector("#elementYouWantToShow5");
+      // const elementClicked5 = document.querySelector("#elementClicked5");
+      // const elementYouWantToShow5 = document.querySelector("#elementYouWantToShow5");
 
-      elementClicked5.addEventListener("click", () => {
-        elementYouWantToShow5.classList.toggle("hide-content");
-      });
+      // elementClicked5.addEventListener("click", () => {
+      //   elementYouWantToShow5.classList.toggle("hide-content");
+      // });
 
       // Thermage-hifu
       count = 0
@@ -1392,10 +1887,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1417,23 +1912,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content6");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow6");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content6");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow6");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked6 = document.querySelector("#elementClicked6");
-      const elementYouWantToShow6 = document.querySelector("#elementYouWantToShow6");
+      // const elementClicked6 = document.querySelector("#elementClicked6");
+      // const elementYouWantToShow6 = document.querySelector("#elementYouWantToShow6");
 
-      elementClicked6.addEventListener("click", () => {
-        elementYouWantToShow6.classList.toggle("hide-content");
-      });
+      // elementClicked6.addEventListener("click", () => {
+      //   elementYouWantToShow6.classList.toggle("hide-content");
+      // });
 
 
       // botox-filler
@@ -1483,10 +1978,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1508,23 +2003,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content7");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow7");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content7");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow7");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked7 = document.querySelector("#elementClicked7");
-      const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
+      // const elementClicked7 = document.querySelector("#elementClicked7");
+      // const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
 
-      elementClicked7.addEventListener("click", () => {
-        elementYouWantToShow7.classList.toggle("hide-content");
-      });
+      // elementClicked7.addEventListener("click", () => {
+      //   elementYouWantToShow7.classList.toggle("hide-content");
+      // });
 
       // botox
       count = 0
@@ -1573,10 +2068,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1663,10 +2158,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1753,10 +2248,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1778,23 +2273,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content10");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow10");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content10");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow10");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked10 = document.querySelector("#elementClicked10");
-      const elementYouWantToShow10 = document.querySelector("#elementYouWantToShow10");
+      // const elementClicked10 = document.querySelector("#elementClicked10");
+      // const elementYouWantToShow10 = document.querySelector("#elementYouWantToShow10");
 
-      elementClicked10.addEventListener("click", () => {
-        elementYouWantToShow10.classList.toggle("hide-content");
-      });
+      // elementClicked10.addEventListener("click", () => {
+      //   elementYouWantToShow10.classList.toggle("hide-content");
+      // });
 
       // rhinoplasty
       count = 0
@@ -1843,10 +2338,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1868,23 +2363,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content11");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow11");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content11");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow11");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked11 = document.querySelector("#elementClicked11");
-      const elementYouWantToShow11 = document.querySelector("#elementYouWantToShow11");
+      // const elementClicked11 = document.querySelector("#elementClicked11");
+      // const elementYouWantToShow11 = document.querySelector("#elementYouWantToShow11");
 
-      elementClicked11.addEventListener("click", () => {
-        elementYouWantToShow11.classList.toggle("hide-content");
-      });
+      // elementClicked11.addEventListener("click", () => {
+      //   elementYouWantToShow11.classList.toggle("hide-content");
+      // });
 
       // breast-augmentation
       count = 0
@@ -1933,10 +2428,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1958,23 +2453,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content12");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow12");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content12");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow12");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked12 = document.querySelector("#elementClicked12");
-      const elementYouWantToShow12 = document.querySelector("#elementYouWantToShow12");
+      // const elementClicked12 = document.querySelector("#elementClicked12");
+      // const elementYouWantToShow12 = document.querySelector("#elementYouWantToShow12");
 
-      elementClicked12.addEventListener("click", () => {
-        elementYouWantToShow12.classList.toggle("hide-content");
-      });
+      // elementClicked12.addEventListener("click", () => {
+      //   elementYouWantToShow12.classList.toggle("hide-content");
+      // });
 
 
       // nipples
@@ -2024,10 +2519,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2049,23 +2544,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content13");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow13");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content13");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow13");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked13 = document.querySelector("#elementClicked13");
-      const elementYouWantToShow13 = document.querySelector("#elementYouWantToShow13");
+      // const elementClicked13 = document.querySelector("#elementClicked13");
+      // const elementYouWantToShow13 = document.querySelector("#elementYouWantToShow13");
 
-      elementClicked13.addEventListener("click", () => {
-        elementYouWantToShow13.classList.toggle("hide-content");
-      });
+      // elementClicked13.addEventListener("click", () => {
+      //   elementYouWantToShow13.classList.toggle("hide-content");
+      // });
 
       // pink-nipples
       count = 0
@@ -2114,10 +2609,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2139,23 +2634,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content14");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow14");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content14");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow14");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked14 = document.querySelector("#elementClicked14");
-      const elementYouWantToShow14 = document.querySelector("#elementYouWantToShow14");
+      // const elementClicked14 = document.querySelector("#elementClicked14");
+      // const elementYouWantToShow14 = document.querySelector("#elementYouWantToShow14");
 
-      elementClicked14.addEventListener("click", () => {
-        elementYouWantToShow14.classList.toggle("hide-content");
-      });
+      // elementClicked14.addEventListener("click", () => {
+      //   elementYouWantToShow14.classList.toggle("hide-content");
+      // });
 
       // chin-augmentation
       count = 0
@@ -2204,10 +2699,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2229,23 +2724,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content15");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow15");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content15");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow15");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked15 = document.querySelector("#elementClicked15");
-      const elementYouWantToShow15 = document.querySelector("#elementYouWantToShow15");
+      // const elementClicked15 = document.querySelector("#elementClicked15");
+      // const elementYouWantToShow15 = document.querySelector("#elementYouWantToShow15");
 
-      elementClicked15.addEventListener("click", () => {
-        elementYouWantToShow15.classList.toggle("hide-content");
-      });
+      // elementClicked15.addEventListener("click", () => {
+      //   elementYouWantToShow15.classList.toggle("hide-content");
+      // });
 
       // jaw-surgery
       count = 0
@@ -2294,10 +2789,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2319,23 +2814,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content16");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow16");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content16");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow16");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked16 = document.querySelector("#elementClicked16");
-      const elementYouWantToShow16 = document.querySelector("#elementYouWantToShow16");
+      // const elementClicked16 = document.querySelector("#elementClicked16");
+      // const elementYouWantToShow16 = document.querySelector("#elementYouWantToShow16");
 
-      elementClicked16.addEventListener("click", () => {
-        elementYouWantToShow16.classList.toggle("hide-content");
-      });
+      // elementClicked16.addEventListener("click", () => {
+      //   elementYouWantToShow16.classList.toggle("hide-content");
+      // });
 
       // surgery
       count = 0
@@ -2384,10 +2879,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2409,23 +2904,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content17");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow17");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content17");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow17");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked17 = document.querySelector("#elementClicked17");
-      const elementYouWantToShow17 = document.querySelector("#elementYouWantToShow17");
+      // const elementClicked17 = document.querySelector("#elementClicked17");
+      // const elementYouWantToShow17 = document.querySelector("#elementYouWantToShow17");
 
-      elementClicked17.addEventListener("click", () => {
-        elementYouWantToShow17.classList.toggle("hide-content");
-      });
+      // elementClicked17.addEventListener("click", () => {
+      //   elementYouWantToShow17.classList.toggle("hide-content");
+      // });
 
       // vaginal-rejuvenation
       count = 0
@@ -2474,10 +2969,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2499,23 +2994,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content18");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow18");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content18");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow18");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked18 = document.querySelector("#elementClicked18");
-      const elementYouWantToShow18 = document.querySelector("#elementYouWantToShow18");
+      // const elementClicked18 = document.querySelector("#elementClicked18");
+      // const elementYouWantToShow18 = document.querySelector("#elementYouWantToShow18");
 
-      elementClicked18.addEventListener("click", () => {
-        elementYouWantToShow18.classList.toggle("hide-content");
-      });
+      // elementClicked18.addEventListener("click", () => {
+      //   elementYouWantToShow18.classList.toggle("hide-content");
+      // });
 
       // nails
       count = 0
@@ -2564,10 +3059,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2589,23 +3084,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content19");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow19");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content19");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow19");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked19 = document.querySelector("#elementClicked19");
-      const elementYouWantToShow19 = document.querySelector("#elementYouWantToShow19");
+      // const elementClicked19 = document.querySelector("#elementClicked19");
+      // const elementYouWantToShow19 = document.querySelector("#elementYouWantToShow19");
 
-      elementClicked19.addEventListener("click", () => {
-        elementYouWantToShow19.classList.toggle("hide-content");
-      });
+      // elementClicked19.addEventListener("click", () => {
+      //   elementYouWantToShow19.classList.toggle("hide-content");
+      // });
 
 
       // massage-and-spa
@@ -2655,10 +3150,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2745,10 +3240,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2770,23 +3265,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content21");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow21");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content21");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow21");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked21 = document.querySelector("#elementClicked21");
-      const elementYouWantToShow21 = document.querySelector("#elementYouWantToShow21");
+      // const elementClicked21 = document.querySelector("#elementClicked21");
+      // const elementYouWantToShow21 = document.querySelector("#elementYouWantToShow21");
 
-      elementClicked21.addEventListener("click", () => {
-        elementYouWantToShow21.classList.toggle("hide-content");
-      });
+      // elementClicked21.addEventListener("click", () => {
+      //   elementYouWantToShow21.classList.toggle("hide-content");
+      // });
 
 
       // lip-micropigmentation
@@ -2836,10 +3331,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2861,23 +3356,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content22");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow22");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content22");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow22");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked22 = document.querySelector("#elementClicked22");
-      const elementYouWantToShow22 = document.querySelector("#elementYouWantToShow22");
+      // const elementClicked22 = document.querySelector("#elementClicked22");
+      // const elementYouWantToShow22 = document.querySelector("#elementYouWantToShow22");
 
-      elementClicked22.addEventListener("click", () => {
-        elementYouWantToShow22.classList.toggle("hide-content");
-      });
+      // elementClicked22.addEventListener("click", () => {
+      //   elementYouWantToShow22.classList.toggle("hide-content");
+      // });
 
       // eye-surgery
       count = 0
@@ -2926,10 +3421,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2951,23 +3446,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content23");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow23");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content23");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow23");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked23 = document.querySelector("#elementClicked23");
-      const elementYouWantToShow23 = document.querySelector("#elementYouWantToShow23");
+      // const elementClicked23 = document.querySelector("#elementClicked23");
+      // const elementYouWantToShow23 = document.querySelector("#elementYouWantToShow23");
 
-      elementClicked23.addEventListener("click", () => {
-        elementYouWantToShow23.classList.toggle("hide-content");
-      });
+      // elementClicked23.addEventListener("click", () => {
+      //   elementYouWantToShow23.classList.toggle("hide-content");
+      // });
 
       // eyebrow
       count = 0
@@ -3016,10 +3511,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3041,23 +3536,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content24");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow24");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content24");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow24");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked24 = document.querySelector("#elementClicked24");
-      const elementYouWantToShow24 = document.querySelector("#elementYouWantToShow24");
+      // const elementClicked24 = document.querySelector("#elementClicked24");
+      // const elementYouWantToShow24 = document.querySelector("#elementYouWantToShow24");
 
-      elementClicked24.addEventListener("click", () => {
-        elementYouWantToShow24.classList.toggle("hide-content");
-      });
+      // elementClicked24.addEventListener("click", () => {
+      //   elementYouWantToShow24.classList.toggle("hide-content");
+      // });
 
       // lash-lift
       count = 0
@@ -3106,10 +3601,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3131,23 +3626,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content25");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow25");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content25");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow25");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked25 = document.querySelector("#elementClicked25");
-      const elementYouWantToShow25 = document.querySelector("#elementYouWantToShow25");
+      // const elementClicked25 = document.querySelector("#elementClicked25");
+      // const elementYouWantToShow25 = document.querySelector("#elementYouWantToShow25");
 
-      elementClicked25.addEventListener("click", () => {
-        elementYouWantToShow25.classList.toggle("hide-content");
-      });
+      // elementClicked25.addEventListener("click", () => {
+      //   elementYouWantToShow25.classList.toggle("hide-content");
+      // });
 
       // tightening-body
       count = 0
@@ -3196,10 +3691,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3221,23 +3716,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content26");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow26");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content26");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow26");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked26 = document.querySelector("#elementClicked26");
-      const elementYouWantToShow26 = document.querySelector("#elementYouWantToShow26");
+      // const elementClicked26 = document.querySelector("#elementClicked26");
+      // const elementYouWantToShow26 = document.querySelector("#elementYouWantToShow26");
 
-      elementClicked26.addEventListener("click", () => {
-        elementYouWantToShow26.classList.toggle("hide-content");
-      });
+      // elementClicked26.addEventListener("click", () => {
+      //   elementYouWantToShow26.classList.toggle("hide-content");
+      // });
 
       // hair-removal
       count = 0
@@ -3286,10 +3781,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3311,23 +3806,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content27");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow27");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content27");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow27");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked27 = document.querySelector("#elementClicked27");
-      const elementYouWantToShow27 = document.querySelector("#elementYouWantToShow27");
+      // const elementClicked27 = document.querySelector("#elementClicked27");
+      // const elementYouWantToShow27 = document.querySelector("#elementYouWantToShow27");
 
-      elementClicked27.addEventListener("click", () => {
-        elementYouWantToShow27.classList.toggle("hide-content");
-      });
+      // elementClicked27.addEventListener("click", () => {
+      //   elementYouWantToShow27.classList.toggle("hide-content");
+      // });
 
       // haircut
       count = 0
@@ -3376,10 +3871,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3401,23 +3896,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content28");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow28");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content28");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow28");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked28 = document.querySelector("#elementClicked28");
-      const elementYouWantToShow28 = document.querySelector("#elementYouWantToShow28");
+      // const elementClicked28 = document.querySelector("#elementClicked28");
+      // const elementYouWantToShow28 = document.querySelector("#elementYouWantToShow28");
 
-      elementClicked28.addEventListener("click", () => {
-        elementYouWantToShow28.classList.toggle("hide-content");
-      });
+      // elementClicked28.addEventListener("click", () => {
+      //   elementYouWantToShow28.classList.toggle("hide-content");
+      // });
 
       // hair-treatment
       count = 0
@@ -3466,10 +3961,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3491,23 +3986,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content29");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow29");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content29");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow29");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked29 = document.querySelector("#elementClicked29");
-      const elementYouWantToShow29 = document.querySelector("#elementYouWantToShow29");
+      // const elementClicked29 = document.querySelector("#elementClicked29");
+      // const elementYouWantToShow29 = document.querySelector("#elementYouWantToShow29");
 
-      elementClicked29.addEventListener("click", () => {
-        elementYouWantToShow29.classList.toggle("hide-content");
-      });
+      // elementClicked29.addEventListener("click", () => {
+      //   elementYouWantToShow29.classList.toggle("hide-content");
+      // });
 
       // hair-transplant
       count = 0
@@ -3556,10 +4051,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3581,23 +4076,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content30");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow30");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content30");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow30");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked30 = document.querySelector("#elementClicked30");
-      const elementYouWantToShow30 = document.querySelector("#elementYouWantToShow30");
+      // const elementClicked30 = document.querySelector("#elementClicked30");
+      // const elementYouWantToShow30 = document.querySelector("#elementYouWantToShow30");
 
-      elementClicked30.addEventListener("click", () => {
-        elementYouWantToShow30.classList.toggle("hide-content");
-      });
+      // elementClicked30.addEventListener("click", () => {
+      //   elementYouWantToShow30.classList.toggle("hide-content");
+      // });
 
       // facial-hair-removal 
       count = 0
@@ -3646,10 +4141,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3671,23 +4166,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content31");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow31");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content31");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow31");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked31 = document.querySelector("#elementClicked31");
-      const elementYouWantToShow31 = document.querySelector("#elementYouWantToShow31");
+      // const elementClicked31 = document.querySelector("#elementClicked31");
+      // const elementYouWantToShow31 = document.querySelector("#elementYouWantToShow31");
 
-      elementClicked31.addEventListener("click", () => {
-        elementYouWantToShow31.classList.toggle("hide-content");
-      });
+      // elementClicked31.addEventListener("click", () => {
+      //   elementYouWantToShow31.classList.toggle("hide-content");
+      // });
 
       // removal-arm-hair
       count = 0
@@ -3736,10 +4231,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3761,23 +4256,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content32");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow32");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content32");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow32");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked32 = document.querySelector("#elementClicked32");
-      const elementYouWantToShow32 = document.querySelector("#elementYouWantToShow32");
+      // const elementClicked32 = document.querySelector("#elementClicked32");
+      // const elementYouWantToShow32 = document.querySelector("#elementYouWantToShow32");
 
-      elementClicked32.addEventListener("click", () => {
-        elementYouWantToShow32.classList.toggle("hide-content");
-      });
+      // elementClicked32.addEventListener("click", () => {
+      //   elementYouWantToShow32.classList.toggle("hide-content");
+      // });
 
       // removal-leg-hair
       count = 0
@@ -3826,10 +4321,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3851,23 +4346,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content33");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow33");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content33");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow33");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked33 = document.querySelector("#elementClicked33");
-      const elementYouWantToShow33 = document.querySelector("#elementYouWantToShow33");
+      // const elementClicked33 = document.querySelector("#elementClicked33");
+      // const elementYouWantToShow33 = document.querySelector("#elementYouWantToShow33");
 
-      elementClicked33.addEventListener("click", () => {
-        elementYouWantToShow33.classList.toggle("hide-content");
-      });
+      // elementClicked33.addEventListener("click", () => {
+      //   elementYouWantToShow33.classList.toggle("hide-content");
+      // });
 
       // bikini-hair
       count = 0
@@ -3916,10 +4411,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -3941,23 +4436,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content34");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow34");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content34");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow34");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked34 = document.querySelector("#elementClicked34");
-      const elementYouWantToShow34 = document.querySelector("#elementYouWantToShow34");
+      // const elementClicked34 = document.querySelector("#elementClicked34");
+      // const elementYouWantToShow34 = document.querySelector("#elementYouWantToShow34");
 
-      elementClicked34.addEventListener("click", () => {
-        elementYouWantToShow34.classList.toggle("hide-content");
-      });
+      // elementClicked34.addEventListener("click", () => {
+      //   elementYouWantToShow34.classList.toggle("hide-content");
+      // });
 
       // beauty-delivery-service
       count = 0
@@ -4006,10 +4501,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4031,23 +4526,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content35");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow35");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content35");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow35");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked35 = document.querySelector("#elementClicked35");
-      const elementYouWantToShow35 = document.querySelector("#elementYouWantToShow35");
+      // const elementClicked35 = document.querySelector("#elementClicked35");
+      // const elementYouWantToShow35 = document.querySelector("#elementYouWantToShow35");
 
-      elementClicked35.addEventListener("click", () => {
-        elementYouWantToShow35.classList.toggle("hide-content");
-      });
+      // elementClicked35.addEventListener("click", () => {
+      //   elementYouWantToShow35.classList.toggle("hide-content");
+      // });
 
       // canine-teeth-decoration
       count = 0
@@ -4096,10 +4591,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4121,23 +4616,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content36");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow36");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content36");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow36");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked36 = document.querySelector("#elementClicked36");
-      const elementYouWantToShow36 = document.querySelector("#elementYouWantToShow36");
+      // const elementClicked36 = document.querySelector("#elementClicked36");
+      // const elementYouWantToShow36 = document.querySelector("#elementYouWantToShow36");
 
-      elementClicked36.addEventListener("click", () => {
-        elementYouWantToShow36.classList.toggle("hide-content");
-      });
+      // elementClicked36.addEventListener("click", () => {
+      //   elementYouWantToShow36.classList.toggle("hide-content");
+      // });
 
       // remove-tattoo
       count = 0
@@ -4186,10 +4681,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4211,23 +4706,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content37");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow37");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content37");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow37");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked37 = document.querySelector("#elementClicked37");
-      const elementYouWantToShow37 = document.querySelector("#elementYouWantToShow37");
+      // const elementClicked37 = document.querySelector("#elementClicked37");
+      // const elementYouWantToShow37 = document.querySelector("#elementYouWantToShow37");
 
-      elementClicked37.addEventListener("click", () => {
-        elementYouWantToShow37.classList.toggle("hide-content");
-      });
+      // elementClicked37.addEventListener("click", () => {
+      //   elementYouWantToShow37.classList.toggle("hide-content");
+      // });
 
       // laser
       count = 0
@@ -4276,10 +4771,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4301,23 +4796,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content38");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow38");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content38");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow38");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked38 = document.querySelector("#elementClicked38");
-      const elementYouWantToShow38 = document.querySelector("#elementYouWantToShow38");
+      // const elementClicked38 = document.querySelector("#elementClicked38");
+      // const elementYouWantToShow38 = document.querySelector("#elementYouWantToShow38");
 
-      elementClicked38.addEventListener("click", () => {
-        elementYouWantToShow38.classList.toggle("hide-content");
-      });
+      // elementClicked38.addEventListener("click", () => {
+      //   elementYouWantToShow38.classList.toggle("hide-content");
+      // });
 
       // acne-scar
       count = 0
@@ -4366,10 +4861,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4391,23 +4886,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content39");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow39");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content39");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow39");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked39 = document.querySelector("#elementClicked39");
-      const elementYouWantToShow39 = document.querySelector("#elementYouWantToShow39");
+      // const elementClicked39 = document.querySelector("#elementClicked39");
+      // const elementYouWantToShow39 = document.querySelector("#elementYouWantToShow39");
 
-      elementClicked39.addEventListener("click", () => {
-        elementYouWantToShow39.classList.toggle("hide-content");
-      });
+      // elementClicked39.addEventListener("click", () => {
+      //   elementYouWantToShow39.classList.toggle("hide-content");
+      // });
 
       // mole-freckle-and-keloid
       count = 0
@@ -4456,10 +4951,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -4481,23 +4976,23 @@
           div_card.appendChild(div_row);
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
-          if (count < 4) {
-            var parent = document.getElementById("example_content40");
-            parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow40");
-            parent.appendChild(a_cover);
-          }
+          // if (count < 4) {
+          var parent = document.getElementById("example_content40");
+          parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow40");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked40 = document.querySelector("#elementClicked40");
-      const elementYouWantToShow40 = document.querySelector("#elementYouWantToShow40");
+      // const elementClicked40 = document.querySelector("#elementClicked40");
+      // const elementYouWantToShow40 = document.querySelector("#elementYouWantToShow40");
 
-      elementClicked40.addEventListener("click", () => {
-        elementYouWantToShow40.classList.toggle("hide-content");
-      });
+      // elementClicked40.addEventListener("click", () => {
+      //   elementYouWantToShow40.classList.toggle("hide-content");
+      // });
 
 
 

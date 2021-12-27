@@ -95,7 +95,7 @@
     }
 
     @media only screen and (max-width: 450px) {
-      h5 {
+      h3 {
         font-size: medium;
       }
 
@@ -110,7 +110,7 @@
     }
 
     @media only screen and (max-width: 375px) {
-      h5 {
+      h3 {
         font-size: small;
       }
 
@@ -164,17 +164,21 @@
 <body>
 
   <!-- button back to top -->
-  <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
+  <!-- <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill"
       viewBox="0 0 16 16">
       <path
-        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
+        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
-  </button>
+  </button> -->
+
+  <div class="card-body">
+    <h1 class="card-title">บทความสัตว์เลี้ยง<h1>
+  </div>
 
   <div>
     <div class="card-body">
-      <h4 class="card-title">สัตว์เลี้ยง</h5>
+      <h2 class="card-title">สัตว์เลี้ยง</h2>
         <hr>
         <a id="elementClicked1" style="display:none; cursor: pointer;  text-align: right; color: black; text-decoration: none;" href="#elementYouWantToShow1">ดูทั้งหมด</a>
     </div>
@@ -202,7 +206,7 @@
             <div class="col-md-8">
 
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h2 class="card-title">Card title</h2>
                 
                 <p class="card-text">
                   card text
@@ -226,7 +230,7 @@
   <br>
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำหมันสุนัข แมว สัตว์เลี้ยงอื่นๆ</h5>
+      <h2 class="card-title">ทำหมันสุนัข แมว สัตว์เลี้ยงอื่นๆ</h2>
         <hr>
         <a id="elementClicked2" style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;" href="#elementYouWantToShow2">ดูทั้งหมด</a>
     </div>
@@ -309,10 +313,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -401,10 +405,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des

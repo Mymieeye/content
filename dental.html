@@ -21,6 +21,7 @@
     body {
       margin-left: 5%;
       margin-right: 5%;
+
     }
 
     @media screen and (min-width: 1000px) {
@@ -62,7 +63,7 @@
     }
 
     .see_all:hover {
-      color: #6392eb !important;
+      color: #0FB396 !important;
       text-decoration: none !important;
     }
 
@@ -75,7 +76,7 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: #6392eb;
+      background-color: #0FB396;
       color: white;
       cursor: pointer;
       padding: 15px;
@@ -83,7 +84,7 @@
     }
 
     #myBtn:hover {
-      background-color: #2a6ce7;
+      background-color: #0FB396;
     }
 
     .card-text {
@@ -97,7 +98,7 @@
     }
 
     @media only screen and (max-width: 450px) {
-      h5 {
+      h3 {
         font-size: medium;
       }
 
@@ -109,10 +110,14 @@
         font-size: small;
       }
 
+      .topics {
+        font-size: small !important;
+      }
+
     }
 
     @media only screen and (max-width: 375px) {
-      h5 {
+      h3 {
         font-size: small;
       }
 
@@ -131,6 +136,89 @@
       }
 
     }
+
+    .topicslist__topiccolumncont.long {
+      width: 33%;
+      display: inline-block;
+
+    }
+
+
+
+    a {
+      text-decoration: none;
+    }
+
+    .topicslist__section {
+      width: auto;
+      /* background-color: #c2f5e949; */
+      margin-bottom: 3%;
+    }
+
+    .topics {
+      color: #012524;
+    }
+
+    .topics:hover {
+      color: #0d6efd;
+    }
+
+    .health-topics__nav-ul {
+      display: flex;
+      margin: 0;
+      justify-content: start;
+    }
+
+    li {
+      padding: 2%;
+      list-style: none;
+
+    }
+
+    .topics {
+      margin: 20px 0;
+      color: #0FB396;
+      font-size: medium;
+    }
+
+    #search {
+      background-color: #ffffff;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+      /* #search {
+        width: 130px;
+        position: fixed;
+        z-index: 1;
+        top: 20px;
+        right: 10px;
+        
+        overflow-x: hidden;
+        padding: 8px 0;
+      }
+     
+      .health-topics__nav-ul{
+        flex-direction: column;
+        align-items: center;
+      }
+      h4{
+        font-size: medium !important;
+      }
+      .search{
+        font-size: xx-small;
+        align-items: center;
+        
+      } */
+      .topicslist__topiccolumncont.long {
+        width: 100%;
+      }
+
+    }
+
+    .search {
+      font-size: large;
+    }
   </style>
 
   <title>Document</title>
@@ -139,22 +227,250 @@
 <body>
 
   <!-- button back to top -->
-  <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
+  <!-- <button onclick="topFunction()" type="button" id="myBtn" title="Go to top" class=''>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock-fill"
       viewBox="0 0 16 16">
       <path
-        d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
+      d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z" />
     </svg>
-  </button>
+  </button> -->
+
+  <div class="card-body">
+    <h1 class="card-title">บทความทันตกรรม<h1>
+  </div>
+
+   <!-- filter by alphabet -->
+   <div class="health-topics__nav-container " id="search">
+    <nav class="health-topics__nav">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li style="color: #a5a5a5;" class="search">ค้นหาตามตัวอักษร</li>
+        </ul>
+      </div>
+      <ul class="health-topics__nav-ul">
+        <li class=""><a class="topics" href="#1" target="_self">
+            <h4 >ข</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#2" target="_self">
+            <h4 >ค</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#3" target="_self">
+            <h4>จ</h4>
+          </a></li>
+          <li class=""><a class="topics" href="#4" target="_self">
+            <h4>ต</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#5" target="_self">
+            <h4>ถ</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#6" target="_self">
+            <h4>ท</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#7" target="_self">
+            <h4>ฟ</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#8" target="_self">
+            <h4>ร</h4>
+          </a></li>
+        <li class=""><a class="topics" href="#9" target="_self">
+            <h4>อ</h4>
+          </a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- ข -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="1">
+            <h4>ข</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#teeth-scaling" class="topics">ขูดหินปูน</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ค -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="2">
+            <h4>ค</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#veneer" class="topics">เคลือบฟันและทำวีเนียร์</a></li>
+          <li><a href="#dental-sealant" class="topics">เคลือบหลุมร่องฟัน</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- จ -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="3">
+            <h4>จ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#wire-braces" class="topics">จัดฟันลวด</a></li>
+          <li><a href="#wire-invisible" class="topics">จัดฟันลวด, จัดฟันใส</a></li>
+          <li><a href="#invisible-braces" class="topics">จัดฟันใส</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ต -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="4">
+            <h4>ต</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#gingiventomy" class="topics">ตัดเหงือก</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ถ -->
+  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="5">
+            <h4>ถ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#tooth-extraction" class="topics">ถอนฟัน</a></li>
+          <li><a href="#wisdom-tooth-removal" class="topics">ถอนหรือผ่าฟันคุด</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ท -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="6">
+            <h4>ท</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#dental-post" class="topics">ทำเดือยฟัน</a></li>
+          <li><a href="#dental-kids" class="topics">ทำฟันเด็ก</a></li>
+          <li><a href="#dental-bridge" class="topics">ทำรากฟันเทียม ครอบฟัน สะพานฟัน</a></li>
+          <li><a href="#retainer" class="topics">ทำรีเทนเนอร์</a></li>
+        </ul>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ฟ -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="7">
+            <h4>ฟ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#teeth-whitening" class="topics">ฟอกสีฟัน</a></li>
+          <li><a href="#false-teeth" class="topics">ฟันปลอม</a></li>
+          
+        </ul>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ร -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="8">
+            <h4>ร</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#dental-implant" class="topics">รักษารากฟัน</a></li>
+          <li><a href="#periodontitis" class="topics">รักษาโรคปริทันต์</a></li>
+          
+        </ul>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- อ -->
+  <section class="topicslist__section shadow-sm bg-white rounded">
+    <div class="topicslist__colcontainer">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li id="9">
+            <h4>อ</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="topicslist__topiccolumncont">
+        <ul>
+          <li><a href="#dental-filling" class="topics">อุดฟัน</a></li>
+          
+        </ul>
+      </div>
+    
+    </div>
+  </section>
+
+
+  
+
 
   <!-- tooth-extraction-->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ถอนฟัน</h5>
-        <hr>
-        <a id="elementClicked1"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ถอนฟัน</h2>
+      <hr>
+      <a id="elementClicked1"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="tooth-extraction">
@@ -172,11 +488,11 @@
   <!-- wisdom-tooth-removal -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ถอนหรือผ่าฟันคุด</h5>
-        <hr>
-        <a id="elementClicked2"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ถอนหรือผ่าฟันคุด</h2>
+      <hr>
+      <a id="elementClicked2"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="wisdom-tooth-removal">
@@ -192,11 +508,11 @@
   <!-- teeth-scaling -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ขูดหินปูน</h5>
-        <hr>
-        <a id="elementClicked3"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ขูดหินปูน</h2>
+      <hr>
+      <a id="elementClicked3"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="teeth-scaling">
@@ -212,11 +528,11 @@
   <!-- invisible-braces -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">จัดฟันใส</h5>
-        <hr>
-        <a id="elementClicked4"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">จัดฟันใส</h2>
+      <hr>
+      <a id="elementClicked4"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="invisible-braces">
@@ -232,11 +548,11 @@
   <!-- wire-braces -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">จัดฟันลวด</h5>
-        <hr>
-        <a id="elementClicked5"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">จัดฟันลวด</h2>
+      <hr>
+      <a id="elementClicked5"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="wire-braces">
@@ -252,11 +568,11 @@
   <!-- wire-invisible -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">จัดฟันลวด, จัดฟันใส</h5>
-        <hr>
-        <a id="elementClicked6"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">จัดฟันลวด, จัดฟันใส</h2>
+      <hr>
+      <a id="elementClicked6"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="wire-invisible">
@@ -272,11 +588,11 @@
   <!-- retainer -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำรีเทนเนอร์</h5>
-        <hr>
-        <a id="elementClicked7"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำรีเทนเนอร์</h2>
+      <hr>
+      <a id="elementClicked7"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="retainer">
@@ -292,11 +608,11 @@
   <!-- gingiventomy -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ตัดเหงือก</h5>
-        <hr>
-        <a id="elementClicked8"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ตัดเหงือก</h2>
+      <hr>
+      <a id="elementClicked8"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="gingiventomy">
@@ -312,10 +628,10 @@
   <!-- teeth-whitening -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฟอกสีฟัน</h5>
-        <hr>
-        <a id="elementClicked9" style="display:block; cursor: pointer;  text-align: right;" color: black;
-          text-decoration: none;" href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ฟอกสีฟัน</h2>
+      <hr>
+      <a id="elementClicked9" style="display:none; cursor: pointer;  text-align: right;" color: black; text-decoration:
+        none;" href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="teeth-whitening">
@@ -331,11 +647,11 @@
   <!-- veneer -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เคลือบฟันและทำวีเนียร์</h5>
-        <hr>
-        <a id="elementClicked10"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เคลือบฟันและทำวีเนียร์</h2>
+      <hr>
+      <a id="elementClicked10"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="veneer">
@@ -351,11 +667,11 @@
   <!-- dental-sealant -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">เคลือบหลุมร่องฟัน</h5>
-        <hr>
-        <a id="elementClicked11"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">เคลือบหลุมร่องฟัน</h2>
+      <hr>
+      <a id="elementClicked11"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dental-sealant">
@@ -371,11 +687,11 @@
   <!-- dental-kids -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำฟันเด็ก</h5>
-        <hr>
-        <a id="elementClicked12"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำฟันเด็ก</h2>
+      <hr>
+      <a id="elementClicked12"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dental-kids">
@@ -391,11 +707,11 @@
   <!-- dental-implant -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">รักษารากฟัน</h5>
-        <hr>
-        <a id="elementClicked13"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">รักษารากฟัน</h2>
+      <hr>
+      <a id="elementClicked13"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dental-implant">
@@ -411,11 +727,11 @@
   <!-- dental-bridge -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำรากฟันเทียม ครอบฟัน สะพานฟัน</h5>
-        <hr>
-        <a id="elementClicked14"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำรากฟันเทียม ครอบฟัน สะพานฟัน</h2>
+      <hr>
+      <a id="elementClicked14"
+        style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dental-bridge">
@@ -431,11 +747,11 @@
   <!-- dental-post -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ทำเดือยฟัน</h5>
-        <hr>
-        <a id="elementClicked15"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ทำเดือยฟัน</h2>
+      <hr>
+      <a id="elementClicked15"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="dental-post">
@@ -451,11 +767,11 @@
   <!-- false-teeth -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">ฟันปลอม</h5>
-        <hr>
-        <a id="elementClicked16"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">ฟันปลอม</h2>
+      <hr>
+      <a id="elementClicked16"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="false-teeth">
@@ -471,11 +787,11 @@
   <!-- periodontitis -->
   <div>
     <div class="card-body">
-      <h4 class="card-title">รักษาโรคปริทันต์</h5>
-        <hr>
-        <a id="elementClicked17"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
+      <h2 class="card-title">รักษาโรคปริทันต์</h2>
+      <hr>
+      <a id="elementClicked17"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
     </div>
 
     <div id="periodontitis">
@@ -483,6 +799,25 @@
       </div>
 
       <div class="hide-content" id="elementYouWantToShow17">
+      </div>
+    </div>
+  </div>
+
+  <!-- dental-filling -->
+  <div>
+    <div class="card-body">
+      <h2 class="card-title">อุดฟัน</h2>
+      <hr>
+      <a id="elementClicked18"
+        style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
+        href="#elementYouWantToShow18" class='see_all'>ดูทั้งหมด</a>
+    </div>
+
+    <div id="dental-filling">
+      <div class="show-content" id="example_content18">
+      </div>
+
+      <div class="hide-content" id="elementYouWantToShow18">
       </div>
     </div>
   </div>
@@ -502,7 +837,11 @@
     request.open("GET", requestURL, true);
     request.send();
 
-
+    // wait til loaded data
+    var jumpID = url.split("#")[1];
+    $.get("content.json", function (data) {
+      document.getElementById(jumpID).scrollIntoView();
+    });
 
     function dataReportStatus(data) {
       let count = 0
@@ -553,10 +892,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -579,24 +918,24 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content1");
             parent.appendChild(a_cover);
 
-          }
-          else {
-            var parent = documea_coverementById("elementYouWantToShow1");
-            parent.appendChild(div_show);
-          }
+          // }
+          // else {
+          //   var parent = documea_coverementById("elementYouWantToShow1");
+          //   parent.appendChild(div_show);
+          // }
         }
       }
 
-      const elementClicked1 = document.querySelector("#elementClicked1");
-      const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
+      // const elementClicked1 = document.querySelector("#elementClicked1");
+      // const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
 
-      elementClicked1.addEventListener("click", () => {
-        elementYouWantToShow1.classList.toggle("hide-content");
-      });
+      // elementClicked1.addEventListener("click", () => {
+      //   elementYouWantToShow1.classList.toggle("hide-content");
+      // });
 
       // wisdom-tooth-removal
       count = 0
@@ -646,10 +985,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -672,23 +1011,115 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content2");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow2");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow2");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked2 = document.querySelector("#elementClicked2");
-      const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
+      // const elementClicked2 = document.querySelector("#elementClicked2");
+      // const elementYouWantToShow2 = document.querySelector("#elementYouWantToShow2");
 
-      elementClicked2.addEventListener("click", () => {
-        elementYouWantToShow2.classList.toggle("hide-content");
-      });
+      // elementClicked2.addEventListener("click", () => {
+      //   elementYouWantToShow2.classList.toggle("hide-content");
+      // });
+
+      //dental-filling
+      count = 0
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].Category_lv2 == "อุดฟัน") {
+          count += 1;
+          console.log(count);
+
+          var a_cover = document.createElement("a");
+          a_cover.href = data[i].URL;
+          a_cover.setAttribute("style", "text-decoration: none; color:black;");
+
+          // cover
+          var div_show = document.createElement("div");
+
+          //in cover
+          var div_card = document.createElement("div");
+          div_card.setAttribute("class", "card m-3 border-0 shadow-sm p-4  bg-white rounded ");
+          div_card.setAttribute("style", "");
+
+          //row
+          var div_row = document.createElement("div");
+          div_row.setAttribute("class", "row g-0");
+          //col1
+          var div_col = document.createElement("div");
+          div_col.setAttribute("class", "col-md-4");
+          // add col1 in row
+          div_row.appendChild(div_col);
+          //img
+          var i_image = document.createElement("img");
+          i_image.src = data[i].image;
+          i_image.setAttribute("class", 'img-fluid rounded');
+
+          // i_image.setAttribute("src", `${data[i].image}`);
+
+          // add img in col1
+          div_col.appendChild(i_image);
+
+          //col2 des
+          var div_col2 = document.createElement("div");
+          div_col2.setAttribute("class", "col-md-8");
+          div_row.appendChild(div_col2);
+
+          var div_text = document.createElement("div");
+          div_text.setAttribute("class", "card-body");
+          div_col2.appendChild(div_text);
+
+
+          // title
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
+
+
+          // des
+          var p_tag = document.createElement("p");
+          p_tag.setAttribute("class", "card-text");
+          p_tag.innerHTML = `${data[i].Meta_Description}`;
+          div_text.appendChild(p_tag);
+
+          var p_tag2 = document.createElement("p");
+          p_tag2.setAttribute("class", "read-more");
+          p_tag2.innerHTML = '';
+          div_text.appendChild(p_tag2);
+
+          var a_link = document.createElement("a");
+          a_link.href = data[i].URL;
+          a_link.innerHTML = 'อ่านเพิ่มเติม';
+          p_tag2.appendChild(a_link);
+
+          div_card.appendChild(div_row);
+          div_show.appendChild(div_card);
+          a_cover.appendChild(div_show);
+
+          // if (count < 4) {
+            var parent = document.getElementById("example_content18");
+            parent.appendChild(a_cover);
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow18");
+          //   parent.appendChild(a_cover);
+          // }
+        }
+      }
+
+      // const elementClicked18 = document.querySelector("#elementClicked18");
+      // const elementYouWantToShow18 = document.querySelector("#elementYouWantToShow18");
+
+      // elementClicked18.addEventListener("click", () => {
+      //   elementYouWantToShow18.classList.toggle("hide-content");
+      // });
 
       // teeth-scaling
       count = 0
@@ -738,10 +1169,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -764,23 +1195,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content3");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow3");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow3");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked3 = document.querySelector("#elementClicked3");
-      const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
+      // const elementClicked3 = document.querySelector("#elementClicked3");
+      // const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
 
-      elementClicked3.addEventListener("click", () => {
-        elementYouWantToShow3.classList.toggle("hide-content");
-      });
+      // elementClicked3.addEventListener("click", () => {
+      //   elementYouWantToShow3.classList.toggle("hide-content");
+      // });
 
       // invisible-braces
       count = 0
@@ -830,10 +1261,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -856,23 +1287,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content4");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow4");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow4");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked4 = document.querySelector("#elementClicked4");
-      const elementYouWantToShow4 = document.querySelector("#elementYouWantToShow4");
+      // const elementClicked4 = document.querySelector("#elementClicked4");
+      // const elementYouWantToShow4 = document.querySelector("#elementYouWantToShow4");
 
-      elementClicked4.addEventListener("click", () => {
-        elementYouWantToShow4.classList.toggle("hide-content");
-      });
+      // elementClicked4.addEventListener("click", () => {
+      //   elementYouWantToShow4.classList.toggle("hide-content");
+      // });
 
       // wire-braces
       count = 0
@@ -922,10 +1353,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -948,23 +1379,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content5");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow5");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow5");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked5 = document.querySelector("#elementClicked5");
-      const elementYouWantToShow5 = document.querySelector("#elementYouWantToShow5");
+      // const elementClicked5 = document.querySelector("#elementClicked5");
+      // const elementYouWantToShow5 = document.querySelector("#elementYouWantToShow5");
 
-      elementClicked5.addEventListener("click", () => {
-        elementYouWantToShow5.classList.toggle("hide-content");
-      });
+      // elementClicked5.addEventListener("click", () => {
+      //   elementYouWantToShow5.classList.toggle("hide-content");
+      // });
 
       // wire-invisible
       count = 0
@@ -1014,10 +1445,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1040,23 +1471,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content6");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow6");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow6");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked6 = document.querySelector("#elementClicked6");
-      const elementYouWantToShow6 = document.querySelector("#elementYouWantToShow6");
+      // const elementClicked6 = document.querySelector("#elementClicked6");
+      // const elementYouWantToShow6 = document.querySelector("#elementYouWantToShow6");
 
-      elementClicked6.addEventListener("click", () => {
-        elementYouWantToShow6.classList.toggle("hide-content");
-      });
+      // elementClicked6.addEventListener("click", () => {
+      //   elementYouWantToShow6.classList.toggle("hide-content");
+      // });
 
 
       // retainer
@@ -1107,10 +1538,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1133,23 +1564,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content7");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow7");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow7");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked7 = document.querySelector("#elementClicked7");
-      const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
+      // const elementClicked7 = document.querySelector("#elementClicked7");
+      // const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
 
-      elementClicked7.addEventListener("click", () => {
-        elementYouWantToShow7.classList.toggle("hide-content");
-      });
+      // elementClicked7.addEventListener("click", () => {
+      //   elementYouWantToShow7.classList.toggle("hide-content");
+      // });
 
       // gingiventomy
       count = 0
@@ -1199,10 +1630,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1225,23 +1656,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content8");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow8");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow8");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked8 = document.querySelector("#elementClicked8");
-      const elementYouWantToShow8 = document.querySelector("#elementYouWantToShow8");
+      // const elementClicked8 = document.querySelector("#elementClicked8");
+      // const elementYouWantToShow8 = document.querySelector("#elementYouWantToShow8");
 
-      elementClicked8.addEventListener("click", () => {
-        elementYouWantToShow8.classList.toggle("hide-content");
-      });
+      // elementClicked8.addEventListener("click", () => {
+      //   elementYouWantToShow8.classList.toggle("hide-content");
+      // });
 
       // teeth-whitening
       count = 0
@@ -1291,10 +1722,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1317,23 +1748,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content9");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow9");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow9");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked9 = document.querySelector("#elementClicked9");
-      const elementYouWantToShow9 = document.querySelector("#elementYouWantToShow9");
+      // const elementClicked9 = document.querySelector("#elementClicked9");
+      // const elementYouWantToShow9 = document.querySelector("#elementYouWantToShow9");
 
-      elementClicked9.addEventListener("click", () => {
-        elementYouWantToShow9.classList.toggle("hide-content");
-      });
+      // elementClicked9.addEventListener("click", () => {
+      //   elementYouWantToShow9.classList.toggle("hide-content");
+      // });
 
       // veneer
       count = 0
@@ -1383,10 +1814,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1409,23 +1840,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content10");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow10");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow10");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked10 = document.querySelector("#elementClicked10");
-      const elementYouWantToShow10 = document.querySelector("#elementYouWantToShow10");
+      // const elementClicked10 = document.querySelector("#elementClicked10");
+      // const elementYouWantToShow10 = document.querySelector("#elementYouWantToShow10");
 
-      elementClicked10.addEventListener("click", () => {
-        elementYouWantToShow10.classList.toggle("hide-content");
-      });
+      // elementClicked10.addEventListener("click", () => {
+      //   elementYouWantToShow10.classList.toggle("hide-content");
+      // });
 
       // dental-sealant
       count = 0
@@ -1475,10 +1906,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1501,23 +1932,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content11");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow11");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow11");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked11 = document.querySelector("#elementClicked11");
-      const elementYouWantToShow11 = document.querySelector("#elementYouWantToShow11");
+      // const elementClicked11 = document.querySelector("#elementClicked11");
+      // const elementYouWantToShow11 = document.querySelector("#elementYouWantToShow11");
 
-      elementClicked11.addEventListener("click", () => {
-        elementYouWantToShow11.classList.toggle("hide-content");
-      });
+      // elementClicked11.addEventListener("click", () => {
+      //   elementYouWantToShow11.classList.toggle("hide-content");
+      // });
 
       // dental-kids
       count = 0
@@ -1567,10 +1998,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1593,23 +2024,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content12");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow12");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow12");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked12 = document.querySelector("#elementClicked12");
-      const elementYouWantToShow12 = document.querySelector("#elementYouWantToShow12");
+      // const elementClicked12 = document.querySelector("#elementClicked12");
+      // const elementYouWantToShow12 = document.querySelector("#elementYouWantToShow12");
 
-      elementClicked12.addEventListener("click", () => {
-        elementYouWantToShow12.classList.toggle("hide-content");
-      });
+      // elementClicked12.addEventListener("click", () => {
+      //   elementYouWantToShow12.classList.toggle("hide-content");
+      // });
 
 
       // dental-implant
@@ -1660,10 +2091,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1686,23 +2117,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content13");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow13");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow13");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked13 = document.querySelector("#elementClicked13");
-      const elementYouWantToShow13 = document.querySelector("#elementYouWantToShow13");
+      // const elementClicked13 = document.querySelector("#elementClicked13");
+      // const elementYouWantToShow13 = document.querySelector("#elementYouWantToShow13");
 
-      elementClicked13.addEventListener("click", () => {
-        elementYouWantToShow13.classList.toggle("hide-content");
-      });
+      // elementClicked13.addEventListener("click", () => {
+      //   elementYouWantToShow13.classList.toggle("hide-content");
+      // });
 
       // dental-bridge
       count = 0
@@ -1752,10 +2183,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1778,23 +2209,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content14");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow14");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow14");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked14 = document.querySelector("#elementClicked14");
-      const elementYouWantToShow14 = document.querySelector("#elementYouWantToShow14");
+      // const elementClicked14 = document.querySelector("#elementClicked14");
+      // const elementYouWantToShow14 = document.querySelector("#elementYouWantToShow14");
 
-      elementClicked14.addEventListener("click", () => {
-        elementYouWantToShow14.classList.toggle("hide-content");
-      });
+      // elementClicked14.addEventListener("click", () => {
+      //   elementYouWantToShow14.classList.toggle("hide-content");
+      // });
 
       // dental-post
       count = 0
@@ -1844,10 +2275,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1870,23 +2301,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content15");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow15");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow15");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked15 = document.querySelector("#elementClicked15");
-      const elementYouWantToShow15 = document.querySelector("#elementYouWantToShow15");
+      // const elementClicked15 = document.querySelector("#elementClicked15");
+      // const elementYouWantToShow15 = document.querySelector("#elementYouWantToShow15");
 
-      elementClicked15.addEventListener("click", () => {
-        elementYouWantToShow15.classList.toggle("hide-content");
-      });
+      // elementClicked15.addEventListener("click", () => {
+      //   elementYouWantToShow15.classList.toggle("hide-content");
+      // });
 
       // false-teeth
       count = 0
@@ -1936,10 +2367,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -1962,23 +2393,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content16");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow16");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow16");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked16 = document.querySelector("#elementClicked16");
-      const elementYouWantToShow16 = document.querySelector("#elementYouWantToShow16");
+      // const elementClicked16 = document.querySelector("#elementClicked16");
+      // const elementYouWantToShow16 = document.querySelector("#elementYouWantToShow16");
 
-      elementClicked16.addEventListener("click", () => {
-        elementYouWantToShow16.classList.toggle("hide-content");
-      });
+      // elementClicked16.addEventListener("click", () => {
+      //   elementYouWantToShow16.classList.toggle("hide-content");
+      // });
 
       // periodontitis
       count = 0
@@ -2028,10 +2459,10 @@
 
 
           // title
-          var h5_tag = document.createElement("h5");
-          h5_tag.setAttribute("class", "card-title");
-          h5_tag.innerHTML = `${data[i].Meta_Title}`;
-          div_text.appendChild(h5_tag);
+          var h3_tag = document.createElement("h3");
+          h3_tag.setAttribute("class", "card-title");
+          h3_tag.innerHTML = `${data[i].Meta_Title}`;
+          div_text.appendChild(h3_tag);
 
 
           // des
@@ -2054,23 +2485,23 @@
           div_show.appendChild(div_card);
           a_cover.appendChild(div_show);
 
-          if (count < 4) {
+          // if (count < 4) {
             var parent = document.getElementById("example_content17");
             parent.appendChild(a_cover);
-          }
-          else {
-            var parent = document.getElementById("elementYouWantToShow17");
-            parent.appendChild(a_cover);
-          }
+          // }
+          // else {
+          //   var parent = document.getElementById("elementYouWantToShow17");
+          //   parent.appendChild(a_cover);
+          // }
         }
       }
 
-      const elementClicked17 = document.querySelector("#elementClicked17");
-      const elementYouWantToShow17 = document.querySelector("#elementYouWantToShow17");
+      // const elementClicked17 = document.querySelector("#elementClicked17");
+      // const elementYouWantToShow17 = document.querySelector("#elementYouWantToShow17");
 
-      elementClicked17.addEventListener("click", () => {
-        elementYouWantToShow17.classList.toggle("hide-content");
-      });
+      // elementClicked17.addEventListener("click", () => {
+      //   elementYouWantToShow17.classList.toggle("hide-content");
+      // });
 
 
     }
@@ -2097,7 +2528,6 @@
     }
     // end button to top
 
-    
   </script>
   </div>
 </body>
