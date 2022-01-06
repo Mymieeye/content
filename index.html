@@ -159,6 +159,14 @@
         padding: 0 10px;
       }
     }
+    .see-all{
+            color: #ffffff;
+            background-color: #0FB396;
+        }
+        .see-all:hover{
+            background-color: #086655b4 !important;
+            color: #ffffff;
+        }
   </style>
 
   <title>Document</title>
@@ -236,9 +244,7 @@
     <div class="card-body">
       <h2 class="card-title">บทความล่าสุด</h2>
         <hr>
-        <a id="elementClicked1"
-          style="display:block; cursor: pointer;  text-align: right; color: black; text-decoration: none;"
-          href="#elementYouWantToShow1">ดูทั้งหมด</a>
+       
     </div>
 
     <div id="latest">
@@ -281,6 +287,13 @@
           </div>
 
         </div> -->
+        <a id="elementClicked1" class="text-center"
+                style="  text-align: center;  text-decoration: none; font-size: medium; scroll-behavior: smooth !important; display: flex;     justify-content: center;"
+                href="#elementYouWantToShow1">
+                <button type="button" class="btn  rounded btn-md   text-center see-all" onclick="toggle(this)"
+                    style=" border-radius: 16px; width: 30% !important; height: auto !important; border-radius: 16px !important; padding: 1.5%;">ดูทั้งหมด</button></a>
+        
+       
     </div>
 
   </div>
@@ -290,9 +303,7 @@
     <div class="card-body">
       <h2 class="card-title">บทความยอดนิยม</h2>
         <hr>
-        <a id="elementClicked2"
-          style="display:block; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow2">ดูทั้งหมด</a>
+       
     </div>
 
     <div id="popular">
@@ -301,6 +312,13 @@
 
       <div class="hide-content" id="elementYouWantToShow2">
       </div>
+      <a id="elementClicked2" class="text-center"
+      style="  text-align: center;  text-decoration: none; font-size: medium; scroll-behavior: smooth !important; display: flex;     justify-content: center;"
+      href="#elementYouWantToShow2">
+      <button type="button" class="btn  rounded btn-md   text-center see-all" onclick="toggle(this)"
+          style=" border-radius: 16px; width: 30% !important; height: auto !important; border-radius: 16px !important; padding: 1.5%;">ดูทั้งหมด</button></a>
+
+      
     </div>
   </div>
 
@@ -322,11 +340,7 @@
     request.open("GET", requestURL, true);
     request.send();
 
-    // wait til loaded data
-    var jumpID = url.split("#")[1];
-        $.get("https://raw.githubusercontent.com/Mymieeye/content/main/content.json", function (data) {
-            document.getElementById(jumpID).scrollIntoView();
-        });
+    
 
     function dataReportStatus(data) {
       let count = 0
@@ -537,7 +551,10 @@
     }
     // end button to top
 
-
+    function toggle(e) {
+  let txt = e.innerText;
+  e.innerText = txt == 'ดูทั้งหมด' ? 'ดูบางส่วน' : 'ดูทั้งหมด';
+}
   </script>
   </div>
 </body>

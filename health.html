@@ -24,6 +24,11 @@
 
     }
 
+    .article,
+    .article__content {
+      max-width: 1000px !important;
+    }
+
     @media screen and (min-width: 1000px) {
       body {
         margin-left: 15%;
@@ -235,716 +240,170 @@
     </svg>
   </button> -->
 
-  <div class="card-body" >
+  <div class="card-body">
     <h1 class="card-title">บทความสุขภาพ และสุขภาพจิต<h1>
   </div>
 
   <!-- filter by alphabet -->
   <div class="health-topics__nav-container " id="search">
-   
-      <nav class="health-topics__nav">
+
+    <nav class="health-topics__nav">
+      <div class="topicslist__sectionheader">
+        <ul>
+          <li style="color: #a5a5a5;" class="search">ค้นหาตามตัวอักษร</li>
+        </ul>
+      </div>
+      <ul class="health-topics__nav-ul" id="nav-ul">
+        <!-- <li><a class="topics" href="#1">
+            <h4 >ก</h4>
+          </a></li>-->
+      </ul>
+    </nav>
+    <nav class="health-topics__nav">
+      <ul class="health-topics__nav-ul" id="nav-ul_eng">
+
+        <!-- <li><a class="topics" href="#D">
+            <h4>D</h4>
+          </a></li> -->
+
+
+      </ul>
+    </nav>
+
+  </div>
+
+  <div id="main">
+    <!-- ก -->
+    <!-- <section class="topicslist__section " style="margin-top: 2%;">
+      <div class="topicslist__colcontainer">
         <div class="topicslist__sectionheader">
           <ul>
-            <li style="color: #a5a5a5;" class="search">ค้นหาตามตัวอักษร</li>
+            <li id="1">
+              <h4>ก</h4>
+            </li>
           </ul>
         </div>
-        <ul class="health-topics__nav-ul">
-          <li class=""><a class="topics" href="#1" target="_self">
-              <h4 id="text1">ก</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#2" target="_self">
-              <h4 id="text2">ข</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#3" target="_self">
-              <h4>ฉ</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#4" target="_self">
-              <h4>ด</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#5" target="_self">
-              <h4>ต</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#6" target="_self">
-              <h4>ท</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#7" target="_self">
-              <h4>น</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#8" target="_self">
-              <h4>บ</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#9" target="_self">
-              <h4>ป</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#10" target="_self">
-              <h4>ฝ</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#11" target="_self">
-              <h4>พ</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#12" target="_self">
-              <h4>ร</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#13" target="_self">
-              <h4>ล</h4>
-            </a></li>
-          <li class=""><a class="topics" href="#14" target="_self">
-              <h4>ศ</h4>
-            </a></li>
-
-
-        </ul>
-      </nav>
-      <nav class="health-topics__nav">
-        <ul class="health-topics__nav-ul">
-
-          <li class=""><a class="topics" href="#D" target="_self">
-              <h4>D</h4>
-            </a></li>
-
-          <li class=""><a class="topics" href="#H" target="_self">
-              <h4>H</h4>
-            </a></li>
-
-          <li class=""><a class="topics" href="#I" target="_self">
-              <h4>I</h4>
-            </a></li>
-
-        </ul>
-      </nav>
-   
+        <div class="topicslist__topiccolumncont">
+          <ul>
+            <li><a href="#กายภาพบำบัดและนวดเพื่อการรักษา" class="topics">กายภาพบำบัดและนวดเพื่อการรักษา</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </section> -->
   </div>
-  
-<div class="main">
-  <!-- ก -->
-  <section class="topicslist__section shadow-sm bg-white rounded" style="margin-top: 2%;">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="1">
-            <h4>ก</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li><a href="#physical-therapy" class="topics">กายภาพบำบัดและนวดเพื่อการรักษา</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ข -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="2">
-            <h4>ข</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li><a href="#circumcision" class="topics">ขริบปลายอวัยวะเพศชาย</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ฉ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="3">
-            <h4>ฉ</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="#dtp-vaccine" class="topics">ฉีดวัคซีน DTP</a>
-          </li>
-          <li>
-            <a href="#hpv-vaccine" class="topics">ฉีดวัคซีน HPV</a>
-          </li>
-          <li>
-            <a href="#ipd-vaccine" class="topics">ฉีดวัคซีน IPD</a>
-          </li>
-
-          <li>
-            <a href="#vaccine-mmr" class="topics">ฉีดวัคซีน MMR</a>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="dengue-vaccine" class="topics">ฉีดวัคซีนไข้เลือดออก</a>
-          </li>
-
-          <li>
-            <a href="flu-vaccine" class="topics">ฉีดวัคซีนไข้หวัดใหญ่</a>
-          </li>
-
-          <li>
-            <a href="#shingles-vaccine" class="topics">ฉีดวัคซีนงูสวัด</a>
-          </li>
-
-          <li>
-            <a href="#vaccines-children" class="topics">ฉีดวัคซีนเด็ก</a>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="#rabies-vaccine" class="topics">ฉีดวัคซีนพิษสุนัขบ้า</a>
-          </li>
-
-          <li>
-            <a href="#hbv-vaccine" class="topics">ฉีดวัคซีนไวรัสตับอักเสบบี</a>
-          </li>
-
-          <li>
-            <a href="#vitamin-infusion" class="topics">ฉีดวิตามิน</a>
-          </li>
-
-          <li>
-            <a href="#vitamin-infusion-vitamin-drip" class="topics">ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ด -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="4">
-            <h4>ด</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li><a href="#cupping-therapy" class="topics">ดูแลสุขภาพด้วยแพทย์แผนจีน</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ฉ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="5">
-            <h4>ต</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="#DNA" class="topics">ตรวจ DNA</a>
-          </li>
-
-          <li>
-            <a href="#STD" class="topics">ตรวจ STD</a>
-          </li>
-
-          <li>
-            <a href="#osteoporosis" class="topics">ตรวจกระดูก</a>
-          </li>
-          <li>
-            <a href="#health-check-up-before-marriage" class="topics">ตรวจก่อนแต่ง</a>
-          </li>
-
-          <li>
-            <a href="#sleep-test" class="topics">ตรวจการนอน Sleep Test</a>
-          </li>
-          <li>
-            <a href="#covid-19" class="topics">ตรวจโควิด-19 (COVID-19)</a>
-          </li>
-          <li>
-            <a href="#liver-checkup" class="topics">ตรวจตับ</a>
-          </li>
-          <li>
-            <a href="#eye-screening" class="topics">ตรวจตา รักษาโรคตา</a>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="#eye-screening-lasik" class="topics">ตรวจตา รักษาโรคตา, ทำเลสิก</a>
-          </li>
-          <li>
-            <a href="#diabetes-screening" class="topics">ตรวจเบาหวาน</a>
-          </li>
-          <li>
-            <a href="#lung-screening" class="topics">ตรวจปอด</a>
-          </li>
-          <li>
-            <a href="#Infertility" class="topics">ตรวจภาวะมีบุตรยาก</a>
-          </li>
-          <li>
-            <a href="#allergy-test" class="topics">ตรวจภูมิแพ้และภาวะแพ้</a>
-          </li>
-          <li>
-            <a href="#food-allergy" class="topics">ตรวจภูมิแพ้อาหารแฝง</a>
-          </li>
-          <li>
-            <a href="#cancer-screen" class="topics">ตรวจมะเร็งทั่วไป</a>
-          </li>
-          <li>
-            <a href="#cancer-screen-for-man" class="topics">ตรวจมะเร็งสำหรับผู้ชาย</a>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont long">
-        <ul>
-          <li>
-            <a href="#cancer-screen-for-wowan" class="topics">ตรวจมะเร็งสำหรับผู้หญิง</a>
-          </li>
-          <li>
-            <a href="#hormone-testing" class="topics">ตรวจระดับฮอร์โมน</a>
-          </li>
-          <li>
-            <a href="#hemorrhoids" class="topics">ตรวจและรักษาริดสีดวงทวาร</a>
-          </li>
-          <li>
-            <a href="#vitamin-check" class="topics">ตรวจวิตามิน</a>
-          </li>
-          <li>
-            <a href="#drug-test" class="topics">ตรวจสารพิษ สารเสพติด</a>
-          </li>
-          <li>
-            <a href="#pre-employment-medical-screening" class="topics">ตรวจสุขภาพเข้าทำงาน</a>
-          </li>
-          <li>
-            <a href="#heart-checkup" class="topics">ตรวจหัวใจ</a>
-          </li>
-          <li style="color: #ffff;">.</li>
-
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ท -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="6">
-            <h4>ท</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li><a href="#lasik" class="topics">ทำเลสิก</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- น -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="7">
-            <h4>น</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#spa-and-massage" class="topics">นวด สปา</a>
-          </li>
-          <li>
-            <a href="#chiropractic" class="topics">นวดจัดกระดูก (Chiropractic)</a>
-          </li>
-          <li>
-            <a href="#being-mom" class="topics">แนะนำคุณแม่มือใหม่</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- บ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="8">
-            <h4>บ</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#health-home-service" class="topics">บริการถึงบ้าน</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ป -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="9">
-            <h4>ป</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#mental-health" class="topics">ปรึกษาสุขภาพจิต</a>
-          </li>
-          <li>
-            <a href="#sex-reassignment" class="topics">แปลงเพศ</a>
-          </li>
-
-          <li>
-            <a href="#health-check-up" class="topics">โปรแกรมตรวจสุขภาพ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ฝ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="10">
-            <h4>ฝ</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#cesarean" class="topics">ฝากครรภ์ คลอดบุตร</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- พ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="11">
-            <h4>พ</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#penis-enlargement" class="topics">เพิ่มขนาดอวัยวะเพศ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ร -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="12">
-            <h4>ร</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#osteoporosis-cure" class="topics">รักษา ผ่าตัด กระดูกและข้อ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ล -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="13">
-            <h4>ล</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#weight-management" class="topics">ลดน้ำหนัก ออกกำลังกาย</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ศ -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="14">
-            <h4>ศ</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#elderly-care" class="topics">ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- D -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="D">
-            <h4>D</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#Detox" class="topics">Detox</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- H -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="H">
-            <h4>H</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#hbo" class="topics">HBO (ไฮเปอร์แบริก)</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- I -->
-  <section class="topicslist__section shadow-sm bg-white rounded">
-    <div class="topicslist__colcontainer">
-      <div class="topicslist__sectionheader">
-        <ul>
-          <li id="I">
-            <h4>I</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="topicslist__topiccolumncont">
-        <ul>
-          <li>
-            <a href="#egg-freezing" class="topics">IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</div>
 
 
 
 
-  <div class="footer js-sticky-end">
+  <div class="contents">
 
     <!-- health-check-up-->
-    <div>
+    <div id="โปรแกรมตรวจสุขภาพ">
       <div class="card-body">
-        <h2 class="card-title">โปรแกรมตรวจสุขภาพ</h2>
+        <h2 class="card-title" >โปรแกรมตรวจสุขภาพ</h2>
         <hr>
-        <a id="elementClicked1"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="health-check-up">
+      <div >
         <div class="show-content" id="example_content1">
         </div>
-
-        <div class="hide-content" id="elementYouWantToShow1">
-        </div>
-
       </div>
 
-    </div>
+
 
     <br>
     <!-- pre-employment-medical-screening -->
-    <div>
+    <div id="ตรวจสุขภาพเข้าทำงาน">
       <div class="card-body">
-        <h2 class="card-title">ตรวจสุขภาพเข้าทำงาน</h2>
+        <h2 class="card-title" >ตรวจสุขภาพเข้าทำงาน</h2>
         <hr>
-        <a id="elementClicked2"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow2" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="pre-employment-medical-screening">
+      <div >
         <div class="show-content" id="example_content2">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow2">
         </div>
       </div>
     </div>
 
     <br>
     <!-- allergy-test -->
-    <div>
+    <div id="ตรวจภูมิแพ้และภาวะแพ้">
       <div class="card-body">
-        <h2 class="card-title">ตรวจภูมิแพ้และภาวะแพ้</h2>
+        <h2 class="card-title" >ตรวจภูมิแพ้และภาวะแพ้</h2>
         <hr>
-        <a id="elementClicked3"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow3" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="allergy-test">
+      <div >
         <div class="show-content" id="example_content3">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow3">
         </div>
       </div>
     </div>
 
     <!-- food-allergy -->
-    <div>
+    <div id="ตรวจภูมิแพ้อาหารแฝง">
       <div class="card-body">
-        <h2 class="card-title">ตรวจภูมิแพ้อาหารแฝง</h2>
+        <h2 class="card-title" >ตรวจภูมิแพ้อาหารแฝง</h2>
         <hr>
-
       </div>
 
-      <div id="food-allergy">
+      <div >
         <div class="show-content" id="food">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow3">
         </div>
       </div>
     </div>
 
     <br>
     <!-- flu-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนไข้หวัดใหญ่">
       <div class="card-body">
-        <h2 class="card-title">ฉีดวัคซีนไข้หวัดใหญ่</h2>
-        <hr>
-        <a id="elementClicked4"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow4" class='see_all'>ดูทั้งหมด</a>
+        <h2 class="card-title" >ฉีดวัคซีนไข้หวัดใหญ่</h2>
+        <hr>  
       </div>
 
-      <div id="flu-vaccine">
+      <div >
         <div class="show-content" id="example_content4">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow4">
         </div>
       </div>
     </div>
 
     <br>
     <!-- dengue-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนไข้เลือดออก">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีนไข้เลือดออก</h2>
         <hr>
-        <a id="elementClicked5"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow5" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="dengue-vaccine">
+      <div >
         <div class="show-content" id="example_content5">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow5">
         </div>
       </div>
     </div>
 
     <br>
     <!-- shingles-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนงูสวัด">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีนงูสวัด<h2>
-            <hr>
-            <a id="elementClicked6"
-              style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-              href="#elementYouWantToShow6" class='see_all'>ดูทั้งหมด</a>
+        <hr>
       </div>
 
-      <div id="shingles-vaccine">
+      <div >
         <div class="show-content" id="example_content6">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow6">
         </div>
       </div>
     </div>
 
     <br>
     <!-- rabies-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนพิษสุนัขบ้า">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีนพิษสุนัขบ้า</h2>
         <hr>
-        <a id="elementClicked7"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow7" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="rabies-vaccine">
+      <div >
         <div class="show-content" id="example_content7">
         </div>
 
@@ -955,484 +414,336 @@
 
     <br>
     <!-- sleep-test -->
-    <div>
+    <div id="ตรวจการนอนSleepTest">
       <div class="card-body">
         <h2 class="card-title">ตรวจการนอน Sleep Test</h2>
         <hr>
-        <a id="elementClicked8"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow8" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="sleep-test">
+      <div >
         <div class="show-content" id="example_content8">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow8">
         </div>
       </div>
     </div>
 
     <br>
     <!-- covid-19 -->
-    <div>
+    <div id="ตรวจโควิด-19(COVID-19)">
       <div class="card-body">
         <h2 class="card-title">ตรวจโควิด-19 (COVID-19)</h2>
         <hr>
-        <a id="elementClicked9"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow9" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="covid-19">
+      <div >
         <div class="show-content" id="example_content9">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow9">
         </div>
       </div>
     </div>
 
     <br>
     <!-- vitamin-check -->
-    <div>
+    <div id="ตรวจวิตามิน">
       <div class="card-body">
         <h2 class="card-title">ตรวจวิตามิน</h2>
         <hr>
-        <a id="elementClicked10"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow10" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="vitamin-check">
+      <div >
         <div class="show-content" id="example_content10">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow10">
         </div>
       </div>
     </div>
 
     <br>
     <!-- vitamin-infusion -->
-    <div>
+    <div id="ฉีดวิตามิน">
       <div class="card-body">
         <h2 class="card-title">ฉีดวิตามิน</h2>
         <hr>
-        <a id="elementClicked11"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow11" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="vitamin-infusion">
+      <div >
         <div class="show-content" id="example_content11">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow11">
         </div>
       </div>
     </div>
 
     <br>
     <!-- vitamin-infusion-vitamin-drip -->
-    <div>
+    <div id="ฉีดวิตามิน,ให้วิตามินรับวิตามินบำรุง">
       <div class="card-body">
         <h2 class="card-title">ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง</h2>
         <hr>
-        <a id="elementClicked12"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow12" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="vitamin-infusion-vitamin-drip">
+      <div >
         <div class="show-content" id="example_content12">
         </div>
-
-        <div class="hide-content" id="elementYouWantToShow12">
         </div>
       </div>
     </div>
 
     <br>
     <!-- hormone-testing -->
-    <div>
+    <div id="ตรวจระดับฮอร์โมน">
       <div class="card-body">
         <h2 class="card-title">ตรวจระดับฮอร์โมน</h2>
         <hr>
-        <a id="elementClicked13"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow13" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="hormone-testing">
+      <div >
         <div class="show-content" id="example_content13">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow13">
         </div>
       </div>
     </div>
 
     <br>
     <!-- drug-test -->
-    <div>
+    <div id="ตรวจสารพิษสารเสพติด>
       <div class="card-body">
         <h2 class="card-title">ตรวจสารพิษ สารเสพติด</h2>
         <hr>
-        <a id="elementClicked14"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow14" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="drug-test">
+      <div ">
         <div class="show-content" id="example_content14">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow14">
         </div>
       </div>
     </div>
 
     <br>
     <!-- heart-checkup -->
-    <div>
+    <div id="ตรวจหัวใจ">
       <div class="card-body">
         <h2 class="card-title">ตรวจหัวใจ</h2>
         <hr>
-
-        <a id="elementClicked15"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow15" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="heart-checkup">
+      <div >
         <div class="show-content" id="example_content15">
         </div>
-
-        <div class="hide-content" id="elementYouWantToShow15">
         </div>
       </div>
     </div>
 
     <br>
     <!-- liver-checkup -->
-    <div>
+    <div id="ตรวจตับ">
       <div class="card-body">
         <h2 class="card-title">ตรวจตับ</h2>
         <hr>
-        <a id="elementClicked16"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow16" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="liver-checkup">
+      <div >
         <div class="show-content" id="example_content16">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow16">
         </div>
       </div>
     </div>
 
     <br>
     <!-- hbv-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนไวรัสตับอักเสบบี">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีนไวรัสตับอักเสบบี</h2>
         <hr>
-        <a id="elementClicked17"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow17" class='see_all'>ดูทั้งหมด</a>
       </div>
-
-      <div id="hbv-vaccine">
+      <div >
         <div class="show-content" id="example_content17">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow17">
         </div>
       </div>
     </div>
 
     <br>
     <!-- diabetes-screening -->
-    <div>
+    <div id="ตรวจเบาหวาน">
       <div class="card-body">
         <h2 class="card-title">ตรวจเบาหวาน</h2>
         <hr>
-        <a id="elementClicked18"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow18" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="diabetes-screening">
+      <div >
         <div class="show-content" id="example_content18">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow18">
         </div>
       </div>
     </div>
 
     <br>
     <!-- hemorrhoids -->
-    <div>
+    <div id="ตรวจและรักษาริดสีดวงทวาร">
       <div class="card-body">
         <h2 class="card-title">ตรวจและรักษาริดสีดวงทวาร</h2>
         <hr>
-        <a id="elementClicked19"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow19" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="hemorrhoids">
+      <div >
         <div class="show-content" id="example_content19">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow19">
         </div>
       </div>
     </div>
 
     <br>
     <!-- DNA -->
-    <div>
+    <div id="ตรวจDNA">
       <div class="card-body">
         <h2 class="card-title">ตรวจ DNA</h2>
         <hr>
-
-        <a id="elementClicked20"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow20" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="DNA">
+      <div >
         <div class="show-content" id="example_content20">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow20">
         </div>
       </div>
     </div>
 
     <br>
     <!-- STD -->
-    <div>
+    <div id="ตรวจSTD">
       <div class="card-body">
         <h2 class="card-title">ตรวจ STD</h2>
         <hr>
-
-        <a id="elementClicked21"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow21" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="STD">
+      <div>
         <div class="show-content" id="example_content21">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow21">
         </div>
       </div>
     </div>
 
     <br>
     <!-- osteoporosis -->
-    <div>
+    <div id="ตรวจกระดูก">
       <div class="card-body">
         <h2 class="card-title">ตรวจกระดูก</h2>
         <hr>
-
-        <a id="elementClicked22"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow22" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="osteoporosis">
+      <div>
         <div class="show-content" id="example_content22">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow22">
         </div>
       </div>
     </div>
-
     <br>
     <!-- osteoporosis-cure -->
-    <div>
+    <div id="รักษาผ่าตัดกระดูกและข้อ">
       <div class="card-body">
         <h2 class="card-title">รักษา ผ่าตัด กระดูกและข้อ</h2>
         <hr>
-        <a id="elementClicked23"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow23" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="osteoporosis-cure">
+      <div>
         <div class="show-content" id="example_content23">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow23">
         </div>
       </div>
     </div>
 
     <br>
     <!-- chiropractic -->
-    <div>
+    <div id="นวดจัดกระดูก(Chiropractic)">
       <div class="card-body">
         <h2 class="card-title">นวดจัดกระดูก (Chiropractic)</h2>
         <hr>
-        <a id="elementClicked24"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow24" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="chiropractic">
+      <div>
         <div class="show-content" id="example_content24">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow24">
         </div>
       </div>
     </div>
 
     <br>
     <!-- physical-therapy -->
-    <div>
+    <div id="กายภาพบำบัดและนวดเพื่อการรักษา">
       <div class="card-body">
         <h2 class="card-title">กายภาพบำบัดและนวดเพื่อการรักษา</h2>
         <hr>
-        <a id="elementClicked25"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow25" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="physical-therapy">
+      <div>
         <div class="show-content" id="example_content25">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow25">
         </div>
       </div>
     </div>
 
     <br>
     <!-- elderly-care -->
-    <div>
+    <div id="ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ">
       <div class="card-body">
         <h2 class="card-title">ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ</h2>
         <hr>
-        <a id="elementClicked26"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow26" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="elderly-care">
+      <div>
         <div class="show-content" id="example_content26">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow26">
         </div>
       </div>
     </div>
 
     <br>
     <!-- lung-screening -->
-    <div>
+    <div id="ตรวจปอด">
       <div class="card-body">
         <h2 class="card-title">ตรวจปอด</h2>
         <hr>
-        <a id="elementClicked27"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow27" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="lung-screening">
+      <div>
         <div class="show-content" id="example_content27">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow27">
         </div>
       </div>
     </div>
 
     <br>
     <!-- ipd-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนIPD">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีน IPD</h2>
         <hr>
-        <a id="elementClicked28"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow28" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="ipd-vaccine">
+      <div>
         <div class="show-content" id="example_content28">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow28">
         </div>
       </div>
     </div>
 
     <br>
     <!-- eye-screening -->
-    <div>
+    <div id="ตรวจตารักษาโรคตา">
       <div class="card-body">
         <h2 class="card-title">ตรวจตา รักษาโรคตา</h2>
         <hr>
-        <a id="elementClicked29"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow29" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="eye-screening">
+      <div>
         <div class="show-content" id="example_content29">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow29">
         </div>
       </div>
     </div>
 
     <br>
     <!-- eye-screening-lasik -->
-    <div>
+    <div id="ตรวจตารักษาโรคตา,ทำเลสิก" >
       <div class="card-body">
         <h2 class="card-title">ตรวจตา รักษาโรคตา, ทำเลสิก</h2>
         <hr>
-        <a id="elementClicked30"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow30" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="eye-screening-lasik" name="eye-screening-lasik">
+      <div>
         <div class="show-content" id="example_content30">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow30">
         </div>
       </div>
     </div>
 
     <br>
     <!-- lasik -->
-    <div>
+    <div id="ทำเลสิก">
       <div class="card-body">
         <h2 class="card-title">ทำเลสิก</h2>
         <hr>
-        <a id="elementClicked31"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow31" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="lasik">
+      <div>
         <div class="show-content" id="example_content31" name="lasik">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow31">
         </div>
       </div>
     </div>
@@ -1440,420 +751,295 @@
 
     <br>
     <!-- cancer-screen -->
-    <div>
+    <div id="ตรวจมะเร็งทั่วไป">
       <div class="card-body">
         <h2 class="card-title">ตรวจมะเร็งทั่วไป</h2>
         <hr>
-        <a id="elementClicked32"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow32" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="cancer-screen">
+      <div>
         <div class="show-content" id="example_content32">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow32">
         </div>
       </div>
     </div>
 
     <br>
     <!-- cancer-screen-for-wowan -->
-    <div>
+    <div id="ตรวจมะเร็งสำหรับผู้หญิง">
       <div class="card-body">
         <h2 class="card-title">ตรวจมะเร็งสำหรับผู้หญิง</h2>
         <hr>
-        <a id="elementClicked33"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow33" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="cancer-screen-for-wowan">
+      <div>
         <div class="show-content" id="example_content33">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow33">
         </div>
       </div>
     </div>
 
     <br>
     <!-- hpv-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนHPV">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีน HPV</h2>
         <hr>
-        <a id="elementClicked34"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow34" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="hpv-vaccine">
+      <div>
         <div class="show-content" id="example_content34">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow34">
         </div>
       </div>
     </div>
 
     <br>
     <!-- cancer-screen-for-man -->
-    <div>
+    <div id="ตรวจมะเร็งสำหรับผู้ชาย">
       <div class="card-body">
         <h2 class="card-title">ตรวจมะเร็งสำหรับผู้ชาย</h2>
         <hr>
-        <a id="elementClicked35"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow35" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="cancer-screen-for-man">
+      <div>
         <div class="show-content" id="example_content35">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow35">
         </div>
       </div>
     </div>
 
     <br>
     <!-- Infertility -->
-    <div>
+    <div id="ตรวจภาวะมีบุตรยาก">
       <div class="card-body">
         <h2 class="card-title">ตรวจภาวะมีบุตรยาก</h2>
         <hr>
-        <a id="elementClicked36"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow36" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="Infertility">
+      <div>
         <div class="show-content" id="example_content36">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow36">
         </div>
       </div>
     </div>
 
     <br>
     <!-- egg-freezing -->
-    <div>
+    <div id="IVF,IUI,ICSI,IMSIฝากไข่แช่แข็งไข่">
       <div class="card-body">
         <h2 class="card-title">IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่</h2>
         <hr>
-        <a id="elementClicked37"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow37" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="egg-freezing">
+      <div>
         <div class="show-content" id="example_content37">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow37">
         </div>
       </div>
     </div>
 
     <br>
     <!-- health-check-up-before-marriage -->
-    <div>
+    <div id="ตรวจก่อนแต่ง">
       <div class="card-body">
-        <h2 class="card-title">ตรวจก่อนแต่ง</h2>
+        <h2 class="card-title" >ตรวจก่อนแต่ง</h2>
         <hr>
-        <a id="elementClicked38"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow38" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="health-check-up-before-marriage">
+      <div >
         <div class="show-content" id="example_content38">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow38">
         </div>
       </div>
     </div>
 
     <br>
     <!-- cesarean -->
-    <div>
+    <div id="ฝากครรภ์คลอดบุตร">
       <div class="card-body">
         <h2 class="card-title">ฝากครรภ์ คลอดบุตร</h2>
         <hr>
-        <a id="elementClicked39"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow39" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="cesarean">
+      <div>
         <div class="show-content" id="example_content39">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow39">
         </div>
       </div>
     </div>
 
     <br>
     <!-- being-mom -->
-    <div>
+    <div id="แนะนำคุณแม่มือใหม่">
       <div class="card-body">
         <h2 class="card-title">แนะนำคุณแม่มือใหม่</h2>
         <hr>
-        <a id="elementClicked40"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow40" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="being-mom">
+      <div>
         <div class="show-content" id="example_content40">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow40">
         </div>
       </div>
     </div>
 
     <br>
     <!-- vaccines-children -->
-    <div>
+    <div id="ฉีดวัคซีนเด็ก">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีนเด็ก</h2>
         <hr>
-        <a id="elementClicked41"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow41" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="vaccines-children">
+      <div>
         <div class="show-content" id="example_content41">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow41">
         </div>
       </div>
     </div>
 
     <br>
     <!-- vaccine-mmr -->
-    <div>
+    <div id="ฉีดวัคซีนMMR">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีน MMR</h2>
         <hr>
-        <a id="elementClicked42"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow42" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="vaccine-mmr">
+      <div>
         <div class="show-content" id="example_content42">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow42">
         </div>
       </div>
     </div>
 
     <br>
     <!-- dtp-vaccine -->
-    <div>
+    <div id="ฉีดวัคซีนDTP">
       <div class="card-body">
         <h2 class="card-title">ฉีดวัคซีน DTP</h2>
         <hr>
-        <a id="elementClicked43"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow43" class='see_all'>ดูทั้งหมด</a>
+       
       </div>
 
-      <div id="dtp-vaccine">
+      <div>
         <div class="show-content" id="example_content43">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow43">
         </div>
       </div>
     </div>
 
     <br>
     <!-- spa-and-massage -->
-    <div>
+    <div id="นวดสปา">
       <div class="card-body">
         <h2 class="card-title">นวด สปา</h2>
         <hr>
-        <a id="elementClicked44"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow1" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="spa-and-massage">
+      <div>
         <div class="show-content" id="example_content44">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow44">
         </div>
       </div>
     </div>
 
     <br>
     <!-- hbo -->
-    <div>
+    <div id="HBO(ไฮเปอร์แบริก)">
       <div class="card-body">
         <h2 class="card-title">HBO (ไฮเปอร์แบริก)</h2>
         <hr>
-        <a id="elementClicked45"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow45" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="hbo">
+      <div>
         <div class="show-content" id="example_content45">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow45">
         </div>
       </div>
     </div>
 
     <br>
     <!-- cupping-therapy -->
-    <div>
+    <div id="ดูแลสุขภาพด้วยแพทย์แผนจีน">
       <div class="card-body">
         <h2 class="card-title">ดูแลสุขภาพด้วยแพทย์แผนจีน</h2>
         <hr>
-        <a id="elementClicked46"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow46" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="cupping-therapy">
+      <div>
         <div class="show-content" id="example_content46">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow46">
         </div>
       </div>
     </div>
 
     <br>
     <!-- weight-management -->
-    <div>
+    <div id="ลดน้ำหนักออกกำลังกาย">
       <div class="card-body">
         <h2 class="card-title">ลดน้ำหนัก ออกกำลังกาย</h2>
         <hr>
-        <a id="elementClicked47"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow47" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="weight-management">
+      <div>
         <div class="show-content" id="example_content47">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow47">
         </div>
       </div>
     </div>
 
     <br>
     <!-- Detox -->
-    <div>
+    <div id="Detox">
       <div class="card-body">
         <h2 class="card-title">Detox</h2>
         <hr>
-        <a id="elementClicked48"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow48" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="Detox">
+      <div>
         <div class="show-content" id="example_content48">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow48">
         </div>
       </div>
     </div>
 
     <br>
     <!-- sex-reassignment -->
-    <div>
+    <div id="แปลงเพศ">
       <div class="card-body">
         <h2 class="card-title">แปลงเพศ</h2>
         <hr>
-        <a id="elementClicked49"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow49" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="sex-reassignment">
+      <div>
         <div class="show-content" id="example_content49">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow49">
         </div>
       </div>
     </div>
 
     <br>
     <!-- circumcision -->
-    <div>
+    <div id="ขริบปลายอวัยวะเพศชาย">
       <div class="card-body">
         <h2 class="card-title">ขริบปลายอวัยวะเพศชาย</h2>
         <hr>
-        <a id="elementClicked50"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow50" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="circumcision">
+      <div>
         <div class="show-content" id="example_content50">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow50">
         </div>
       </div>
     </div>
 
     <br>
     <!-- penis-enlargement -->
-    <div>
+    <div id="เพิ่มขนาดอวัยวะเพศ">
       <div class="card-body">
         <h2 class="card-title">เพิ่มขนาดอวัยวะเพศ</h2>
         <hr>
-        <a id="elementClicked51"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow51" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="penis-enlargement">
+      <div>
         <div class="show-content" id="example_content51">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow51">
         </div>
       </div>
     </div>
 
     <br>
     <!-- mental-health -->
-    <div>
+    <div id="ปรึกษาสุขภาพจิต">
       <div class="card-body">
         <h2 class="card-title">ปรึกษาสุขภาพจิต</h2>
         <hr>
-        <a id="elementClicked52"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow52" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="mental-health">
+      <div>
         <div class="show-content" id="example_content52">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow52">
         </div>
       </div>
     </div>
@@ -1861,25 +1047,19 @@
 
     <br>
     <!-- health-home-service -->
-    <div>
+    <div id="บริการถึงบ้าน">
       <div class="card-body">
         <h2 class="card-title">บริการถึงบ้าน</h2>
         <hr>
-        <a id="elementClicked53"
-          style="display:none; cursor: pointer;  text-align: right;color: black; text-decoration: none;"
-          href="#elementYouWantToShow53" class='see_all'>ดูทั้งหมด</a>
       </div>
 
-      <div id="health-home-service">
+      <div>
         <div class="show-content" id="example_content53">
-        </div>
-
-        <div class="hide-content" id="elementYouWantToShow53">
         </div>
       </div>
     </div>
-
   </div>
+ 
 
   <script>
     // data
@@ -1888,25 +1068,460 @@
     request.onreadystatechange = function () {
       if (request.readyState == 4 && request.status == 200) {
         dataReportStatus(JSON.parse(request.responseText));
-        console.log("jj");
+        console.log("get data successful!");
       }
     };
     request.open("GET", requestURL, true);
     request.send();
 
-    // wait til loaded data
-    var jumpID = url.split("#")[1];
-    $.get("content.json", function (data) {
-      document.getElementById(jumpID).scrollIntoView();
-    });
+    let count_navbar = 0;
 
+    function loop_navbar_topics(uniqueChars) {
+      // show navbar ก in display
+      var nav_li = document.createElement("li");
+      var a_li = document.createElement("a");
+      a_li.href = "#" + count_navbar;
+      a_li.setAttribute("class", "topics");
+      var h4_li = document.createElement("h4");
+      h4_li.innerHTML = uniqueChars[0].charAt(0);
+
+      a_li.appendChild(h4_li);
+      nav_li.appendChild(a_li);
+      var parent_topics = document.getElementById("nav-ul");
+      parent_topics.appendChild(nav_li);
+
+      // show all toppic ก
+
+      var section = document.createElement("section");
+      section.setAttribute("class", "topicslist__section shadow-sm bg-white rounded");
+
+      var hr = document.createElement("hr");
+
+      var div_container = document.createElement("div");
+      div_container.setAttribute("class", "topicslist__colcontainer");
+
+      var div_header = document.createElement("div");
+      div_header.setAttribute("class", "topicslist__sectionheader");
+
+      var ul = document.createElement("ul");
+      var li = document.createElement("li");
+      li.setAttribute("id", count_navbar);
+      var h4_section = document.createElement("h4");
+      h4_section.innerHTML = uniqueChars[0].charAt(0);
+
+      // appendChild
+      section.appendChild(div_container);
+      // section.appendChild(hr);
+      div_container.appendChild(div_header);
+      div_header.appendChild(ul);
+      ul.appendChild(li);
+      li.appendChild(h4_section);
+
+      var div_column = document.createElement("div");
+      div_column.setAttribute("class", "topicslist__topiccolumncont");
+      var ul1 = document.createElement("ul");
+
+      // appendChild
+
+      div_container.appendChild(div_column);
+      div_column.appendChild(ul1);
+
+      // loop every topics in array ก
+      for (let y = 0; y < uniqueChars.length; y++) {
+        var li2 = document.createElement("li");
+        var a2 = document.createElement("a");
+        a2.href = "#" + uniqueChars[y].replace(/\s+/g, '');
+        a2.innerHTML = uniqueChars[y];
+        a2.setAttribute("class", "topics");
+
+        ul1.appendChild(li2);
+        li2.appendChild(a2);
+      }
+
+      var parent_main = document.getElementById("main");
+      parent_main.appendChild(section);
+    }
+
+    function loop_navbar_topics_eng(uniqueChars) {
+      // show navbar ก in display
+      var nav_li = document.createElement("li");
+      var a_li = document.createElement("a");
+      a_li.href = "#" + count_navbar;
+      a_li.setAttribute("class", "topics");
+      var h4_li = document.createElement("h4");
+      h4_li.innerHTML = uniqueChars[0].charAt(0);
+
+      a_li.appendChild(h4_li);
+      nav_li.appendChild(a_li);
+      var parent_topics = document.getElementById("nav-ul_eng");
+      parent_topics.appendChild(nav_li);
+
+      // show all toppic ก
+
+      var section = document.createElement("section");
+      section.setAttribute("class", "topicslist__section shadow-sm bg-white rounded");
+
+      var hr = document.createElement("hr");
+
+      var div_container = document.createElement("div");
+      div_container.setAttribute("class", "topicslist__colcontainer");
+
+      var div_header = document.createElement("div");
+      div_header.setAttribute("class", "topicslist__sectionheader");
+
+      var ul = document.createElement("ul");
+      var li = document.createElement("li");
+      li.setAttribute("id", count_navbar);
+      var h4_section = document.createElement("h4");
+      h4_section.innerHTML = uniqueChars[0].charAt(0);
+
+      // appendChild
+      section.appendChild(div_container);
+      // section.appendChild(hr);
+      div_container.appendChild(div_header);
+      div_header.appendChild(ul);
+      ul.appendChild(li);
+      li.appendChild(h4_section);
+
+      var div_column = document.createElement("div");
+      div_column.setAttribute("class", "topicslist__topiccolumncont");
+      var ul1 = document.createElement("ul");
+
+      // appendChild
+
+      div_container.appendChild(div_column);
+      div_column.appendChild(ul1);
+
+      // loop every topics in array ก
+      for (let y = 0; y < uniqueChars.length; y++) {
+        var li2 = document.createElement("li");
+        var a2 = document.createElement("a");
+        a2.href = "#" + uniqueChars[y].replace(/\s+/g, '');
+        a2.innerHTML = uniqueChars[y];
+        a2.setAttribute("class", "topics");
+
+        ul1.appendChild(li2);
+        li2.appendChild(a2);
+      }
+
+      var parent_main = document.getElementById("main");
+      parent_main.appendChild(section);
+    }
+
+    
     function dataReportStatus(data) {
+      let arr_topic = [];
+
+      // push all ก in array
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ก" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+      }
+      // remove repeat word of ก
+      let uniqueChars = [...new Set(arr_topic)];
+      // cheak array ก isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ข in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ข" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+      }
+      // remove repeat word of ข
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ข isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ฉ in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ฉ" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ฉ
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ฉ isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ด in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ด" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ด
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ด isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ต in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ต" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ต
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ต isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ท in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ท" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ท
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ท isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all น in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "น" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of น
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array น isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all บ in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "บ" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of บ
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array บ isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ป in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ป" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ป
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ป isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ฝ in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ฝ" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ฝ
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ฝ isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all พ in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "พ" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of พ
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array พ isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ร in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ร" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ร
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ร isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ล in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ล" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ล
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ล isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all ศ in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "ศ" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of ศ
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array ศ isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics(uniqueChars);
+      }
+
+      // push all D in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "D" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of D
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array D isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics_eng(uniqueChars);
+      }
+
+      // push all H in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "H" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of H
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array H isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics_eng(uniqueChars);
+      }
+      
+      // push all I in array
+      arr_topic = [];
+      count_navbar += 1;
+      for (let i = 0; i < data.length; i++) {
+        let x = data[i].Category_lv2;
+        if (x.charAt(0) == "I" && data[i].Category_lv1 == "Health") {
+          arr_topic.push(x);
+        }
+
+      }
+      // remove repeat word of I
+      uniqueChars = [...new Set(arr_topic)];
+      // cheak array I isnt null
+      if (arr_topic.length != 0) {
+        // create nav and topics
+        loop_navbar_topics_eng(uniqueChars);
+      }
+
+
       let count = 0
       // health-check-up
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "โปรแกรมตรวจสุขภาพ") {
           count += 1;
-          // console.log(count);
+          // 
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -1977,30 +1592,20 @@
           a_cover.appendChild(div_show)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content1");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow1");
-          //   parent.appendChild(a_cover);
-          // }
+
         }
       }
 
-      // const elementClicked1 = document.querySelector("#elementClicked1");
-      // const elementYouWantToShow1 = document.querySelector("#elementYouWantToShow1");
-
-      // elementClicked1.addEventListener("click", () => {
-      //   elementYouWantToShow1.classList.toggle("hide-content");
-      // });
-
+      
       // pre-employment-medical-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจสุขภาพเข้าทำงาน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2092,7 +1697,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจภูมิแพ้และภาวะแพ้") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2161,23 +1766,14 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content3");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow3");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked3 = document.querySelector("#elementClicked3");
-      // const elementYouWantToShow3 = document.querySelector("#elementYouWantToShow3");
 
-      // elementClicked3.addEventListener("click", () => {
-      //   elementYouWantToShow3.classList.toggle("hide-content");
-      // });
 
 
       // food-allergy
@@ -2185,7 +1781,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจภูมิแพ้อาหารแฝง") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2267,7 +1863,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนไข้หวัดใหญ่") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2336,30 +1932,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content4");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow4");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked4 = document.querySelector("#elementClicked4");
-      // const elementYouWantToShow4 = document.querySelector("#elementYouWantToShow4");
-
-      // elementClicked4.addEventListener("click", () => {
-      //   elementYouWantToShow4.classList.toggle("hide-content");
-      // });
 
       // dengue-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนไข้เลือดออก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2428,30 +2014,19 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content5");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow5");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked5 = document.querySelector("#elementClicked5");
-      // const elementYouWantToShow5 = document.querySelector("#elementYouWantToShow5");
-
-      // elementClicked5.addEventListener("click", () => {
-      //   elementYouWantToShow5.classList.toggle("hide-content");
-      // });
-
-      // shingles-vaccine
+      
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนงูสวัด") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2520,23 +2095,12 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
           var parent = document.getElementById("example_content6");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow6");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked6 = document.querySelector("#elementClicked6");
-      // const elementYouWantToShow6 = document.querySelector("#elementYouWantToShow6");
-
-      // elementClicked6.addEventListener("click", () => {
-      //   elementYouWantToShow6.classList.toggle("hide-content");
-      // });
 
 
       // rabies-vaccine
@@ -2544,7 +2108,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนพิษสุนัขบ้า") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2613,30 +2177,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content7");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow7");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked7 = document.querySelector("#elementClicked7");
-      // const elementYouWantToShow7 = document.querySelector("#elementYouWantToShow7");
-
-      // elementClicked7.addEventListener("click", () => {
-      //   elementYouWantToShow7.classList.toggle("hide-content");
-      // });
 
       // sleep-test
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจการนอน Sleep Test") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2708,27 +2262,16 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content8");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow8");
-          //   parent.appendChild(a_cover);
-          // }
+        
         }
       }
-
-      // const elementClicked8 = document.querySelector("#elementClicked8");
-      // const elementYouWantToShow8 = document.querySelector("#elementYouWantToShow8");
-
-      // elementClicked8.addEventListener("click", () => {
-      //   elementYouWantToShow8.classList.toggle("hide-content");
-      // });
 
       // covid-19
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจโควิด-19 (COVID-19)") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2800,27 +2343,16 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content9");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow9");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
-
-      // const elementClicked9 = document.querySelector("#elementClicked9");
-      // const elementYouWantToShow9 = document.querySelector("#elementYouWantToShow9");
-
-      // elementClicked9.addEventListener("click", () => {
-      //   elementYouWantToShow9.classList.toggle("hide-content");
-      // });
 
       // vitamin-check
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจวิตามิน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2892,27 +2424,18 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content10");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow10");
-          //   parent.appendChild(a_cover);
-          // }
+        
         }
       }
 
-      // const elementClicked10 = document.querySelector("#elementClicked10");
-      // const elementYouWantToShow10 = document.querySelector("#elementYouWantToShow10");
-
-      // elementClicked10.addEventListener("click", () => {
-      //   elementYouWantToShow10.classList.toggle("hide-content");
-      // });
+    
 
       // vitamin-infusion
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวิตามิน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -2981,30 +2504,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content11");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow11");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked11 = document.querySelector("#elementClicked11");
-      // const elementYouWantToShow11 = document.querySelector("#elementYouWantToShow11");
-
-      // elementClicked11.addEventListener("click", () => {
-      //   elementYouWantToShow11.classList.toggle("hide-content");
-      // });
 
       // vitamin-infusion-vitamin-drip
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวิตามิน, ให้วิตามิน รับวิตามินบำรุง") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3076,20 +2589,9 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content12");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow12");
-          //   parent.appendChild(a_cover);
-          // }
+        
         }
       }
-
-      // const elementClicked12 = document.querySelector("#elementClicked12");
-      // const elementYouWantToShow12 = document.querySelector("#elementYouWantToShow12");
-
-      // elementClicked12.addEventListener("click", () => {
-      //   elementYouWantToShow12.classList.toggle("hide-content");
-      // });
 
 
       // hormone-testing
@@ -3097,7 +2599,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจระดับฮอร์โมน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3166,30 +2668,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content13");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow13");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked13 = document.querySelector("#elementClicked13");
-      // const elementYouWantToShow13 = document.querySelector("#elementYouWantToShow13");
-
-      // elementClicked13.addEventListener("click", () => {
-      //   elementYouWantToShow13.classList.toggle("hide-content");
-      // });
 
       // drug-test
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจสารพิษ สารเสพติด") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3258,30 +2750,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content14");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow14");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked14 = document.querySelector("#elementClicked14");
-      // const elementYouWantToShow14 = document.querySelector("#elementYouWantToShow14");
-
-      // elementClicked14.addEventListener("click", () => {
-      //   elementYouWantToShow14.classList.toggle("hide-content");
-      // });
+     
 
       // heart-checkup
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจหัวใจ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3350,30 +2833,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content15");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow15");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked15 = document.querySelector("#elementClicked15");
-      // const elementYouWantToShow15 = document.querySelector("#elementYouWantToShow15");
-
-      // elementClicked15.addEventListener("click", () => {
-      //   elementYouWantToShow15.classList.toggle("hide-content");
-      // });
+     
 
       // liver-checkup
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจตับ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3442,30 +2916,18 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content16");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow16");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked16 = document.querySelector("#elementClicked16");
-      // const elementYouWantToShow16 = document.querySelector("#elementYouWantToShow16");
-
-      // elementClicked16.addEventListener("click", () => {
-      //   elementYouWantToShow16.classList.toggle("hide-content");
-      // });
-
-      // hbv-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนไวรัสตับอักเสบบี") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3534,30 +2996,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content17");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow17");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked17 = document.querySelector("#elementClicked17");
-      // const elementYouWantToShow17 = document.querySelector("#elementYouWantToShow17");
-
-      // elementClicked17.addEventListener("click", () => {
-      //   elementYouWantToShow17.classList.toggle("hide-content");
-      // });
 
       // diabetes-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจเบาหวาน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3626,30 +3078,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content18");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow18");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked18 = document.querySelector("#elementClicked18");
-      // const elementYouWantToShow18 = document.querySelector("#elementYouWantToShow18");
-
-      // elementClicked18.addEventListener("click", () => {
-      //   elementYouWantToShow18.classList.toggle("hide-content");
-      // });
+      
 
       // hemorrhoids
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจและรักษาริดสีดวงทวาร") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3718,23 +3161,14 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content19");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow19");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked19 = document.querySelector("#elementClicked19");
-      // const elementYouWantToShow19 = document.querySelector("#elementYouWantToShow19");
-
-      // elementClicked19.addEventListener("click", () => {
-      //   elementYouWantToShow19.classList.toggle("hide-content");
-      // });
+      
 
 
       // DNA
@@ -3742,7 +3176,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจ DNA") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3811,30 +3245,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content20");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow20");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked20 = document.querySelector("#elementClicked20");
-      // const elementYouWantToShow20 = document.querySelector("#elementYouWantToShow20");
-
-      // elementClicked20.addEventListener("click", () => {
-      //   elementYouWantToShow20.classList.toggle("hide-content");
-      // });
 
       // STD
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจ STD") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3903,23 +3327,13 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content21");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow21");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked21 = document.querySelector("#elementClicked21");
-      // const elementYouWantToShow21 = document.querySelector("#elementYouWantToShow21");
-
-      // elementClicked21.addEventListener("click", () => {
-      //   elementYouWantToShow21.classList.toggle("hide-content");
-      // });
 
 
       // osteoporosis
@@ -3927,7 +3341,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจกระดูก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -3999,27 +3413,16 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content22");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow22");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
-
-      // const elementClicked22 = document.querySelector("#elementClicked22");
-      // const elementYouWantToShow22 = document.querySelector("#elementYouWantToShow22");
-
-      // elementClicked22.addEventListener("click", () => {
-      //   elementYouWantToShow22.classList.toggle("hide-content");
-      // });
 
       // osteoporosis-cure
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "รักษา ผ่าตัด กระดูกและข้อ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4088,30 +3491,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content23");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow23");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked23 = document.querySelector("#elementClicked23");
-      // const elementYouWantToShow23 = document.querySelector("#elementYouWantToShow23");
-
-      // elementClicked23.addEventListener("click", () => {
-      //   elementYouWantToShow23.classList.toggle("hide-content");
-      // });
 
       // chiropractic
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "นวดจัดกระดูก (Chiropractic)") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4183,27 +3576,17 @@
           // if (count < 4) {
           var parent = document.getElementById("example_content24");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow24");
-          //   parent.appendChild(a_cover);
-          // }
+         
         }
       }
 
-      // const elementClicked24 = document.querySelector("#elementClicked24");
-      // const elementYouWantToShow24 = document.querySelector("#elementYouWantToShow24");
-
-      // elementClicked24.addEventListener("click", () => {
-      //   elementYouWantToShow24.classList.toggle("hide-content");
-      // });
 
       // physical-therapy
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "กายภาพบำบัดและนวดเพื่อการรักษา") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4272,30 +3655,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content25");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow25");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked25 = document.querySelector("#elementClicked25");
-      // const elementYouWantToShow25 = document.querySelector("#elementYouWantToShow25");
-
-      // elementClicked25.addEventListener("click", () => {
-      //   elementYouWantToShow25.classList.toggle("hide-content");
-      // });
+      
 
       // elderly-care
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ศูนย์ดูแลและฟื้นฟูผู้ป่วย-ผู้สูงอายุ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4364,30 +3738,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content26");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow26");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked26 = document.querySelector("#elementClicked26");
-      // const elementYouWantToShow26 = document.querySelector("#elementYouWantToShow26");
-
-      // elementClicked26.addEventListener("click", () => {
-      //   elementYouWantToShow26.classList.toggle("hide-content");
-      // });
+     
 
       // lung-screening
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจปอด") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4456,30 +3821,19 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content27");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow27");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
-
-      // const elementClicked27 = document.querySelector("#elementClicked27");
-      // const elementYouWantToShow27 = document.querySelector("#elementYouWantToShow27");
-
-      // elementClicked27.addEventListener("click", () => {
-      //   elementYouWantToShow27.classList.toggle("hide-content");
-      // });
 
       // ipd-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีน IPD") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4571,7 +3925,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4640,30 +3994,21 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content29");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow29");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked29 = document.querySelector("#elementClicked29");
-      // const elementYouWantToShow29 = document.querySelector("#elementYouWantToShow29");
-
-      // elementClicked29.addEventListener("click", () => {
-      //   elementYouWantToShow29.classList.toggle("hide-content");
-      // });
+      
 
       // eye-screening-lasik 
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจตา รักษาโรคตา, ทำเลสิก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4732,30 +4077,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content30");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow30");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked30 = document.querySelector("#elementClicked30");
-      // const elementYouWantToShow30 = document.querySelector("#elementYouWantToShow30");
-
-      // elementClicked30.addEventListener("click", () => {
-      //   elementYouWantToShow30.classList.toggle("hide-content");
-      // });
 
       // lasik 
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ทำเลสิก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4824,30 +4159,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+         
           var parent = document.getElementById("example_content31");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow31");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked31 = document.querySelector("#elementClicked31");
-      // const elementYouWantToShow31 = document.querySelector("#elementYouWantToShow31");
-
-      // elementClicked31.addEventListener("click", () => {
-      //   elementYouWantToShow31.classList.toggle("hide-content");
-      // });
 
       // eye-screening-lasik 
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "นวด สปา") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -4932,7 +4257,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจมะเร็งทั่วไป") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5001,30 +4326,20 @@
           div_show.appendChild(div_card)
           a_cover.appendChild(div_show)
 
-          // if (count < 4) {
+          
           var parent = document.getElementById("example_content32");
           parent.appendChild(a_cover);
-          // }
-          // else {
-          //   var parent = document.getElementById("elementYouWantToShow32");
-          //   parent.appendChild(a_cover);
-          // }
+          
         }
       }
 
-      // const elementClicked32 = document.querySelector("#elementClicked32");
-      // const elementYouWantToShow32 = document.querySelector("#elementYouWantToShow32");
-
-      // elementClicked32.addEventListener("click", () => {
-      //   elementYouWantToShow32.classList.toggle("hide-content");
-      // });
-
+      
       // cancer-screen-for-woman
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้หญิง") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5104,19 +4419,14 @@
         }
       }
 
-      const elementClicked33 = document.querySelector("#elementClicked33");
-      const elementYouWantToShow33 = document.querySelector("#elementYouWantToShow33");
-
-      elementClicked33.addEventListener("click", () => {
-        elementYouWantToShow33.classList.toggle("hide-content");
-      });
+      
 
       // hpv-vaccine
       count = 0
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีน HPV") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5208,7 +4518,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจมะเร็งสำหรับผู้ชาย") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5300,7 +4610,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจภาวะมีบุตรยาก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5392,7 +4702,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "IVF, IUI, ICSI, IMSI ฝากไข่ แช่แข็งไข่") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5484,7 +4794,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ตรวจก่อนแต่ง") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5576,7 +4886,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฝากครรภ์ คลอดบุตร") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5668,7 +4978,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "แนะนำคุณแม่มือใหม่") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5760,7 +5070,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีนเด็ก") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5852,7 +5162,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีน MMR") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -5944,7 +5254,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ฉีดวัคซีน DTP") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6040,7 +5350,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "HBO (ไฮเปอร์แบริก)") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6132,7 +5442,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ดูแลสุขภาพด้วยแพทย์แผนจีน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6224,7 +5534,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ลดน้ำหนัก ออกกำลังกาย") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6316,7 +5626,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "Detox") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6408,7 +5718,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "แปลงเพศ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6500,7 +5810,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ขริบปลายอวัยวะเพศชาย") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6592,7 +5902,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "เพิ่มขนาดอวัยวะเพศ") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6684,7 +5994,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "ปรึกษาสุขภาพจิต") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6776,7 +6086,7 @@
       for (let i = 0; i < data.length; i++) {
         if (data[i].Category_lv2 == "บริการถึงบ้าน") {
           count += 1;
-          console.log(count);
+
 
           var a_cover = document.createElement("a");
           a_cover.href = data[i].URL;
@@ -6871,27 +6181,27 @@
 
     // button to top
     //Get the button
-    var mybutton = document.getElementById("myBtn");
+    // var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
+    // window.onscroll = function () { scrollFunction() };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     mybutton.style.display = "block";
+    //   } else {
+    //     mybutton.style.display = "none";
+    //   }
+    // }
 
     // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+    // function topFunction() {
+    //   document.body.scrollTop = 0;
+    //   document.documentElement.scrollTop = 0;
+    // }
     // end button to top
 
-    
+
 
 
 
@@ -6903,5 +6213,3 @@
 </body>
 
 </html>
-
-<!-- document.getElementById('Result').innerHTML += data; -->
